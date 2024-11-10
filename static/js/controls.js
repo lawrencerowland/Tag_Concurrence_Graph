@@ -21,9 +21,29 @@ document.addEventListener('DOMContentLoaded', function() {
         const threshold = parseFloat(this.value);
         weightValue.textContent = threshold;
         
+        // Reset visibility
+        cy.elements().style('opacity', 1);
+        
+        // Track nodes with edges above threshold
+        const nodesWithValidEdges = new Set();
+        
+        // Process edges
         cy.edges().forEach(edge => {
             const weight = edge.data('weight');
-            edge.style('opacity', weight >= threshold ? 0.8 : 0);
+            if (weight >= threshold) {
+                edge.style('opacity', 0.8);
+                nodesWithValidEdges.add(edge.source().id());
+                nodesWithValidEdges.add(edge.target().id());
+            } else {
+                edge.style('opacity', 0);
+            }
+        });
+        
+        // Hide nodes with no valid edges
+        cy.nodes().forEach(node => {
+            if (!nodesWithValidEdges.has(node.id())) {
+                node.style('opacity', 0);
+            }
         });
     });
 
@@ -32,6 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
     resetViewBtn.addEventListener('click', function() {
         cy.fit();
         cy.center();
+        // Reset edge weight filter
+        edgeWeightFilter.value = 0;
+        weightValue.textContent = "0";
+        cy.elements().style('opacity', 1);
     });
 
     // Toggle labels button
