@@ -6,6 +6,7 @@ async function initializeGraph() {
         const response = await fetch('/api/network');
         originalData = await response.json();
 
+        // Initialize Cytoscape
         cy = cytoscape({
             container: document.getElementById('cy'),
             elements: originalData,
@@ -19,14 +20,22 @@ async function initializeGraph() {
                         'font-size': '12px',
                         'text-wrap': 'wrap',
                         'text-max-width': '80px',
-                        'width': 'mapData(weight, 0, 10, 20, 60)',
-                        'height': 'mapData(weight, 0, 10, 20, 60)'
+                        'width': 30,
+                        'height': 30
+                    }
+                },
+                {
+                    selector: 'node[weight > 0]',
+                    style: {
+                        'width': 'mapData(weight, 1, 10, 30, 60)',
+                        'height': 'mapData(weight, 1, 10, 30, 60)',
+                        'font-size': 'mapData(weight, 1, 10, 12, 16)'
                     }
                 },
                 {
                     selector: 'edge',
                     style: {
-                        'width': 'data(weight)',
+                        'width': 'mapData(weight, 1, 5, 1, 5)',
                         'line-color': '#495057',
                         'curve-style': 'bezier',
                         'opacity': 0.7,
@@ -57,7 +66,7 @@ async function initializeGraph() {
                 animate: true,
                 animationDuration: 1000,
                 nodeDimensionsIncludeLabels: true,
-                padding: 30,
+                padding: 50,
                 randomize: true,
                 nodeRepulsion: 8000,
                 idealEdgeLength: 100,
@@ -71,20 +80,15 @@ async function initializeGraph() {
             }
         });
 
-        // Calculate node weights based on connections
-        cy.nodes().forEach(node => {
-            const edges = node.connectedEdges();
-            const weight = edges.reduce((sum, edge) => sum + edge.data('weight'), 0);
-            node.data('weight', weight);
-        });
-
-        // Add pan-zoom controls
-        cy.panzoom({
-            zoomFactor: 0.05,
-            zoomDelay: 45,
-            minZoom: 0.1,
-            maxZoom: 10
-        });
+        // Initialize panzoom after cy is created
+        if (cy.panzoom) {
+            cy.panzoom({
+                zoomFactor: 0.05,
+                zoomDelay: 45,
+                minZoom: 0.1,
+                maxZoom: 10
+            });
+        }
 
         // Event handlers
         cy.on('tap', 'node', function(evt) {
@@ -126,11 +130,11 @@ function updateNodeInfo(node) {
     const nodeInfo = document.getElementById('nodeInfo');
     const neighbors = node.neighborhood('node');
     const edges = node.connectedEdges();
-    const totalWeight = edges.reduce((sum, edge) => sum + edge.data('weight'), 0);
+    const weight = node.data('weight') || 0;
     
     nodeInfo.innerHTML = `
         <p><strong>Tag:</strong> ${node.id()}</p>
-        <p><strong>Total Weight:</strong> ${totalWeight}</p>
+        <p><strong>Weight:</strong> ${weight}</p>
         <p><strong>Connections:</strong> ${neighbors.length}</p>
         <p><strong>Connected Tags:</strong></p>
         <ul class="list-unstyled">
