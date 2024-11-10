@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 p-3 control-panel">
+            <h4>Tag Network Controls</h4>
+            <div class="mb-3">
+                <label for="layoutSelect" class="form-label">Layout</label>
+                <select class="form-select" id="layoutSelect">
+                    <option value="fcose">Force-Directed (FCose)</option>
+                    <option value="grid">Grid</option>
+                    <option value="concentric">Concentric</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="edgeWeightFilter" class="form-label">Min Edge Weight</label>
+                <input type="range" class="form-range" id="edgeWeightFilter" min="0" max="1" step="0.1" value="0">
+                <span id="weightValue">0</span>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-secondary" id="resetView">Reset View</button>
+                <button class="btn btn-secondary" id="toggleLabels">Toggle Labels</button>
+            </div>
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Selected Node Info</h5>
+                    <div id="nodeInfo">
+                        <p>Click a node to see details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="cy"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/controls.js') }}"></script>
+<script src="{{ url_for('static', filename='js/graph.js') }}"></script>
+{% endblock %}
