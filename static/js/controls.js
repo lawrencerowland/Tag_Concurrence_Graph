@@ -1,23 +1,27 @@
 document.addEventListener('DOMContentLoaded', async function() {
+    // Initialize dataset buttons first
+    const datasetButtons = document.querySelectorAll('[data-dataset]');
+    
     // Wait for Cytoscape initialization
     while (!cy) {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
     try {
-        // Set Lawrence dataset button as active by default
-        const datasetButtons = document.querySelectorAll('[data-dataset]');
+        console.log("Setting initial dataset...");
+        // Set Lawrence dataset button as active
         datasetButtons.forEach(btn => btn.classList.remove('active'));
-        document.querySelector('[data-dataset="lawrence"]').classList.add('active');
+        const lawrenceButton = document.querySelector('[data-dataset="lawrence"]');
+        lawrenceButton.classList.add('active');
 
-        console.log("Loading initial dataset (Lawrence's)...");
-        // Load Lawrence dataset by default with explicit dataset parameter
+        console.log("Loading Lawrence dataset...");
+        // Load Lawrence dataset by default
         const response = await fetch('/api/network?dataset=lawrence');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         originalData = await response.json();
-        console.log("Loaded dataset:", originalData);
+        console.log("Loaded dataset with nodes:", originalData.nodes.length);
         
         // Clear any existing elements
         cy.elements().remove();
@@ -51,7 +55,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 originalData = await response.json();
-                console.log("Loaded new dataset:", originalData);
+                console.log("Loaded new dataset with nodes:", originalData.nodes.length);
                 
                 // Add new elements
                 cy.add(originalData);
