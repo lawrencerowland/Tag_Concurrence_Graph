@@ -9,9 +9,23 @@ app.secret_key = "tag_network_visualization_secret"
 
 # Load network data
 def load_network_data(dataset='lawrence'):
-    filename = 'tag_concurrence_graph.json' if dataset == 'lawrence' else 'complex_project_management_graph.json'
+    # Use absolute paths to ensure correct file loading
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Debug print
+    print(f"Loading dataset: {dataset}")
+    
+    # Select correct file
+    if dataset == 'lawrence':
+        filename = os.path.join(base_dir, 'tag_concurrence_graph.json')
+    else:
+        filename = os.path.join(base_dir, 'complex_project_management_graph.json')
+    
+    print(f"Loading file: {filename}")  # Debug print
+    
     with open(filename, 'r') as f:
         data = json.load(f)
+        print(f"Loaded data with {len(data['nodes'])} nodes")  # Debug print
         
         # Transform data to Cytoscape format
         elements = {
@@ -19,7 +33,7 @@ def load_network_data(dataset='lawrence'):
                 {
                     "data": {
                         "id": node["id"],
-                        "weight": node["weight"]  # Use weight directly from node data
+                        "weight": node["weight"]
                     }
                 } for node in data["nodes"]
             ],
@@ -77,9 +91,11 @@ def upload_file():
             if not isinstance(node, dict) or 'id' not in node or 'weight' not in node:
                 raise ValueError("Invalid node structure")
         
-        # Save valid file
+        # Save valid file with absolute path
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        file_path = os.path.join(base_dir, 'tag_concurrence_graph.json')
         file.seek(0)
-        file.save('tag_concurrence_graph.json')
+        file.save(file_path)
         
         return jsonify({"message": "File uploaded successfully"}), 200
         
