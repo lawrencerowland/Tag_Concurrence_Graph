@@ -1,291 +1,7442 @@
 {
     "nodes": [
         {
-            "id": "Systems Thinking",
-            "weight": 22
+            "id": "2017bottomup",
+            "weight": 2
         },
         {
-            "id": "Stakeholder Management",
-            "weight": 18
+            "id": "interface",
+            "weight": 4
         },
         {
-            "id": "Risk Management",
-            "weight": 25
+            "id": "convey",
+            "weight": 5
         },
         {
-            "id": "Agile Methodology",
-            "weight": 15
+            "id": "system",
+            "weight": 9
         },
         {
-            "id": "Critical Path Method",
-            "weight": 12
+            "id": "bi category",
+            "weight": 2
         },
         {
-            "id": "Resource Allocation",
-            "weight": 20
+            "id": "functors",
+            "weight": 1
         },
         {
-            "id": "Adaptive Planning",
-            "weight": 16
+            "id": "2 category",
+            "weight": 3
         },
         {
-            "id": "Complexity Theory",
-            "weight": 19
+            "id": "design",
+            "weight": 7
         },
         {
-            "id": "Scenario Analysis",
-            "weight": 13
+            "id": "resource management",
+            "weight": 2
         },
         {
-            "id": "Decision-Making Under Uncertainty",
+            "id": "wiring diagram operad",
+            "weight": 1
+        },
+        {
+            "id": "deconfliction",
+            "weight": 1
+        },
+        {
+            "id": "network operad",
+            "weight": 1
+        },
+        {
+            "id": "commitments",
+            "weight": 1
+        },
+        {
+            "id": "granularity",
+            "weight": 1
+        },
+        {
+            "id": "alternative viewpoint",
+            "weight": 1
+        },
+        {
+            "id": "decision",
+            "weight": 1
+        },
+        {
+            "id": "uncertainty",
+            "weight": 2
+        },
+        {
+            "id": "categories",
             "weight": 23
         },
         {
-            "id": "Project Governance",
-            "weight": 18
+            "id": "prioritisation",
+            "weight": 1
         },
         {
-            "id": "Communication Strategy",
-            "weight": 15
+            "id": "2024 act oxford",
+            "weight": 2
         },
         {
-            "id": "Change Management",
-            "weight": 17
+            "id": "back prop",
+            "weight": 1
         },
         {
-            "id": "Emergent Behavior",
-            "weight": 10
-        },
-        {
-            "id": "Feedback Loops",
-            "weight": 12
-        },
-        {
-            "id": "Dynamic Scheduling",
-            "weight": 14
-        },
-        {
-            "id": "Cross-Functional Teams",
-            "weight": 13
-        },
-        {
-            "id": "Project Lifecycle",
-            "weight": 15
-        },
-        {
-            "id": "Integrated Project Delivery",
+            "id": "SMC",
             "weight": 11
         },
         {
-            "id": "Lean Construction",
-            "weight": 13
+            "id": "tangent bundle",
+            "weight": 1
         },
         {
-            "id": "Collaborative Tools",
-            "weight": 14
+            "id": "differential equations",
+            "weight": 1
         },
         {
-            "id": "Stakeholder Alignment",
-            "weight": 12
+            "id": "lens",
+            "weight": 7
         },
         {
-            "id": "Knowledge Management",
-            "weight": 18
+            "id": "cotangent bundle",
+            "weight": 1
         },
         {
-            "id": "Multi-criteria Decision Analysis",
-            "weight": 14
+            "id": "Para",
+            "weight": 4
         },
         {
-            "id": "Value Engineering",
-            "weight": 11
+            "id": "the Reaction",
+            "weight": 1
         },
         {
-            "id": "Iterative Development",
-            "weight": 13
+            "id": "open system",
+            "weight": 4
         },
         {
-            "id": "Cost-Benefit Analysis",
-            "weight": 16
+            "id": "hamiltonian",
+            "weight": 2
         },
         {
-            "id": "Monte Carlo Simulation",
-            "weight": 10
+            "id": "Org Category",
+            "weight": 1
         },
         {
-            "id": "Organizational Learning",
-            "weight": 17
+            "id": "double category",
+            "weight": 5
         },
         {
-            "id": "Scenario Planning",
-            "weight": 14
+            "id": "differential geometry",
+            "weight": 1
         },
         {
-            "id": "Portfolio Management",
-            "weight": 15
+            "id": "poset",
+            "weight": 3
         },
         {
-            "id": "Network Analysis",
-            "weight": 12
+            "id": "category theory",
+            "weight": 8
         },
         {
-            "id": "Change Readiness",
-            "weight": 11
+            "id": "python package",
+            "weight": 1
         },
         {
-            "id": "Contingency Planning",
-            "weight": 13
+            "id": "trade offs",
+            "weight": 3
         },
         {
-            "id": "System Dynamics",
-            "weight": 16
+            "id": "cambridge design",
+            "weight": 2
+        },
+        {
+            "id": "petri net",
+            "weight": 4
+        },
+        {
+            "id": "dsm",
+            "weight": 1
+        },
+        {
+            "id": "tools",
+            "weight": 4
+        },
+        {
+            "id": "dynamic",
+            "weight": 3
+        },
+        {
+            "id": "hypergraph category",
+            "weight": 1
+        },
+        {
+            "id": "topos",
+            "weight": 1
+        },
+        {
+            "id": "behavioural approach",
+            "weight": 4
+        },
+        {
+            "id": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "id": "algebraic topology",
+            "weight": 2
+        },
+        {
+            "id": "Rel category",
+            "weight": 3
+        },
+        {
+            "id": "sheaves",
+            "weight": 4
+        },
+        {
+            "id": "service offering",
+            "weight": 1
+        },
+        {
+            "id": "stochastic optimisation",
+            "weight": 4
+        },
+        {
+            "id": "RL",
+            "weight": 4
+        },
+        {
+            "id": "SMCs",
+            "weight": 2
+        },
+        {
+            "id": "monoid",
+            "weight": 2
+        },
+        {
+            "id": "bundle",
+            "weight": 4
+        },
+        {
+            "id": "functor",
+            "weight": 7
+        },
+        {
+            "id": "containers",
+            "weight": 1
+        },
+        {
+            "id": "dependent lenses",
+            "weight": 1
+        },
+        {
+            "id": "Poly",
+            "weight": 1
+        },
+        {
+            "id": "context dependent interaction",
+            "weight": 1
+        },
+        {
+            "id": "arena",
+            "weight": 3
+        },
+        {
+            "id": "experimentable",
+            "weight": 5
+        },
+        {
+            "id": "scheduling",
+            "weight": 2
+        },
+        {
+            "id": "dynamics",
+            "weight": 1
+        },
+        {
+            "id": "indexed category",
+            "weight": 3
+        },
+        {
+            "id": "port hamiltonian",
+            "weight": 1
+        },
+        {
+            "id": "systems",
+            "weight": 4
+        },
+        {
+            "id": "operad",
+            "weight": 9
+        },
+        {
+            "id": "UWD",
+            "weight": 1
+        },
+        {
+            "id": "presheaves",
+            "weight": 3
+        },
+        {
+            "id": "llm",
+            "weight": 8
+        },
+        {
+            "id": "adoption",
+            "weight": 2
+        },
+        {
+            "id": "scale",
+            "weight": 1
+        },
+        {
+            "id": "computation",
+            "weight": 2
+        },
+        {
+            "id": "function approximation",
+            "weight": 1
+        },
+        {
+            "id": "functional analysis",
+            "weight": 1
+        },
+        {
+            "id": "reasoning",
+            "weight": 2
+        },
+        {
+            "id": "collaboration",
+            "weight": 1
+        },
+        {
+            "id": "experimentation",
+            "weight": 1
+        },
+        {
+            "id": "markov",
+            "weight": 1
+        },
+        {
+            "id": "optics",
+            "weight": 3
+        },
+        {
+            "id": "very interesting",
+            "weight": 4
+        },
+        {
+            "id": "copresheaves",
+            "weight": 3
+        },
+        {
+            "id": "chain rule",
+            "weight": 1
+        },
+        {
+            "id": "dynamic systems",
+            "weight": 2
+        },
+        {
+            "id": "transition",
+            "weight": 1
+        },
+        {
+            "id": "agents",
+            "weight": 3
+        },
+        {
+            "id": "graph rewriting",
+            "weight": 2
+        },
+        {
+            "id": "traced SMC",
+            "weight": 1
+        },
+        {
+            "id": "undirected system",
+            "weight": 3
+        },
+        {
+            "id": "cospan",
+            "weight": 1
+        },
+        {
+            "id": "wiring diagram",
+            "weight": 7
+        },
+        {
+            "id": "observation sharing",
+            "weight": 1
+        },
+        {
+            "id": "resource sharing",
+            "weight": 1
+        },
+        {
+            "id": "compose as machine",
+            "weight": 1
+        },
+        {
+            "id": "non deterministic automata",
+            "weight": 1
+        },
+        {
+            "id": "comb",
+            "weight": 1
+        },
+        {
+            "id": "verification",
+            "weight": 1
+        },
+        {
+            "id": "safeguarded ai",
+            "weight": 2
+        },
+        {
+            "id": "manager or worker",
+            "weight": 1
+        },
+        {
+            "id": "folio",
+            "weight": 2
+        },
+        {
+            "id": "themes",
+            "weight": 1
+        },
+        {
+            "id": "resource theories",
+            "weight": 3
+        },
+        {
+            "id": "co design",
+            "weight": 3
+        },
+        {
+            "id": "commutative monoid",
+            "weight": 3
+        },
+        {
+            "id": "partial order",
+            "weight": 1
+        },
+        {
+            "id": "hierarchy",
+            "weight": 4
+        },
+        {
+            "id": "operads",
+            "weight": 2
+        },
+        {
+            "id": "groups",
+            "weight": 1
+        },
+        {
+            "id": "olog",
+            "weight": 2
+        },
+        {
+            "id": "self similarity",
+            "weight": 2
+        },
+        {
+            "id": "monad",
+            "weight": 1
+        },
+        {
+            "id": "model",
+            "weight": 4
+        },
+        {
+            "id": "CMG view cycle",
+            "weight": 1
+        },
+        {
+            "id": "MBSE",
+            "weight": 1
+        },
+        {
+            "id": "alternate perspectives",
+            "weight": 2
+        },
+        {
+            "id": "Category of wiring diagrams",
+            "weight": 1
+        },
+        {
+            "id": "dynamic system",
+            "weight": 2
+        },
+        {
+            "id": "stock flow link",
+            "weight": 1
+        },
+        {
+            "id": "stock and flow",
+            "weight": 3
+        },
+        {
+            "id": "hypergraph",
+            "weight": 1
+        },
+        {
+            "id": "concept with an attitude",
+            "weight": 1
+        },
+        {
+            "id": "presheaf",
+            "weight": 1
+        },
+        {
+            "id": "field",
+            "weight": 1
+        },
+        {
+            "id": "cooccurence",
+            "weight": 1
+        },
+        {
+            "id": "bi partite",
+            "weight": 1
+        },
+        {
+            "id": "dependency",
+            "weight": 1
+        },
+        {
+            "id": "dynamical systems",
+            "weight": 1
+        },
+        {
+            "id": "ODEs",
+            "weight": 1
+        },
+        {
+            "id": "dynamical system",
+            "weight": 1
+        },
+        {
+            "id": "state",
+            "weight": 2
+        },
+        {
+            "id": "requirements",
+            "weight": 2
+        },
+        {
+            "id": "STRIPS",
+            "weight": 1
+        },
+        {
+            "id": "PDDL",
+            "weight": 3
+        },
+        {
+            "id": "planning",
+            "weight": 3
+        },
+        {
+            "id": "technical ontologies",
+            "weight": 1
+        },
+        {
+            "id": "ml",
+            "weight": 2
+        },
+        {
+            "id": "gnns",
+            "weight": 1
+        },
+        {
+            "id": "graph",
+            "weight": 4
+        },
+        {
+            "id": "gauge",
+            "weight": 1
+        },
+        {
+            "id": "GDL",
+            "weight": 1
+        },
+        {
+            "id": "manifold",
+            "weight": 1
+        },
+        {
+            "id": "goldblatt",
+            "weight": 2
+        },
+        {
+            "id": "api",
+            "weight": 3
+        },
+        {
+            "id": "GPT",
+            "weight": 1
+        },
+        {
+            "id": "apis",
+            "weight": 1
+        },
+        {
+            "id": "iterable loosely coupled layer",
+            "weight": 1
+        },
+        {
+            "id": "predictive processing",
+            "weight": 2
+        },
+        {
+            "id": "mamba",
+            "weight": 1
+        },
+        {
+            "id": "kalman",
+            "weight": 1
+        },
+        {
+            "id": "control systems",
+            "weight": 1
+        },
+        {
+            "id": "schema",
+            "weight": 1
+        },
+        {
+            "id": "causation",
+            "weight": 1
+        },
+        {
+            "id": "lax functor",
+            "weight": 1
+        },
+        {
+            "id": "bottom up top down balance",
+            "weight": 1
+        },
+        {
+            "id": "precision",
+            "weight": 1
+        },
+        {
+            "id": "graph databases",
+            "weight": 1
+        },
+        {
+            "id": "sql",
+            "weight": 1
+        },
+        {
+            "id": "dagger category",
+            "weight": 1
+        },
+        {
+            "id": "T box",
+            "weight": 1
+        },
+        {
+            "id": "category of elements",
+            "weight": 1
+        },
+        {
+            "id": "description logic",
+            "weight": 1
+        },
+        {
+            "id": "category Rel",
+            "weight": 1
+        },
+        {
+            "id": "logical implication",
+            "weight": 1
+        },
+        {
+            "id": "partitioned process theories",
+            "weight": 1
+        },
+        {
+            "id": "resource monotones",
+            "weight": 1
+        },
+        {
+            "id": "co slice category",
+            "weight": 1
+        },
+        {
+            "id": "pre ordered monoid",
+            "weight": 1
+        },
+        {
+            "id": "smc",
+            "weight": 3
+        },
+        {
+            "id": "resource convertibility",
+            "weight": 1
+        },
+        {
+            "id": "combs",
+            "weight": 1
+        },
+        {
+            "id": "mbse",
+            "weight": 1
+        },
+        {
+            "id": "boundary",
+            "weight": 1
+        },
+        {
+            "id": "port graph",
+            "weight": 2
+        },
+        {
+            "id": "alternate perspective",
+            "weight": 1
+        },
+        {
+            "id": "tree",
+            "weight": 3
+        },
+        {
+            "id": "boltzmann machine",
+            "weight": 1
+        },
+        {
+            "id": "hopfield network",
+            "weight": 1
+        },
+        {
+            "id": "control state P",
+            "weight": 1
+        },
+        {
+            "id": "agency",
+            "weight": 1
+        },
+        {
+            "id": "control feedback Q",
+            "weight": 1
+        },
+        {
+            "id": "residual",
+            "weight": 1
+        },
+        {
+            "id": "actegory",
+            "weight": 1
+        },
+        {
+            "id": "causality",
+            "weight": 1
+        },
+        {
+            "id": "generative model",
+            "weight": 1
+        },
+        {
+            "id": "collective token philosophy",
+            "weight": 1
+        },
+        {
+            "id": "co pre sheaves",
+            "weight": 1
+        },
+        {
+            "id": "category of wiring diagrams",
+            "weight": 1
+        },
+        {
+            "id": "C set",
+            "weight": 2
+        },
+        {
+            "id": "prompt",
+            "weight": 1
+        },
+        {
+            "id": "directed graph",
+            "weight": 1
+        },
+        {
+            "id": "bipartite",
+            "weight": 2
+        },
+        {
+            "id": "lambda calculus",
+            "weight": 1
+        },
+        {
+            "id": "logic",
+            "weight": 2
+        },
+        {
+            "id": "quite interesting",
+            "weight": 1
+        },
+        {
+            "id": "key",
+            "weight": 5
+        },
+        {
+            "id": "PID control",
+            "weight": 1
+        },
+        {
+            "id": "control system",
+            "weight": 1
+        },
+        {
+            "id": "bidirectional morphism",
+            "weight": 1
+        },
+        {
+            "id": "Poly category",
+            "weight": 1
+        },
+        {
+            "id": "dependent lens",
+            "weight": 1
+        },
+        {
+            "id": "interaction",
+            "weight": 1
+        },
+        {
+            "id": "importance",
+            "weight": 1
+        },
+        {
+            "id": "metric space",
+            "weight": 1
+        },
+        {
+            "id": "timed petri net",
+            "weight": 1
+        },
+        {
+            "id": "timed event graph",
+            "weight": 1
+        },
+        {
+            "id": "pro monoidal",
+            "weight": 1
+        },
+        {
+            "id": "prop",
+            "weight": 1
+        },
+        {
+            "id": "pro functor",
+            "weight": 1
+        },
+        {
+            "id": "clustering",
+            "weight": 1
+        },
+        {
+            "id": "budb",
+            "weight": 1
+        },
+        {
+            "id": "multilayer",
+            "weight": 1
+        },
+        {
+            "id": "alex",
+            "weight": 1
+        },
+        {
+            "id": "interesting",
+            "weight": 3
+        },
+        {
+            "id": "reviewed",
+            "weight": 1
+        },
+        {
+            "id": "rl",
+            "weight": 1
+        },
+        {
+            "id": "span",
+            "weight": 3
+        },
+        {
+            "id": "schedules",
+            "weight": 1
+        },
+        {
+            "id": "ontology",
+            "weight": 1
+        },
+        {
+            "id": "DPO",
+            "weight": 2
+        },
+        {
+            "id": "c set",
+            "weight": 1
+        },
+        {
+            "id": "contract",
+            "weight": 1
+        },
+        {
+            "id": "slice category",
+            "weight": 1
+        },
+        {
+            "id": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "id": "SysML",
+            "weight": 1
+        },
+        {
+            "id": "moore machine",
+            "weight": 1
+        },
+        {
+            "id": "sheaf",
+            "weight": 1
+        },
+        {
+            "id": "simplex",
+            "weight": 1
+        },
+        {
+            "id": "state machine",
+            "weight": 1
+        },
+        {
+            "id": "delay",
+            "weight": 1
+        },
+        {
+            "id": "traced category",
+            "weight": 1
+        },
+        {
+            "id": "compact closed",
+            "weight": 1
+        },
+        {
+            "id": "open petri net",
+            "weight": 1
+        },
+        {
+            "id": "mealy machine",
+            "weight": 1
+        },
+        {
+            "id": "stateful process",
+            "weight": 1
+        },
+        {
+            "id": "Span(Graph) category",
+            "weight": 1
+        },
+        {
+            "id": "fibration",
+            "weight": 1
+        },
+        {
+            "id": "taxonomy",
+            "weight": 1
+        },
+        {
+            "id": "concept graph",
+            "weight": 1
+        },
+        {
+            "id": "graph morphism",
+            "weight": 1
+        },
+        {
+            "id": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "id": "variable sharing",
+            "weight": 1
+        },
+        {
+            "id": "tear zoom link",
+            "weight": 2
+        },
+        {
+            "id": "unbundling",
+            "weight": 2
+        },
+        {
+            "id": "embedding",
+            "weight": 1
+        },
+        {
+            "id": "time",
+            "weight": 2
+        },
+        {
+            "id": "maximal simplex",
+            "weight": 1
+        },
+        {
+            "id": "topological cavity",
+            "weight": 1
+        },
+        {
+            "id": "higher order graphs",
+            "weight": 1
+        },
+        {
+            "id": "compexity",
+            "weight": 1
+        },
+        {
+            "id": "PBS WBS",
+            "weight": 1
+        },
+        {
+            "id": "optimal transport",
+            "weight": 1
+        },
+        {
+            "id": "annealing",
+            "weight": 1
+        },
+        {
+            "id": "categorical product",
+            "weight": 1
+        },
+        {
+            "id": "space",
+            "weight": 1
+        },
+        {
+            "id": "foraging",
+            "weight": 1
+        },
+        {
+            "id": "surprise",
+            "weight": 1
+        },
+        {
+            "id": "nlp",
+            "weight": 1
+        },
+        {
+            "id": "prediction error",
+            "weight": 1
+        },
+        {
+            "id": "search",
+            "weight": 1
+        },
+        {
+            "id": "KL divergence",
+            "weight": 1
+        },
+        {
+            "id": "exploration exploitation",
+            "weight": 1
+        },
+        {
+            "id": "lda",
+            "weight": 1
+        },
+        {
+            "id": "bayes",
+            "weight": 1
+        },
+        {
+            "id": "will",
+            "weight": 1
+        },
+        {
+            "id": "structure preserving",
+            "weight": 1
+        },
+        {
+            "id": "meat space",
+            "weight": 1
+        },
+        {
+            "id": "cognitive artefact",
+            "weight": 1
+        },
+        {
+            "id": "affordance",
+            "weight": 1
+        },
+        {
+            "id": "morphism",
+            "weight": 1
+        },
+        {
+            "id": "christopher alexander",
+            "weight": 1
+        },
+        {
+            "id": "transitions",
+            "weight": 1
+        },
+        {
+            "id": "bret victor",
+            "weight": 1
+        },
+        {
+            "id": "generality",
+            "weight": 1
+        },
+        {
+            "id": "discovery",
+            "weight": 1
+        },
+        {
+            "id": "design thinking",
+            "weight": 1
+        },
+        {
+            "id": "prediction",
+            "weight": 1
+        },
+        {
+            "id": "frame",
+            "weight": 1
+        },
+        {
+            "id": "validation",
+            "weight": 1
         }
     ],
     "edges": [
         {
-            "source": "Systems Thinking",
-            "target": "Complexity Theory",
-            "weight": 15
+            "source": "2017bottomup",
+            "target": "interface",
+            "weight": 2
         },
         {
-            "source": "Stakeholder Management",
-            "target": "Communication Strategy",
-            "weight": 12
+            "source": "2017bottomup",
+            "target": "convey",
+            "weight": 2
         },
         {
-            "source": "Risk Management",
-            "target": "Scenario Analysis",
-            "weight": 14
+            "source": "2017bottomup",
+            "target": "system",
+            "weight": 2
         },
         {
-            "source": "Agile Methodology",
-            "target": "Adaptive Planning",
-            "weight": 10
+            "source": "convey",
+            "target": "interface",
+            "weight": 3
         },
         {
-            "source": "Critical Path Method",
-            "target": "Resource Allocation",
-            "weight": 9
+            "source": "interface",
+            "target": "system",
+            "weight": 3
         },
         {
-            "source": "Resource Allocation",
-            "target": "Decision-Making Under Uncertainty",
-            "weight": 17
+            "source": "convey",
+            "target": "system",
+            "weight": 2
         },
         {
-            "source": "Adaptive Planning",
-            "target": "Emergent Behavior",
-            "weight": 8
+            "source": "bi category",
+            "target": "functors",
+            "weight": 1
         },
         {
-            "source": "Complexity Theory",
-            "target": "Emergent Behavior",
-            "weight": 13
+            "source": "2 category",
+            "target": "bi category",
+            "weight": 2
         },
         {
-            "source": "Scenario Analysis",
-            "target": "Decision-Making Under Uncertainty",
-            "weight": 18
+            "source": "2 category",
+            "target": "functors",
+            "weight": 1
         },
         {
-            "source": "Project Governance",
-            "target": "Change Management",
-            "weight": 12
+            "source": "design",
+            "target": "resource management",
+            "weight": 2
         },
         {
-            "source": "Communication Strategy",
-            "target": "Feedback Loops",
-            "weight": 10
+            "source": "design",
+            "target": "wiring diagram operad",
+            "weight": 1
         },
         {
-            "source": "Change Management",
-            "target": "Stakeholder Management",
-            "weight": 11
+            "source": "deconfliction",
+            "target": "design",
+            "weight": 1
         },
         {
-            "source": "Systems Thinking",
-            "target": "Feedback Loops",
-            "weight": 14
+            "source": "design",
+            "target": "network operad",
+            "weight": 1
         },
         {
-            "source": "Risk Management",
-            "target": "Project Governance",
-            "weight": 13
+            "source": "commitments",
+            "target": "design",
+            "weight": 1
         },
         {
-            "source": "Agile Methodology",
-            "target": "Change Management",
-            "weight": 9
+            "source": "design",
+            "target": "granularity",
+            "weight": 1
         },
         {
-            "source": "Dynamic Scheduling",
-            "target": "Cross-Functional Teams",
-            "weight": 8
+            "source": "alternative viewpoint",
+            "target": "design",
+            "weight": 1
         },
         {
-            "source": "Project Lifecycle",
-            "target": "Integrated Project Delivery",
-            "weight": 9
+            "source": "resource management",
+            "target": "wiring diagram operad",
+            "weight": 1
         },
         {
-            "source": "Lean Construction",
-            "target": "Collaborative Tools",
-            "weight": 10
+            "source": "deconfliction",
+            "target": "resource management",
+            "weight": 1
         },
         {
-            "source": "Stakeholder Alignment",
-            "target": "Knowledge Management",
-            "weight": 11
+            "source": "network operad",
+            "target": "resource management",
+            "weight": 1
         },
         {
-            "source": "Multi-criteria Decision Analysis",
-            "target": "Value Engineering",
-            "weight": 8
+            "source": "commitments",
+            "target": "resource management",
+            "weight": 1
         },
         {
-            "source": "Iterative Development",
-            "target": "Agile Methodology",
-            "weight": 11
+            "source": "granularity",
+            "target": "resource management",
+            "weight": 1
         },
         {
-            "source": "Cost-Benefit Analysis",
-            "target": "Monte Carlo Simulation",
-            "weight": 7
+            "source": "alternative viewpoint",
+            "target": "resource management",
+            "weight": 1
         },
         {
-            "source": "Organizational Learning",
-            "target": "Knowledge Management",
-            "weight": 15
+            "source": "deconfliction",
+            "target": "wiring diagram operad",
+            "weight": 1
         },
         {
-            "source": "Scenario Planning",
-            "target": "Risk Management",
-            "weight": 13
+            "source": "network operad",
+            "target": "wiring diagram operad",
+            "weight": 1
         },
         {
-            "source": "Portfolio Management",
-            "target": "Resource Allocation",
-            "weight": 10
+            "source": "commitments",
+            "target": "wiring diagram operad",
+            "weight": 1
         },
         {
-            "source": "Network Analysis",
-            "target": "System Dynamics",
-            "weight": 9
+            "source": "granularity",
+            "target": "wiring diagram operad",
+            "weight": 1
         },
         {
-            "source": "Change Readiness",
-            "target": "Change Management",
-            "weight": 10
+            "source": "alternative viewpoint",
+            "target": "wiring diagram operad",
+            "weight": 1
         },
         {
-            "source": "Contingency Planning",
-            "target": "Risk Management",
-            "weight": 12
+            "source": "deconfliction",
+            "target": "network operad",
+            "weight": 1
         },
         {
-            "source": "System Dynamics",
-            "target": "Feedback Loops",
-            "weight": 11
+            "source": "commitments",
+            "target": "deconfliction",
+            "weight": 1
+        },
+        {
+            "source": "deconfliction",
+            "target": "granularity",
+            "weight": 1
+        },
+        {
+            "source": "alternative viewpoint",
+            "target": "deconfliction",
+            "weight": 1
+        },
+        {
+            "source": "commitments",
+            "target": "network operad",
+            "weight": 1
+        },
+        {
+            "source": "granularity",
+            "target": "network operad",
+            "weight": 1
+        },
+        {
+            "source": "alternative viewpoint",
+            "target": "network operad",
+            "weight": 1
+        },
+        {
+            "source": "commitments",
+            "target": "granularity",
+            "weight": 1
+        },
+        {
+            "source": "alternative viewpoint",
+            "target": "commitments",
+            "weight": 1
+        },
+        {
+            "source": "alternative viewpoint",
+            "target": "granularity",
+            "weight": 1
+        },
+        {
+            "source": "decision",
+            "target": "uncertainty",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "decision",
+            "weight": 1
+        },
+        {
+            "source": "decision",
+            "target": "prioritisation",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "decision",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "uncertainty",
+            "weight": 1
+        },
+        {
+            "source": "prioritisation",
+            "target": "uncertainty",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "uncertainty",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "prioritisation",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "prioritisation",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "back prop",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "back prop",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "differential equations",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "cotangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "back prop",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "back prop",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "back prop",
+            "target": "differential geometry",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "SMC",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "differential equations",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "lens",
+            "weight": 3
+        },
+        {
+            "source": "SMC",
+            "target": "cotangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "SMC",
+            "weight": 3
+        },
+        {
+            "source": "SMC",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "open system",
+            "weight": 2
+        },
+        {
+            "source": "SMC",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "SMC",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "double category",
+            "weight": 2
+        },
+        {
+            "source": "SMC",
+            "target": "differential geometry",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "system",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "tangent bundle",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "differential geometry",
+            "target": "tangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "differential equations",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "cotangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "Para",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "Org Category",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "2024 act oxford",
+            "target": "differential geometry",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "system",
+            "weight": 2
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "system",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "system",
+            "weight": 2
+        },
+        {
+            "source": "differential geometry",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "differential equations",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "differential equations",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "differential equations",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "differential equations",
+            "target": "differential geometry",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "lens",
+            "weight": 3
+        },
+        {
+            "source": "lens",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "lens",
+            "weight": 2
+        },
+        {
+            "source": "differential geometry",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "cotangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "cotangent bundle",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "cotangent bundle",
+            "target": "differential geometry",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "Para",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "double category",
+            "weight": 2
+        },
+        {
+            "source": "Para",
+            "target": "differential geometry",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "differential geometry",
+            "target": "the Reaction",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "open system",
+            "weight": 2
+        },
+        {
+            "source": "differential geometry",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "differential geometry",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "Org Category",
+            "target": "differential geometry",
+            "weight": 1
+        },
+        {
+            "source": "differential geometry",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "poset",
+            "target": "resource management",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "poset",
+            "weight": 2
+        },
+        {
+            "source": "poset",
+            "target": "python package",
+            "weight": 1
+        },
+        {
+            "source": "poset",
+            "target": "trade offs",
+            "weight": 2
+        },
+        {
+            "source": "category theory",
+            "target": "resource management",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "python package",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "trade offs",
+            "weight": 1
+        },
+        {
+            "source": "python package",
+            "target": "resource management",
+            "weight": 1
+        },
+        {
+            "source": "resource management",
+            "target": "trade offs",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "python package",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "trade offs",
+            "weight": 2
+        },
+        {
+            "source": "python package",
+            "target": "trade offs",
+            "weight": 1
+        },
+        {
+            "source": "cambridge design",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "cambridge design",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "cambridge design",
+            "target": "dsm",
+            "weight": 1
+        },
+        {
+            "source": "cambridge design",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "dsm",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "petri net",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "dsm",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "dsm",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "hypergraph category",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "dynamic",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "dynamic",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "dynamic",
+            "weight": 2
+        },
+        {
+            "source": "Rel category",
+            "target": "dynamic",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "service offering",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph category",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "hypergraph category",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph category",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "hypergraph category",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "hypergraph category",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "hypergraph category",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph category",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph category",
+            "target": "service offering",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "temporal type theory",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "sheaves",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "service offering",
+            "target": "topos",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "behavioural approach",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "category theory",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "behavioural approach",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "service offering",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "sheaves",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "service offering",
+            "target": "temporal type theory",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "category theory",
+            "weight": 2
+        },
+        {
+            "source": "Rel category",
+            "target": "algebraic topology",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "service offering",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "category theory",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "service offering",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "service offering",
+            "weight": 1
+        },
+        {
+            "source": "service offering",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "RL",
+            "target": "stochastic optimisation",
+            "weight": 4
+        },
+        {
+            "source": "SMCs",
+            "target": "convey",
+            "weight": 1
+        },
+        {
+            "source": "convey",
+            "target": "monoid",
+            "weight": 1
+        },
+        {
+            "source": "SMCs",
+            "target": "monoid",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "bundle",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "bundle",
+            "weight": 1
+        },
+        {
+            "source": "containers",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "dependent lenses",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "Poly",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "context dependent interaction",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "containers",
+            "target": "dependent lenses",
+            "weight": 1
+        },
+        {
+            "source": "Poly",
+            "target": "containers",
+            "weight": 1
+        },
+        {
+            "source": "containers",
+            "target": "context dependent interaction",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "containers",
+            "weight": 1
+        },
+        {
+            "source": "Poly",
+            "target": "dependent lenses",
+            "weight": 1
+        },
+        {
+            "source": "context dependent interaction",
+            "target": "dependent lenses",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "dependent lenses",
+            "weight": 1
+        },
+        {
+            "source": "Poly",
+            "target": "context dependent interaction",
+            "weight": 1
+        },
+        {
+            "source": "Poly",
+            "target": "arena",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "context dependent interaction",
+            "weight": 1
+        },
+        {
+            "source": "experimentable",
+            "target": "scheduling",
+            "weight": 1
+        },
+        {
+            "source": "RL",
+            "target": "experimentable",
+            "weight": 1
+        },
+        {
+            "source": "experimentable",
+            "target": "stochastic optimisation",
+            "weight": 1
+        },
+        {
+            "source": "RL",
+            "target": "scheduling",
+            "weight": 1
+        },
+        {
+            "source": "scheduling",
+            "target": "stochastic optimisation",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "bundle",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "dynamics",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "dynamics",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "dynamics",
+            "weight": 1
+        },
+        {
+            "source": "dynamics",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "dynamics",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "indexed category",
+            "weight": 2
+        },
+        {
+            "source": "indexed category",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "port hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "port hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "port hamiltonian",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "port hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "port hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "UWD",
+            "target": "port hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "hamiltonian",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "UWD",
+            "target": "hamiltonian",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "categories",
+            "weight": 2
+        },
+        {
+            "source": "UWD",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "UWD",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "UWD",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "UWD",
+            "target": "behavioural approach",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "presheaves",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "adoption",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "llm",
+            "target": "scale",
+            "weight": 1
+        },
+        {
+            "source": "adoption",
+            "target": "scale",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "function approximation",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "functional analysis",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "function approximation",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "functional analysis",
+            "weight": 1
+        },
+        {
+            "source": "function approximation",
+            "target": "functional analysis",
+            "weight": 1
+        },
+        {
+            "source": "llm",
+            "target": "reasoning",
+            "weight": 2
+        },
+        {
+            "source": "collaboration",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "experimentation",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "collaboration",
+            "target": "reasoning",
+            "weight": 1
+        },
+        {
+            "source": "collaboration",
+            "target": "experimentation",
+            "weight": 1
+        },
+        {
+            "source": "experimentation",
+            "target": "reasoning",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "markov",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "behavioural approach",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "chain rule",
+            "weight": 1
+        },
+        {
+            "source": "optics",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "presheaves",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "chain rule",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "optics",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "chain rule",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "optics",
+            "weight": 2
+        },
+        {
+            "source": "Para",
+            "target": "optics",
+            "weight": 2
+        },
+        {
+            "source": "double category",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "chain rule",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "chain rule",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "chain rule",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "lens",
+            "weight": 2
+        },
+        {
+            "source": "Para",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "chain rule",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "chain rule",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "behavioural approach",
+            "weight": 1
+        },
+        {
+            "source": "chain rule",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "chain rule",
+            "weight": 1
+        },
+        {
+            "source": "dynamic systems",
+            "target": "transition",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "dynamic systems",
+            "weight": 1
+        },
+        {
+            "source": "dynamic systems",
+            "target": "graph rewriting",
+            "weight": 1
+        },
+        {
+            "source": "dynamic systems",
+            "target": "traced SMC",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "transition",
+            "weight": 1
+        },
+        {
+            "source": "graph rewriting",
+            "target": "transition",
+            "weight": 1
+        },
+        {
+            "source": "traced SMC",
+            "target": "transition",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "graph rewriting",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "traced SMC",
+            "weight": 1
+        },
+        {
+            "source": "graph rewriting",
+            "target": "traced SMC",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "dynamic",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "system",
+            "weight": 2
+        },
+        {
+            "source": "categories",
+            "target": "undirected system",
+            "weight": 2
+        },
+        {
+            "source": "system",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "dynamic",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "wiring diagram",
+            "weight": 6
+        },
+        {
+            "source": "operad",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "observation sharing",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "resource sharing",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "non deterministic automata",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "observation sharing",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "resource sharing",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "cospan",
+            "weight": 1
+        },
+        {
+            "source": "cospan",
+            "target": "non deterministic automata",
+            "weight": 1
+        },
+        {
+            "source": "undirected system",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "observation sharing",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "resource sharing",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "non deterministic automata",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "observation sharing",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "resource sharing",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "non deterministic automata",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "observation sharing",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "resource sharing",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "non deterministic automata",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "observation sharing",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "resource sharing",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "indexed category",
+            "weight": 1
+        },
+        {
+            "source": "indexed category",
+            "target": "non deterministic automata",
+            "weight": 1
+        },
+        {
+            "source": "observation sharing",
+            "target": "resource sharing",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "observation sharing",
+            "weight": 1
+        },
+        {
+            "source": "non deterministic automata",
+            "target": "observation sharing",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "resource sharing",
+            "weight": 1
+        },
+        {
+            "source": "non deterministic automata",
+            "target": "resource sharing",
+            "weight": 1
+        },
+        {
+            "source": "compose as machine",
+            "target": "non deterministic automata",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "comb",
+            "weight": 1
+        },
+        {
+            "source": "comb",
+            "target": "verification",
+            "weight": 1
+        },
+        {
+            "source": "comb",
+            "target": "safeguarded ai",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "verification",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "safeguarded ai",
+            "weight": 1
+        },
+        {
+            "source": "safeguarded ai",
+            "target": "verification",
+            "weight": 1
+        },
+        {
+            "source": "adoption",
+            "target": "manager or worker",
+            "weight": 1
+        },
+        {
+            "source": "folio",
+            "target": "themes",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "resource theories",
+            "weight": 2
+        },
+        {
+            "source": "co design",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "co design",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "category theory",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "petri net",
+            "weight": 2
+        },
+        {
+            "source": "SMC",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "commutative monoid",
+            "weight": 1
+        },
+        {
+            "source": "monoid",
+            "target": "partial order",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "partial order",
+            "weight": 1
+        },
+        {
+            "source": "operads",
+            "target": "partial order",
+            "weight": 1
+        },
+        {
+            "source": "groups",
+            "target": "partial order",
+            "weight": 1
+        },
+        {
+            "source": "olog",
+            "target": "partial order",
+            "weight": 1
+        },
+        {
+            "source": "partial order",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "monad",
+            "target": "partial order",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "monoid",
+            "weight": 1
+        },
+        {
+            "source": "monoid",
+            "target": "operads",
+            "weight": 1
+        },
+        {
+            "source": "groups",
+            "target": "monoid",
+            "weight": 1
+        },
+        {
+            "source": "monoid",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "monoid",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "monad",
+            "target": "monoid",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "operads",
+            "weight": 1
+        },
+        {
+            "source": "groups",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "monad",
+            "weight": 1
+        },
+        {
+            "source": "groups",
+            "target": "operads",
+            "weight": 1
+        },
+        {
+            "source": "olog",
+            "target": "operads",
+            "weight": 1
+        },
+        {
+            "source": "operads",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "monad",
+            "target": "operads",
+            "weight": 1
+        },
+        {
+            "source": "groups",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "groups",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "groups",
+            "target": "monad",
+            "weight": 1
+        },
+        {
+            "source": "olog",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "monad",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "monad",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "model",
+            "weight": 4
+        },
+        {
+            "source": "CMG view cycle",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "MBSE",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspectives",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "CMG view cycle",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "MBSE",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspectives",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "CMG view cycle",
+            "target": "MBSE",
+            "weight": 1
+        },
+        {
+            "source": "CMG view cycle",
+            "target": "alternate perspectives",
+            "weight": 1
+        },
+        {
+            "source": "MBSE",
+            "target": "alternate perspectives",
+            "weight": 1
+        },
+        {
+            "source": "co design",
+            "target": "trade offs",
+            "weight": 2
+        },
+        {
+            "source": "Category of wiring diagrams",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "model",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "Category of wiring diagrams",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "Category of wiring diagrams",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "Category of wiring diagrams",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "dynamic system",
+            "target": "stock flow link",
+            "weight": 1
+        },
+        {
+            "source": "dynamic system",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "dynamic system",
+            "weight": 1
+        },
+        {
+            "source": "dynamic system",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "dynamic system",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "dynamic system",
+            "target": "hypergraph",
+            "weight": 1
+        },
+        {
+            "source": "resource theories",
+            "target": "stock flow link",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "stock flow link",
+            "weight": 1
+        },
+        {
+            "source": "stock flow link",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "stock and flow",
+            "target": "stock flow link",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph",
+            "target": "stock flow link",
+            "weight": 1
+        },
+        {
+            "source": "resource theories",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "resource theories",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "stock and flow",
+            "weight": 3
+        },
+        {
+            "source": "categories",
+            "target": "hypergraph",
+            "weight": 1
+        },
+        {
+            "source": "stock and flow",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph",
+            "target": "undirected system",
+            "weight": 1
+        },
+        {
+            "source": "hypergraph",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "convey",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "interface",
+            "weight": 1
+        },
+        {
+            "source": "concept with an attitude",
+            "target": "presheaf",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "concept with an attitude",
+            "weight": 1
+        },
+        {
+            "source": "concept with an attitude",
+            "target": "field",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "presheaf",
+            "weight": 1
+        },
+        {
+            "source": "field",
+            "target": "presheaf",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "field",
+            "weight": 1
+        },
+        {
+            "source": "bi partite",
+            "target": "cooccurence",
+            "weight": 1
+        },
+        {
+            "source": "cooccurence",
+            "target": "dependency",
+            "weight": 1
+        },
+        {
+            "source": "cooccurence",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "bi partite",
+            "target": "dependency",
+            "weight": 1
+        },
+        {
+            "source": "bi partite",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "dependency",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "dynamical systems",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "ODEs",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "dynamical systems",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "ODEs",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "ODEs",
+            "target": "dynamical systems",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "tools",
+            "weight": 3
+        },
+        {
+            "source": "model",
+            "target": "tools",
+            "weight": 2
+        },
+        {
+            "source": "SMC",
+            "target": "arena",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "dynamical system",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "state",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "dynamical system",
+            "weight": 1
+        },
+        {
+            "source": "arena",
+            "target": "state",
+            "weight": 1
+        },
+        {
+            "source": "dynamical system",
+            "target": "state",
+            "weight": 1
+        },
+        {
+            "source": "STRIPS",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "planning",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "STRIPS",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "STRIPS",
+            "weight": 1
+        },
+        {
+            "source": "STRIPS",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "STRIPS",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "SMC",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "categories",
+            "weight": 2
+        },
+        {
+            "source": "PDDL",
+            "target": "planning",
+            "weight": 3
+        },
+        {
+            "source": "SMC",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "planning",
+            "weight": 2
+        },
+        {
+            "source": "gnns",
+            "target": "ml",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "ml",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "gnns",
+            "weight": 1
+        },
+        {
+            "source": "gauge",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "GDL",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "manifold",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "ml",
+            "weight": 1
+        },
+        {
+            "source": "GDL",
+            "target": "gauge",
+            "weight": 1
+        },
+        {
+            "source": "gauge",
+            "target": "manifold",
+            "weight": 1
+        },
+        {
+            "source": "gauge",
+            "target": "ml",
+            "weight": 1
+        },
+        {
+            "source": "GDL",
+            "target": "manifold",
+            "weight": 1
+        },
+        {
+            "source": "GDL",
+            "target": "ml",
+            "weight": 1
+        },
+        {
+            "source": "manifold",
+            "target": "ml",
+            "weight": 1
+        },
+        {
+            "source": "api",
+            "target": "experimentable",
+            "weight": 3
+        },
+        {
+            "source": "api",
+            "target": "llm",
+            "weight": 2
+        },
+        {
+            "source": "experimentable",
+            "target": "llm",
+            "weight": 2
+        },
+        {
+            "source": "agents",
+            "target": "llm",
+            "weight": 2
+        },
+        {
+            "source": "GPT",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "apis",
+            "target": "llm",
+            "weight": 1
+        },
+        {
+            "source": "GPT",
+            "target": "agents",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "apis",
+            "weight": 1
+        },
+        {
+            "source": "GPT",
+            "target": "apis",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "iterable loosely coupled layer",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "predictive processing",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "mamba",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "state",
+            "weight": 1
+        },
+        {
+            "source": "mamba",
+            "target": "state",
+            "weight": 1
+        },
+        {
+            "source": "control systems",
+            "target": "kalman",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "schema",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "causation",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "lax functor",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "schema",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "stock and flow",
+            "target": "tools",
+            "weight": 2
+        },
+        {
+            "source": "olog",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "lax functor",
+            "target": "tools",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "schema",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "lax functor",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "model",
+            "target": "schema",
+            "weight": 1
+        },
+        {
+            "source": "model",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "model",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "lax functor",
+            "target": "model",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "schema",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "lax functor",
+            "weight": 1
+        },
+        {
+            "source": "schema",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "olog",
+            "target": "schema",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "schema",
+            "weight": 1
+        },
+        {
+            "source": "lax functor",
+            "target": "schema",
+            "weight": 1
+        },
+        {
+            "source": "olog",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "lax functor",
+            "target": "stock and flow",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "lax functor",
+            "target": "olog",
+            "weight": 1
+        },
+        {
+            "source": "causation",
+            "target": "lax functor",
+            "weight": 1
+        },
+        {
+            "source": "bottom up top down balance",
+            "target": "predictive processing",
+            "weight": 1
+        },
+        {
+            "source": "precision",
+            "target": "predictive processing",
+            "weight": 1
+        },
+        {
+            "source": "bottom up top down balance",
+            "target": "precision",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "graph databases",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "dagger category",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "category of elements",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "description logic",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "category Rel",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "graph databases",
+            "weight": 1
+        },
+        {
+            "source": "graph databases",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "graph databases",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "dagger category",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "T box",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "category of elements",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "SMC",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "description logic",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "category Rel",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "2 category",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "dagger category",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "category of elements",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "description logic",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "category Rel",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "logical implication",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "poset",
+            "target": "sql",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "dagger category",
+            "weight": 1
+        },
+        {
+            "source": "category of elements",
+            "target": "dagger category",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "dagger category",
+            "weight": 1
+        },
+        {
+            "source": "dagger category",
+            "target": "description logic",
+            "weight": 1
+        },
+        {
+            "source": "category Rel",
+            "target": "dagger category",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "dagger category",
+            "weight": 1
+        },
+        {
+            "source": "dagger category",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "dagger category",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "category of elements",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "T box",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "description logic",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "category Rel",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "bi category",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "T box",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "category of elements",
+            "weight": 1
+        },
+        {
+            "source": "category of elements",
+            "target": "description logic",
+            "weight": 1
+        },
+        {
+            "source": "category Rel",
+            "target": "category of elements",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "category of elements",
+            "weight": 1
+        },
+        {
+            "source": "category of elements",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "category of elements",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "description logic",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "category Rel",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "bi category",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "category Rel",
+            "target": "description logic",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "description logic",
+            "weight": 1
+        },
+        {
+            "source": "description logic",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "description logic",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "category Rel",
+            "weight": 1
+        },
+        {
+            "source": "category Rel",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "category Rel",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "logical implication",
+            "weight": 1
+        },
+        {
+            "source": "bi category",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "logical implication",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "partitioned process theories",
+            "target": "resource monotones",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "partitioned process theories",
+            "weight": 1
+        },
+        {
+            "source": "partitioned process theories",
+            "target": "pre ordered monoid",
+            "weight": 1
+        },
+        {
+            "source": "partitioned process theories",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "partitioned process theories",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "partitioned process theories",
+            "weight": 1
+        },
+        {
+            "source": "partitioned process theories",
+            "target": "resource convertibility",
+            "weight": 1
+        },
+        {
+            "source": "combs",
+            "target": "partitioned process theories",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "resource monotones",
+            "weight": 1
+        },
+        {
+            "source": "pre ordered monoid",
+            "target": "resource monotones",
+            "weight": 1
+        },
+        {
+            "source": "resource monotones",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "resource monotones",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "resource monotones",
+            "weight": 1
+        },
+        {
+            "source": "resource convertibility",
+            "target": "resource monotones",
+            "weight": 1
+        },
+        {
+            "source": "combs",
+            "target": "resource monotones",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "pre ordered monoid",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "commutative monoid",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "resource convertibility",
+            "weight": 1
+        },
+        {
+            "source": "co slice category",
+            "target": "combs",
+            "weight": 1
+        },
+        {
+            "source": "pre ordered monoid",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "pre ordered monoid",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "pre ordered monoid",
+            "weight": 1
+        },
+        {
+            "source": "pre ordered monoid",
+            "target": "resource convertibility",
+            "weight": 1
+        },
+        {
+            "source": "combs",
+            "target": "pre ordered monoid",
+            "weight": 1
+        },
+        {
+            "source": "resource theories",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "resource convertibility",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "combs",
+            "target": "resource theories",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "resource convertibility",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "combs",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "resource convertibility",
+            "weight": 1
+        },
+        {
+            "source": "combs",
+            "target": "commutative monoid",
+            "weight": 1
+        },
+        {
+            "source": "combs",
+            "target": "resource convertibility",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "mbse",
+            "weight": 1
+        },
+        {
+            "source": "boundary",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "boundary",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "boundary",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "boundary",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "boundary",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspective",
+            "target": "boundary",
+            "weight": 1
+        },
+        {
+            "source": "boundary",
+            "target": "interface",
+            "weight": 1
+        },
+        {
+            "source": "boundary",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "system",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "port graph",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspective",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "interface",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "tree",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "port graph",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "system",
+            "weight": 2
+        },
+        {
+            "source": "alternate perspective",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "system",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspective",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "interface",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "tree",
+            "weight": 2
+        },
+        {
+            "source": "operad",
+            "target": "port graph",
+            "weight": 2
+        },
+        {
+            "source": "alternate perspective",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "interface",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "port graph",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspective",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "interface",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspective",
+            "target": "interface",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspective",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "interface",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "trade offs",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "poset",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "co design",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "trade offs",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "co design",
+            "weight": 1
+        },
+        {
+            "source": "co design",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "co design",
+            "target": "poset",
+            "weight": 1
+        },
+        {
+            "source": "boltzmann machine",
+            "target": "hopfield network",
+            "weight": 1
+        },
+        {
+            "source": "agency",
+            "target": "control state P",
+            "weight": 1
+        },
+        {
+            "source": "control feedback Q",
+            "target": "control state P",
+            "weight": 1
+        },
+        {
+            "source": "control state P",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "control state P",
+            "weight": 1
+        },
+        {
+            "source": "control state P",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "agency",
+            "target": "control feedback Q",
+            "weight": 1
+        },
+        {
+            "source": "agency",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "agency",
+            "weight": 1
+        },
+        {
+            "source": "agency",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "control feedback Q",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "control feedback Q",
+            "weight": 1
+        },
+        {
+            "source": "control feedback Q",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "optics",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "Para",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "lens",
+            "target": "residual",
+            "weight": 1
+        },
+        {
+            "source": "actegory",
+            "target": "lens",
+            "weight": 1
+        },
+        {
+            "source": "optics",
+            "target": "residual",
+            "weight": 1
+        },
+        {
+            "source": "actegory",
+            "target": "optics",
+            "weight": 1
+        },
+        {
+            "source": "actegory",
+            "target": "residual",
+            "weight": 1
+        },
+        {
+            "source": "causality",
+            "target": "commutative monoid",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "generative model",
+            "weight": 1
+        },
+        {
+            "source": "collective token philosophy",
+            "target": "commutative monoid",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "commutative monoid",
+            "weight": 1
+        },
+        {
+            "source": "commutative monoid",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "causality",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "causality",
+            "target": "generative model",
+            "weight": 1
+        },
+        {
+            "source": "causality",
+            "target": "collective token philosophy",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "causality",
+            "weight": 1
+        },
+        {
+            "source": "causality",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "causality",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "generative model",
+            "weight": 1
+        },
+        {
+            "source": "collective token philosophy",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "double category",
+            "weight": 1
+        },
+        {
+            "source": "double category",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "collective token philosophy",
+            "target": "generative model",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "generative model",
+            "weight": 1
+        },
+        {
+            "source": "generative model",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "generative model",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "collective token philosophy",
+            "weight": 1
+        },
+        {
+            "source": "collective token philosophy",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "collective token philosophy",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "Rel category",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "category of wiring diagrams",
+            "target": "co pre sheaves",
+            "weight": 1
+        },
+        {
+            "source": "co pre sheaves",
+            "target": "dynamic system",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "co pre sheaves",
+            "weight": 1
+        },
+        {
+            "source": "co pre sheaves",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "co pre sheaves",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "category of wiring diagrams",
+            "target": "dynamic system",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "category of wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "category of wiring diagrams",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "category of wiring diagrams",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "dynamic system",
+            "weight": 1
+        },
+        {
+            "source": "dynamic system",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "dynamic system",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "port graph",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "experimentable",
+            "weight": 1
+        },
+        {
+            "source": "experimentable",
+            "target": "prompt",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "api",
+            "weight": 1
+        },
+        {
+            "source": "agents",
+            "target": "prompt",
+            "weight": 1
+        },
+        {
+            "source": "api",
+            "target": "prompt",
+            "weight": 1
+        },
+        {
+            "source": "llm",
+            "target": "prompt",
+            "weight": 1
+        },
+        {
+            "source": "petri net",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "directed graph",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "convey",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "petri net",
+            "weight": 1
+        },
+        {
+            "source": "directed graph",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "convey",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "convey",
+            "target": "directed graph",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "directed graph",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "convey",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "lambda calculus",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "quite interesting",
+            "weight": 1
+        },
+        {
+            "source": "lambda calculus",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "lambda calculus",
+            "weight": 1
+        },
+        {
+            "source": "lambda calculus",
+            "target": "quite interesting",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "logic",
+            "target": "quite interesting",
+            "weight": 1
+        },
+        {
+            "source": "algebraic topology",
+            "target": "quite interesting",
+            "weight": 1
+        },
+        {
+            "source": "PID control",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "control system",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "PID control",
+            "target": "control system",
+            "weight": 1
+        },
+        {
+            "source": "Poly category",
+            "target": "bidirectional morphism",
+            "weight": 1
+        },
+        {
+            "source": "bidirectional morphism",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "bidirectional morphism",
+            "target": "dependent lens",
+            "weight": 1
+        },
+        {
+            "source": "bidirectional morphism",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "bidirectional morphism",
+            "target": "interaction",
+            "weight": 1
+        },
+        {
+            "source": "Poly category",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "Poly category",
+            "target": "dependent lens",
+            "weight": 1
+        },
+        {
+            "source": "Poly category",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "Poly category",
+            "target": "interaction",
+            "weight": 1
+        },
+        {
+            "source": "dependent lens",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "interaction",
+            "target": "systems",
+            "weight": 1
+        },
+        {
+            "source": "dependent lens",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "dependent lens",
+            "target": "interaction",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "interaction",
+            "weight": 1
+        },
+        {
+            "source": "cambridge design",
+            "target": "importance",
+            "weight": 1
+        },
+        {
+            "source": "metric space",
+            "target": "scheduling",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "scheduling",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "scheduling",
+            "weight": 1
+        },
+        {
+            "source": "scheduling",
+            "target": "timed petri net",
+            "weight": 1
+        },
+        {
+            "source": "scheduling",
+            "target": "timed event graph",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "metric space",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "metric space",
+            "weight": 1
+        },
+        {
+            "source": "metric space",
+            "target": "timed petri net",
+            "weight": 1
+        },
+        {
+            "source": "metric space",
+            "target": "timed event graph",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "timed petri net",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "timed event graph",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "timed petri net",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "timed event graph",
+            "weight": 1
+        },
+        {
+            "source": "timed event graph",
+            "target": "timed petri net",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "pro monoidal",
+            "weight": 1
+        },
+        {
+            "source": "pro monoidal",
+            "target": "prop",
+            "weight": 1
+        },
+        {
+            "source": "pro functor",
+            "target": "pro monoidal",
+            "weight": 1
+        },
+        {
+            "source": "pro monoidal",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "pro monoidal",
+            "weight": 1
+        },
+        {
+            "source": "clustering",
+            "target": "pro monoidal",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "prop",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "pro functor",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "operad",
+            "weight": 2
+        },
+        {
+            "source": "clustering",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "pro functor",
+            "target": "prop",
+            "weight": 1
+        },
+        {
+            "source": "prop",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "prop",
+            "weight": 1
+        },
+        {
+            "source": "clustering",
+            "target": "prop",
+            "weight": 1
+        },
+        {
+            "source": "pro functor",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "pro functor",
+            "weight": 1
+        },
+        {
+            "source": "clustering",
+            "target": "pro functor",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "wiring diagram",
+            "weight": 2
+        },
+        {
+            "source": "clustering",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "clustering",
+            "weight": 1
+        },
+        {
+            "source": "budb",
+            "target": "multilayer",
+            "weight": 1
+        },
+        {
+            "source": "alex",
+            "target": "budb",
+            "weight": 1
+        },
+        {
+            "source": "budb",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "budb",
+            "target": "reviewed",
+            "weight": 1
+        },
+        {
+            "source": "budb",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "budb",
+            "target": "folio",
+            "weight": 1
+        },
+        {
+            "source": "alex",
+            "target": "multilayer",
+            "weight": 1
+        },
+        {
+            "source": "interesting",
+            "target": "multilayer",
+            "weight": 1
+        },
+        {
+            "source": "multilayer",
+            "target": "reviewed",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "multilayer",
+            "weight": 1
+        },
+        {
+            "source": "folio",
+            "target": "multilayer",
+            "weight": 1
+        },
+        {
+            "source": "alex",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "alex",
+            "target": "reviewed",
+            "weight": 1
+        },
+        {
+            "source": "alex",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "alex",
+            "target": "folio",
+            "weight": 1
+        },
+        {
+            "source": "interesting",
+            "target": "reviewed",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "interesting",
+            "weight": 2
+        },
+        {
+            "source": "folio",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "reviewed",
+            "weight": 1
+        },
+        {
+            "source": "folio",
+            "target": "reviewed",
+            "weight": 1
+        },
+        {
+            "source": "folio",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "experimentable",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspectives",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspectives",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "alternate perspectives",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspectives",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspectives",
+            "target": "schedules",
+            "weight": 1
+        },
+        {
+            "source": "alternate perspectives",
+            "target": "ontology",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "alternate perspectives",
+            "weight": 1
+        },
+        {
+            "source": "planning",
+            "target": "span",
+            "weight": 2
+        },
+        {
+            "source": "PDDL",
+            "target": "span",
+            "weight": 2
+        },
+        {
+            "source": "functor",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "schedules",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "ontology",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "span",
+            "weight": 2
+        },
+        {
+            "source": "functor",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "planning",
+            "target": "schedules",
+            "weight": 1
+        },
+        {
+            "source": "ontology",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "planning",
+            "weight": 2
+        },
+        {
+            "source": "PDDL",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "schedules",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "ontology",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "PDDL",
+            "weight": 2
+        },
+        {
+            "source": "functor",
+            "target": "schedules",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "ontology",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "functor",
+            "weight": 1
+        },
+        {
+            "source": "ontology",
+            "target": "schedules",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "schedules",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "ontology",
+            "weight": 1
+        },
+        {
+            "source": "c set",
+            "target": "contract",
+            "weight": 1
+        },
+        {
+            "source": "c set",
+            "target": "slice category",
+            "weight": 1
+        },
+        {
+            "source": "c set",
+            "target": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "c set",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "SysML",
+            "target": "c set",
+            "weight": 1
+        },
+        {
+            "source": "c set",
+            "target": "moore machine",
+            "weight": 1
+        },
+        {
+            "source": "c set",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "contract",
+            "target": "slice category",
+            "weight": 1
+        },
+        {
+            "source": "contract",
+            "target": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "contract",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "SysML",
+            "target": "contract",
+            "weight": 1
+        },
+        {
+            "source": "contract",
+            "target": "moore machine",
+            "weight": 1
+        },
+        {
+            "source": "contract",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "slice category",
+            "target": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "requirements",
+            "target": "slice category",
+            "weight": 1
+        },
+        {
+            "source": "SysML",
+            "target": "slice category",
+            "weight": 1
+        },
+        {
+            "source": "moore machine",
+            "target": "slice category",
+            "weight": 1
+        },
+        {
+            "source": "slice category",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "requirements",
+            "target": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "SysML",
+            "target": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "moore machine",
+            "target": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "system",
+            "target": "wiring diagrams",
+            "weight": 1
+        },
+        {
+            "source": "SysML",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "moore machine",
+            "target": "requirements",
+            "weight": 1
+        },
+        {
+            "source": "requirements",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "SysML",
+            "target": "moore machine",
+            "weight": 1
+        },
+        {
+            "source": "SysML",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "moore machine",
+            "target": "system",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "presheaves",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "sheaf",
+            "weight": 1
+        },
+        {
+            "source": "presheaves",
+            "target": "sheaf",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "simplex",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "delay",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "state machine",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "open petri net",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "mealy machine",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "state machine",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "span",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "state machine",
+            "weight": 1
+        },
+        {
+            "source": "delay",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "open petri net",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "mealy machine",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "open system",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "open system",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "delay",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "compact closed",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "open petri net",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "mealy machine",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "Span(Graph) category",
+            "weight": 1
+        },
+        {
+            "source": "delay",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "delay",
+            "weight": 1
+        },
+        {
+            "source": "delay",
+            "target": "open petri net",
+            "weight": 1
+        },
+        {
+            "source": "delay",
+            "target": "mealy machine",
+            "weight": 1
+        },
+        {
+            "source": "delay",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "delay",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "delay",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "open petri net",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "mealy machine",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "stateful process",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "span",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "traced category",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "open petri net",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "mealy machine",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "compact closed",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "compact closed",
+            "weight": 1
+        },
+        {
+            "source": "mealy machine",
+            "target": "open petri net",
+            "weight": 1
+        },
+        {
+            "source": "open petri net",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "open petri net",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "open petri net",
+            "weight": 1
+        },
+        {
+            "source": "mealy machine",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "mealy machine",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "mealy machine",
+            "weight": 1
+        },
+        {
+            "source": "span",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "stateful process",
+            "weight": 1
+        },
+        {
+            "source": "Span(Graph) category",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "operads",
+            "target": "smc",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "fibration",
+            "weight": 1
+        },
+        {
+            "source": "fibration",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "interesting",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "interesting",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "graph rewriting",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "graph morphism",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "interesting",
+            "target": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "source": "taxonomy",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "graph rewriting",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "graph morphism",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "specialisation tree",
+            "target": "taxonomy",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "graph rewriting",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "graph morphism",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "specialisation tree",
+            "target": "tree",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "graph rewriting",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "graph morphism",
+            "target": "hierarchy",
+            "weight": 1
+        },
+        {
+            "source": "hierarchy",
+            "target": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "concept graph",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "graph rewriting",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "graph morphism",
+            "weight": 1
+        },
+        {
+            "source": "bipartite",
+            "target": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "graph",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "graph rewriting",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "graph morphism",
+            "weight": 1
+        },
+        {
+            "source": "concept graph",
+            "target": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "graph rewriting",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "graph morphism",
+            "weight": 1
+        },
+        {
+            "source": "graph",
+            "target": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "source": "graph morphism",
+            "target": "graph rewriting",
+            "weight": 1
+        },
+        {
+            "source": "graph rewriting",
+            "target": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "source": "graph morphism",
+            "target": "specialisation tree",
+            "weight": 1
+        },
+        {
+            "source": "dynamic systems",
+            "target": "variable sharing",
+            "weight": 1
+        },
+        {
+            "source": "dynamic systems",
+            "target": "tear zoom link",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "dynamic systems",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "dynamic systems",
+            "weight": 1
+        },
+        {
+            "source": "tear zoom link",
+            "target": "variable sharing",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "variable sharing",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "variable sharing",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "tear zoom link",
+            "weight": 1
+        },
+        {
+            "source": "behavioural approach",
+            "target": "tear zoom link",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "unbundling",
+            "weight": 2
+        },
+        {
+            "source": "bundle",
+            "target": "category theory",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "tear zoom link",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "tear zoom link",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "interesting",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "tear zoom link",
+            "weight": 1
+        },
+        {
+            "source": "category theory",
+            "target": "interesting",
+            "weight": 1
+        },
+        {
+            "source": "interesting",
+            "target": "tear zoom link",
+            "weight": 1
+        },
+        {
+            "source": "self similarity",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "self similarity",
+            "target": "time",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "self similarity",
+            "weight": 1
+        },
+        {
+            "source": "time",
+            "target": "wiring diagram",
+            "weight": 1
+        },
+        {
+            "source": "operad",
+            "target": "time",
+            "weight": 1
+        },
+        {
+            "source": "SMC",
+            "target": "time",
+            "weight": 1
+        },
+        {
+            "source": "maximal simplex",
+            "target": "topological cavity",
+            "weight": 1
+        },
+        {
+            "source": "higher order graphs",
+            "target": "maximal simplex",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "maximal simplex",
+            "weight": 1
+        },
+        {
+            "source": "compexity",
+            "target": "maximal simplex",
+            "weight": 1
+        },
+        {
+            "source": "higher order graphs",
+            "target": "topological cavity",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "topological cavity",
+            "weight": 1
+        },
+        {
+            "source": "compexity",
+            "target": "topological cavity",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "higher order graphs",
+            "weight": 1
+        },
+        {
+            "source": "compexity",
+            "target": "higher order graphs",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "compexity",
+            "weight": 1
+        },
+        {
+            "source": "PBS WBS",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "key",
+            "target": "optimal transport",
+            "weight": 1
+        },
+        {
+            "source": "annealing",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "PBS WBS",
+            "target": "optimal transport",
+            "weight": 1
+        },
+        {
+            "source": "PBS WBS",
+            "target": "annealing",
+            "weight": 1
+        },
+        {
+            "source": "annealing",
+            "target": "optimal transport",
+            "weight": 1
+        },
+        {
+            "source": "categorical product",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "categorical product",
+            "target": "time",
+            "weight": 1
+        },
+        {
+            "source": "categorical product",
+            "target": "space",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "time",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "space",
+            "weight": 1
+        },
+        {
+            "source": "space",
+            "target": "time",
+            "weight": 1
+        },
+        {
+            "source": "foraging",
+            "target": "surprise",
+            "weight": 1
+        },
+        {
+            "source": "foraging",
+            "target": "nlp",
+            "weight": 1
+        },
+        {
+            "source": "foraging",
+            "target": "prediction error",
+            "weight": 1
+        },
+        {
+            "source": "foraging",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "foraging",
+            "target": "search",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "foraging",
+            "weight": 1
+        },
+        {
+            "source": "exploration exploitation",
+            "target": "foraging",
+            "weight": 1
+        },
+        {
+            "source": "foraging",
+            "target": "lda",
+            "weight": 1
+        },
+        {
+            "source": "nlp",
+            "target": "surprise",
+            "weight": 1
+        },
+        {
+            "source": "prediction error",
+            "target": "surprise",
+            "weight": 1
+        },
+        {
+            "source": "surprise",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "search",
+            "target": "surprise",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "surprise",
+            "weight": 1
+        },
+        {
+            "source": "exploration exploitation",
+            "target": "surprise",
+            "weight": 1
+        },
+        {
+            "source": "lda",
+            "target": "surprise",
+            "weight": 1
+        },
+        {
+            "source": "nlp",
+            "target": "prediction error",
+            "weight": 1
+        },
+        {
+            "source": "nlp",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "nlp",
+            "target": "search",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "nlp",
+            "weight": 1
+        },
+        {
+            "source": "exploration exploitation",
+            "target": "nlp",
+            "weight": 1
+        },
+        {
+            "source": "lda",
+            "target": "nlp",
+            "weight": 1
+        },
+        {
+            "source": "prediction error",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "prediction error",
+            "target": "search",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "prediction error",
+            "weight": 1
+        },
+        {
+            "source": "exploration exploitation",
+            "target": "prediction error",
+            "weight": 1
+        },
+        {
+            "source": "lda",
+            "target": "prediction error",
+            "weight": 1
+        },
+        {
+            "source": "search",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "exploration exploitation",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "lda",
+            "target": "very interesting",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "search",
+            "weight": 1
+        },
+        {
+            "source": "exploration exploitation",
+            "target": "search",
+            "weight": 1
+        },
+        {
+            "source": "lda",
+            "target": "search",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "exploration exploitation",
+            "weight": 1
+        },
+        {
+            "source": "KL divergence",
+            "target": "lda",
+            "weight": 1
+        },
+        {
+            "source": "exploration exploitation",
+            "target": "lda",
+            "weight": 1
+        },
+        {
+            "source": "bayes",
+            "target": "will",
+            "weight": 1
+        },
+        {
+            "source": "bayes",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "key",
+            "target": "will",
+            "weight": 1
+        },
+        {
+            "source": "meat space",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "cognitive artefact",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "key",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "morphism",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "christopher alexander",
+            "target": "structure preserving",
+            "weight": 1
+        },
+        {
+            "source": "cognitive artefact",
+            "target": "meat space",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "meat space",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "meat space",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "meat space",
+            "weight": 1
+        },
+        {
+            "source": "key",
+            "target": "meat space",
+            "weight": 1
+        },
+        {
+            "source": "meat space",
+            "target": "morphism",
+            "weight": 1
+        },
+        {
+            "source": "christopher alexander",
+            "target": "meat space",
+            "weight": 1
+        },
+        {
+            "source": "cognitive artefact",
+            "target": "computation",
+            "weight": 1
+        },
+        {
+            "source": "cognitive artefact",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "cognitive artefact",
+            "weight": 1
+        },
+        {
+            "source": "cognitive artefact",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "cognitive artefact",
+            "target": "morphism",
+            "weight": 1
+        },
+        {
+            "source": "christopher alexander",
+            "target": "cognitive artefact",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "computation",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "computation",
+            "target": "morphism",
+            "weight": 1
+        },
+        {
+            "source": "christopher alexander",
+            "target": "computation",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "design",
+            "target": "morphism",
+            "weight": 1
+        },
+        {
+            "source": "christopher alexander",
+            "target": "design",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "morphism",
+            "weight": 1
+        },
+        {
+            "source": "affordance",
+            "target": "christopher alexander",
+            "weight": 1
+        },
+        {
+            "source": "key",
+            "target": "morphism",
+            "weight": 1
+        },
+        {
+            "source": "christopher alexander",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "christopher alexander",
+            "target": "morphism",
+            "weight": 1
+        },
+        {
+            "source": "bret victor",
+            "target": "transitions",
+            "weight": 1
+        },
+        {
+            "source": "transitions",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "transitions",
+            "weight": 1
+        },
+        {
+            "source": "generality",
+            "target": "transitions",
+            "weight": 1
+        },
+        {
+            "source": "key",
+            "target": "transitions",
+            "weight": 1
+        },
+        {
+            "source": "discovery",
+            "target": "transitions",
+            "weight": 1
+        },
+        {
+            "source": "design thinking",
+            "target": "transitions",
+            "weight": 1
+        },
+        {
+            "source": "bret victor",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "bret victor",
+            "target": "bundle",
+            "weight": 1
+        },
+        {
+            "source": "bret victor",
+            "target": "generality",
+            "weight": 1
+        },
+        {
+            "source": "bret victor",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "bret victor",
+            "target": "discovery",
+            "weight": 1
+        },
+        {
+            "source": "bret victor",
+            "target": "design thinking",
+            "weight": 1
+        },
+        {
+            "source": "generality",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "key",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "discovery",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "design thinking",
+            "target": "unbundling",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "generality",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "discovery",
+            "weight": 1
+        },
+        {
+            "source": "bundle",
+            "target": "design thinking",
+            "weight": 1
+        },
+        {
+            "source": "generality",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "discovery",
+            "target": "generality",
+            "weight": 1
+        },
+        {
+            "source": "design thinking",
+            "target": "generality",
+            "weight": 1
+        },
+        {
+            "source": "discovery",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "design thinking",
+            "target": "key",
+            "weight": 1
+        },
+        {
+            "source": "design thinking",
+            "target": "discovery",
+            "weight": 1
+        },
+        {
+            "source": "prediction",
+            "target": "uncertainty",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "frame",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "DPO",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "DPO",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "frame",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "categories",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "categories",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "frame",
+            "weight": 1
+        },
+        {
+            "source": "frame",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "frame",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "frame",
+            "weight": 1
+        },
+        {
+            "source": "frame",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "frame",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "C set",
+            "target": "PDDL",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "logic",
+            "target": "span",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "logic",
+            "target": "planning",
+            "weight": 1
+        },
+        {
+            "source": "copresheaves",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "copresheaves",
+            "weight": 1
+        },
+        {
+            "source": "PDDL",
+            "target": "logic",
+            "weight": 1
+        },
+        {
+            "source": "api",
+            "target": "validation",
+            "weight": 1
+        },
+        {
+            "source": "experimentable",
+            "target": "validation",
+            "weight": 1
+        },
+        {
+            "source": "functor",
+            "target": "sheaves",
+            "weight": 1
+        },
+        {
+            "source": "SMCs",
+            "target": "operad",
+            "weight": 1
+        },
+        {
+            "source": "SMCs",
+            "target": "wiring diagram",
+            "weight": 1
         }
     ]
 }

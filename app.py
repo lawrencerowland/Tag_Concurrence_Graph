@@ -25,15 +25,15 @@ def load_network_data(dataset='lawrence'):
     
     with open(filename, 'r') as f:
         data = json.load(f)
-        print(f"Loaded data with {len(data['nodes'])} nodes")  # Debug print
+        print(f"Raw data nodes: {len(data['nodes'])}")  # Debug print
         
-        # Transform data to Cytoscape format
+        # Transform data to Cytoscape format, preserving all nodes
         elements = {
             "nodes": [
                 {
                     "data": {
                         "id": node["id"],
-                        "weight": node["weight"]
+                        "weight": node.get("weight", 1)  # Default weight if not present
                     }
                 } for node in data["nodes"]
             ],
@@ -43,11 +43,12 @@ def load_network_data(dataset='lawrence'):
                         "id": f"{edge['source']}-{edge['target']}",
                         "source": edge["source"],
                         "target": edge["target"],
-                        "weight": edge.get("weight", 1)
+                        "weight": edge.get("weight", 1)  # Default weight if not present
                     }
                 } for edge in data.get("edges", [])
             ]
         }
+        print(f"Transformed data nodes: {len(elements['nodes'])}")  # Debug print
         return elements
 
 @app.route('/')
@@ -88,7 +89,7 @@ def upload_file():
             
         # Validate nodes have required fields
         for node in data['nodes']:
-            if not isinstance(node, dict) or 'id' not in node or 'weight' not in node:
+            if not isinstance(node, dict) or 'id' not in node:
                 raise ValueError("Invalid node structure")
         
         # Save valid file with absolute path
