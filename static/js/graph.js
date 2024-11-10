@@ -3,114 +3,132 @@ let originalData = null;
 
 async function initializeGraph() {
     try {
+        // Load network data
         const response = await fetch('/api/network');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         originalData = await response.json();
 
-        // Initialize Cytoscape
-        cy = cytoscape({
-            container: document.getElementById('cy'),
-            elements: originalData,
-            style: [
-                {
-                    selector: 'node',
-                    style: {
-                        'background-color': '#6c757d',
-                        'label': 'data(id)',
-                        'color': '#fff',
-                        'font-size': '12px',
-                        'text-wrap': 'wrap',
-                        'text-max-width': '80px',
-                        'width': 30,
-                        'height': 30
-                    }
-                },
-                {
-                    selector: 'node[weight > 0]',
-                    style: {
-                        'width': 'mapData(weight, 1, 10, 30, 60)',
-                        'height': 'mapData(weight, 1, 10, 30, 60)',
-                        'font-size': 'mapData(weight, 1, 10, 12, 16)'
-                    }
-                },
-                {
-                    selector: 'edge',
-                    style: {
-                        'width': 'mapData(weight, 1, 5, 2, 8)',
-                        'line-color': '#6ea8fe',
-                        'curve-style': 'bezier',
-                        'opacity': 0.8,
-                        'target-arrow-shape': 'none'
-                    }
-                },
-                {
-                    selector: ':selected',
-                    style: {
-                        'background-color': '#0d6efd',
-                        'line-color': '#0d6efd',
-                        'target-arrow-color': '#0d6efd',
-                        'opacity': 1
-                    }
-                },
-                {
-                    selector: '.highlighted',
-                    style: {
-                        'background-color': '#198754',
-                        'line-color': '#198754',
-                        'opacity': 1
-                    }
-                }
-            ],
-            layout: {
-                name: 'fcose',
-                quality: 'proof',
-                animate: true,
-                animationDuration: 1000,
-                nodeDimensionsIncludeLabels: true,
-                padding: 50,
-                randomize: true,
-                nodeRepulsion: 8000,
-                idealEdgeLength: 100,
-                edgeElasticity: 0.45,
-                nestingFactor: 0.1,
-                gravity: 0.25,
-                numIter: 2500,
-                tile: true,
-                tilingPaddingVertical: 10,
-                tilingPaddingHorizontal: 10
+        // Initialize Cytoscape with error handling
+        try {
+            // Register the panzoom extension
+            if (typeof cytoscape('core', 'panzoom') !== 'function') {
+                cytoscape.use(cytoscapePanzoom);
             }
-        });
 
-        // Initialize panzoom after cy is created
-        if (cy.panzoom) {
+            cy = cytoscape({
+                container: document.getElementById('cy'),
+                elements: originalData,
+                style: [
+                    {
+                        selector: 'node',
+                        style: {
+                            'background-color': '#6c757d',
+                            'label': 'data(id)',
+                            'color': '#fff',
+                            'font-size': '12px',
+                            'text-wrap': 'wrap',
+                            'text-max-width': '80px',
+                            'width': 30,
+                            'height': 30
+                        }
+                    },
+                    {
+                        selector: 'node[weight > 0]',
+                        style: {
+                            'width': 'mapData(weight, 1, 10, 30, 60)',
+                            'height': 'mapData(weight, 1, 10, 30, 60)',
+                            'font-size': 'mapData(weight, 1, 10, 12, 16)'
+                        }
+                    },
+                    {
+                        selector: 'edge',
+                        style: {
+                            'width': 'mapData(weight, 1, 5, 2, 8)',
+                            'line-color': '#6ea8fe',
+                            'curve-style': 'bezier',
+                            'opacity': 0.8,
+                            'target-arrow-shape': 'none'
+                        }
+                    },
+                    {
+                        selector: ':selected',
+                        style: {
+                            'background-color': '#0d6efd',
+                            'line-color': '#0d6efd',
+                            'target-arrow-color': '#0d6efd',
+                            'opacity': 1
+                        }
+                    },
+                    {
+                        selector: '.highlighted',
+                        style: {
+                            'background-color': '#198754',
+                            'line-color': '#198754',
+                            'opacity': 1
+                        }
+                    }
+                ],
+                layout: {
+                    name: 'fcose',
+                    quality: 'proof',
+                    animate: true,
+                    animationDuration: 1000,
+                    nodeDimensionsIncludeLabels: true,
+                    padding: 50,
+                    randomize: true,
+                    nodeRepulsion: 8000,
+                    idealEdgeLength: 100,
+                    edgeElasticity: 0.45,
+                    nestingFactor: 0.1,
+                    gravity: 0.25,
+                    numIter: 2500,
+                    tile: true,
+                    tilingPaddingVertical: 10,
+                    tilingPaddingHorizontal: 10
+                }
+            });
+
+            // Initialize panzoom after cy is created
             cy.panzoom({
                 zoomFactor: 0.05,
                 zoomDelay: 45,
                 minZoom: 0.1,
-                maxZoom: 10
+                maxZoom: 10,
+                fitPadding: 50
             });
+
+            // Event handlers
+            cy.on('tap', 'node', function(evt) {
+                const node = evt.target;
+                highlightNeighbors(node);
+                updateNodeInfo(node);
+            });
+
+            cy.on('tap', function(evt) {
+                if (evt.target === cy) {
+                    resetHighlighting();
+                    clearNodeInfo();
+                }
+            });
+
+            // Fit the graph to the viewport after layout is done
+            cy.on('layoutstop', function() {
+                cy.fit();
+            });
+
+        } catch (cytoscapeError) {
+            console.error('Error initializing Cytoscape:', cytoscapeError);
+            throw cytoscapeError;
         }
-
-        // Event handlers
-        cy.on('tap', 'node', function(evt) {
-            const node = evt.target;
-            highlightNeighbors(node);
-            updateNodeInfo(node);
-        });
-
-        cy.on('tap', function(evt) {
-            if (evt.target === cy) {
-                resetHighlighting();
-                clearNodeInfo();
-            }
-        });
-
-        // Fit the graph to the viewport after layout is done
-        cy.on('layoutstop', function() {
-            cy.fit();
-        });
 
     } catch (error) {
         console.error('Error initializing graph:', error);
+        const cyContainer = document.getElementById('cy');
+        if (cyContainer) {
+            cyContainer.innerHTML = '<div class="alert alert-danger">Error loading graph visualization. Please try refreshing the page.</div>';
+        }
     }
 }
 

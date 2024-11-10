@@ -45,6 +45,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 node.style('opacity', 0);
             }
         });
+
+        // Get current layout name and rerun layout
+        const currentLayout = layoutSelect.value;
+        const layout = cy.layout({
+            name: currentLayout,
+            animate: true,
+            padding: 30,
+            nodeDimensionsIncludeLabels: true
+        });
+        layout.run();
     });
 
     // Reset view button
