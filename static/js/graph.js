@@ -38,10 +38,10 @@ async function initializeGraph() {
                 {
                     selector: 'edge',
                     style: {
-                        'width': 'mapData(weight, 1, 5, 2, 8)',
-                        'line-color': '#6ea8fe',
+                        'width': 'mapData(weight, 1, 5, 3, 12)',  // Increased width range
+                        'line-color': 'mapData(weight, 1, 5, "#495057", "#0d6efd")',  // Color gradient from dark gray to blue
                         'curve-style': 'bezier',
-                        'opacity': 0.8,
+                        'opacity': 'mapData(weight, 1, 5, 0.6, 1)',  // Opacity increases with weight
                         'target-arrow-shape': 'none'
                     }
                 },
