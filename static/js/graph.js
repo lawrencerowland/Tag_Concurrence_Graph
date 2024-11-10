@@ -16,14 +16,15 @@ async function initializeGraph() {
                 {
                     selector: 'node',
                     style: {
-                        'background-color': '#6c757d',
                         'label': 'data(id)',
                         'color': '#fff',
                         'font-size': '12px',
                         'text-wrap': 'wrap',
                         'text-max-width': '80px',
                         'width': 30,
-                        'height': 30
+                        'height': 30,
+                        'border-width': 2,
+                        'border-color': '#fff'
                     }
                 },
                 {
@@ -47,7 +48,8 @@ async function initializeGraph() {
                 {
                     selector: ':selected',
                     style: {
-                        'background-color': '#0d6efd',
+                        'border-color': '#0d6efd',
+                        'border-width': 3,
                         'line-color': '#0d6efd',
                         'target-arrow-color': '#0d6efd',
                         'opacity': 1
@@ -56,7 +58,8 @@ async function initializeGraph() {
                 {
                     selector: '.highlighted',
                     style: {
-                        'background-color': '#198754',
+                        'border-color': '#0d6efd',
+                        'border-width': 3,
                         'line-color': '#198754',
                         'opacity': 1
                     }
@@ -68,14 +71,26 @@ async function initializeGraph() {
                 animate: true,
                 animationDuration: 1000,
                 nodeDimensionsIncludeLabels: true,
-                padding: 50,
+                padding: 100,
                 randomize: false,
-                nodeRepulsion: 8000,
-                idealEdgeLength: 100,
+                nodeRepulsion: function(node) {
+                    return 8000 + (node.degree() * 500);
+                },
+                idealEdgeLength: 150,
                 edgeElasticity: 0.45,
                 nestingFactor: 0.1,
                 gravity: 0.25,
-                numIter: 2500
+                numIter: 2500,
+                // Add community detection parameters
+                tile: true,
+                tilingPaddingVertical: 10,
+                tilingPaddingHorizontal: 10,
+                gravityRangeCompound: 1.5,
+                // Improve community separation
+                gravityCompound: 1.0,
+                gravityRange: 3.8,
+                // Separate components more
+                componentSpacing: 100
             }
         });
 
@@ -83,6 +98,16 @@ async function initializeGraph() {
         if (typeof cy.panzoom === 'function') {
             cy.panzoom();
         }
+
+        // Color nodes by their connectivity patterns
+        const communities = cy.elements().components();
+        const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD', '#D4A5A5', '#9FA8DA', '#CE93D8'];
+
+        communities.forEach((component, index) => {
+            component.nodes().style({
+                'background-color': colors[index % colors.length]
+            });
+        });
 
         // Event handlers
         cy.on('tap', 'node', function(evt) {
@@ -113,11 +138,16 @@ function highlightNeighbors(node) {
     const neighborhood = node.neighborhood().add(node);
     neighborhood.addClass('highlighted');
     cy.elements().difference(neighborhood).style('opacity', '0.2');
+    // Preserve community colors when highlighting
+    neighborhood.nodes().style('border-color', '#0d6efd');
+    neighborhood.nodes().style('border-width', 3);
 }
 
 function resetHighlighting() {
     cy.elements().removeClass('highlighted');
     cy.elements().style('opacity', '1');
+    cy.nodes().style('border-width', 2);
+    cy.nodes().style('border-color', '#fff');
 }
 
 function updateNodeInfo(node) {
