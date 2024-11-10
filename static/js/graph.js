@@ -30,9 +30,9 @@ async function initializeGraph() {
                 {
                     selector: 'node[weight > 0]',
                     style: {
-                        'width': 'mapData(weight, 1, 10, 30, 60)',
-                        'height': 'mapData(weight, 1, 10, 30, 60)',
-                        'font-size': 'mapData(weight, 1, 10, 12, 16)'
+                        'width': 'mapData(weight, 1, 23, 30, 80)',  // Adjust range based on actual weight values
+                        'height': 'mapData(weight, 1, 23, 30, 80)',
+                        'font-size': 'mapData(weight, 1, 23, 12, 18)'
                     }
                 },
                 {

@@ -7,21 +7,8 @@ app.secret_key = "tag_network_visualization_secret"
 
 # Load network data
 def load_network_data():
-    with open('tag_concurrence_network (1).json', 'r') as f:
+    with open('tag_concurrence_graph.json', 'r') as f:
         data = json.load(f)
-        
-        # Create a dictionary to store total weights for each node
-        node_weights = {}
-        
-        # Calculate total weights for each node from edges
-        for edge in data.get("edges", []):
-            source = edge.get("source")
-            target = edge.get("target")
-            weight = edge.get("weight", 1)
-            
-            # Add weights to both source and target nodes
-            node_weights[source] = node_weights.get(source, 0) + weight
-            node_weights[target] = node_weights.get(target, 0) + weight
         
         # Transform data to Cytoscape format
         elements = {
@@ -29,7 +16,7 @@ def load_network_data():
                 {
                     "data": {
                         "id": node["id"],
-                        "weight": node_weights.get(node["id"], 0)
+                        "weight": node["weight"]  # Use weight directly from node data
                     }
                 } for node in data["nodes"]
             ],
