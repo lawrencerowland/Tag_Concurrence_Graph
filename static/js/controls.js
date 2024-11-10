@@ -46,10 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Get current layout name and rerun layout
-        const currentLayout = layoutSelect.value;
+        // Recalculate layout with current settings
         const layout = cy.layout({
-            name: currentLayout,
+            name: layoutSelect.value,
             animate: true,
             padding: 30,
             nodeDimensionsIncludeLabels: true

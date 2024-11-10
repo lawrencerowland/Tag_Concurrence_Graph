@@ -18,35 +18,6 @@ async function initializeGraph() {
             throw new Error("Invalid data structure: expected array of elements");
         }
 
-        // Check available layouts
-        console.log("Available layouts:", Object.keys(cytoscape.layouts));
-
-        // Configure layout
-        const layoutConfig = {
-            name: 'fcose',
-            quality: 'proof',
-            animate: true,
-            animationDuration: 1000,
-            nodeDimensionsIncludeLabels: true,
-            padding: 50,
-            randomize: true,
-            nodeRepulsion: 4500,
-            idealEdgeLength: 50,
-            edgeElasticity: 0.45,
-            nestingFactor: 0.1,
-            gravity: 0.25,
-            numIter: 2000,
-            initialTemp: 200,
-            coolingFactor: 0.95,
-            minTemp: 1.0
-        };
-
-        // Add a fallback if fcose is not available
-        if (!cytoscape.layouts.fcose) {
-            console.log("FCose not available, falling back to cose layout");
-            layoutConfig.name = 'cose';
-        }
-
         // Initialize Cytoscape
         cy = cytoscape({
             container: document.getElementById('cy'),
@@ -107,16 +78,46 @@ async function initializeGraph() {
                     }
                 }
             ],
-            layout: layoutConfig
+            layout: {
+                name: 'cose',
+                animate: true,
+                animationDuration: 1000,
+                nodeDimensionsIncludeLabels: true,
+                padding: 50,
+                componentSpacing: 100,
+                nodeOverlap: 20,
+                idealEdgeLength: 100,
+                edgeElasticity: 0.45,
+                nestingFactor: 0.1,
+                gravity: 0.25,
+                numIter: 2000,
+                initialTemp: 200,
+                coolingFactor: 0.95,
+                minTemp: 1.0
+            }
         });
 
-        // Initialize panzoom
-        cy.panzoom({
-            zoomFactor: 0.05,
-            zoomDelay: 45,
-            minZoom: 0.1,
-            maxZoom: 10,
-            fitPadding: 50
+        // Initialize panzoom after graph is ready
+        cy.ready(() => {
+            cy.panzoom({
+                zoomFactor: 0.05,
+                zoomDelay: 45,
+                minZoom: 0.1,
+                maxZoom: 10,
+                fitPadding: 50
+            });
+
+            // Initial layout
+            cy.layout({
+                name: 'cose',
+                animate: true,
+                nodeDimensionsIncludeLabels: true,
+                padding: 50
+            }).run();
+
+            // Center and fit the graph
+            cy.fit();
+            cy.center();
         });
 
         // Event handlers
@@ -132,9 +133,6 @@ async function initializeGraph() {
                 clearNodeInfo();
             }
         });
-
-        // Initial layout
-        cy.layout(layoutConfig).run();
 
     } catch (error) {
         console.error('Error initializing graph:', error);
