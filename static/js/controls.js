@@ -180,4 +180,84 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Error exporting graph. Please try again.');
         }
     });
+
+    // File upload handling
+    const uploadForm = document.getElementById('uploadForm');
+    uploadForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const fileInput = document.getElementById('jsonFile');
+        const file = fileInput.files[0];
+        
+        if (!file) {
+            alert('Please select a file to upload');
+            return;
+        }
+        
+        try {
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            const response = await fetch('/api/upload', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (!response.ok) {
+                throw new Error('Upload failed');
+            }
+            
+            // Clear existing graph
+            cy.elements().remove();
+            
+            // Get and load new network data
+            const networkResponse = await fetch('/api/network');
+            originalData = await networkResponse.json();
+            
+            // Add new elements
+            cy.add(originalData);
+            
+            // Apply current layout settings
+            const currentLayout = document.getElementById('layoutSelect').value;
+            cy.layout({
+                name: currentLayout,
+                quality: 'proof',
+                animate: true,
+                animationDuration: 1000,
+                nodeDimensionsIncludeLabels: true,
+                padding: 50,
+                randomize: false,
+                nodeRepulsion: 8000,
+                idealEdgeLength: 100,
+                edgeElasticity: 0.45,
+                nestingFactor: 0.1,
+                gravity: 0.25,
+                numIter: 2500,
+                tile: true,
+                tilingPaddingVertical: 10,
+                tilingPaddingHorizontal: 10,
+                gravityRangeCompound: 1.5,
+                gravityCompound: 1.0,
+                gravityRange: 3.8,
+                componentSpacing: 100
+            }).run();
+            
+            // Reset filters
+            document.querySelector('#weightButtons button[data-weight="0"]').click();
+            
+            // Reapply community colors
+            const communities = cy.elements().components();
+            const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD', '#D4A5A5', '#9FA8DA', '#CE93D8'];
+            communities.forEach((component, index) => {
+                component.nodes().style({
+                    'background-color': colors[index % colors.length]
+                });
+            });
+            
+        } catch (error) {
+            console.error('Error uploading file:', error);
+            alert('Error uploading file. Please ensure the JSON format matches the required structure.');
+        }
+        
+        fileInput.value = ''; // Reset file input
+    });
 });
