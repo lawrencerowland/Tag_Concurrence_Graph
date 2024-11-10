@@ -18,19 +18,11 @@ async function initializeGraph() {
             throw new Error("Invalid data structure: expected array of elements");
         }
 
-        // Register Cytoscape extensions
-        if (typeof cytoscape('core', 'fcose') !== 'function') {
-            console.log("Registering FCose layout...");
-            cytoscape.use(cytoscapeFCose);
-        }
-
-        if (typeof cytoscape('core', 'panzoom') !== 'function') {
-            console.log("Registering panzoom extension...");
-            cytoscape.use(cytoscapePanzoom);
-        }
+        // Check available layouts
+        console.log("Available layouts:", Object.keys(cytoscape.layouts));
 
         // Configure layout
-        let layoutConfig = {
+        const layoutConfig = {
             name: 'fcose',
             quality: 'proof',
             animate: true,
@@ -48,6 +40,12 @@ async function initializeGraph() {
             coolingFactor: 0.95,
             minTemp: 1.0
         };
+
+        // Add a fallback if fcose is not available
+        if (!cytoscape.layouts.fcose) {
+            console.log("FCose not available, falling back to cose layout");
+            layoutConfig.name = 'cose';
+        }
 
         // Initialize Cytoscape
         cy = cytoscape({
