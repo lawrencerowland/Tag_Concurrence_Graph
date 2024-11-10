@@ -1,4 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
+    // Initial load of Lawrence dataset
+    const lawrenceButton = document.querySelector('[data-dataset="lawrence"]');
+    lawrenceButton.classList.add('active');
+    
+    // Load Lawrence dataset by default
+    try {
+        const response = await fetch('/api/network?dataset=lawrence');
+        originalData = await response.json();
+        cy.add(originalData);
+        
+        // Apply initial layout and community colors
+        applyLayout();
+        applyCommunityStyling();
+    } catch (error) {
+        console.error('Error loading initial dataset:', error);
+    }
+    
     // Dataset switcher
     const datasetButtons = document.querySelectorAll('[data-dataset]');
     datasetButtons.forEach(button => {
@@ -19,47 +36,55 @@ document.addEventListener('DOMContentLoaded', function() {
                 cy.add(originalData);
                 
                 // Apply current layout
-                const currentLayout = document.getElementById('layoutSelect').value;
-                cy.layout({
-                    name: currentLayout,
-                    quality: 'proof',
-                    animate: true,
-                    animationDuration: 1000,
-                    nodeDimensionsIncludeLabels: true,
-                    padding: 50,
-                    randomize: false,
-                    nodeRepulsion: 8000,
-                    idealEdgeLength: 100,
-                    edgeElasticity: 0.45,
-                    nestingFactor: 0.1,
-                    gravity: 0.25,
-                    numIter: 2500,
-                    tile: true,
-                    tilingPaddingVertical: 10,
-                    tilingPaddingHorizontal: 10,
-                    gravityRangeCompound: 1.5,
-                    gravityCompound: 1.0,
-                    gravityRange: 3.8,
-                    componentSpacing: 100
-                }).run();
+                applyLayout();
                 
                 // Reset filters
                 document.querySelector('#weightButtons button[data-weight="0"]').click();
                 
                 // Reapply community colors
-                const communities = cy.elements().components();
-                const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD', '#D4A5A5', '#9FA8DA', '#CE93D8'];
-                communities.forEach((component, index) => {
-                    component.nodes().style({
-                        'background-color': colors[index % colors.length]
-                    });
-                });
+                applyCommunityStyling();
             } catch (error) {
                 console.error('Error loading dataset:', error);
                 alert('Error loading dataset. Please try again.');
             }
         });
     });
+
+    function applyLayout() {
+        const currentLayout = document.getElementById('layoutSelect').value;
+        cy.layout({
+            name: currentLayout,
+            quality: 'proof',
+            animate: true,
+            animationDuration: 1000,
+            nodeDimensionsIncludeLabels: true,
+            padding: 50,
+            randomize: false,
+            nodeRepulsion: 8000,
+            idealEdgeLength: 100,
+            edgeElasticity: 0.45,
+            nestingFactor: 0.1,
+            gravity: 0.25,
+            numIter: 2500,
+            tile: true,
+            tilingPaddingVertical: 10,
+            tilingPaddingHorizontal: 10,
+            gravityRangeCompound: 1.5,
+            gravityCompound: 1.0,
+            gravityRange: 3.8,
+            componentSpacing: 100
+        }).run();
+    }
+
+    function applyCommunityStyling() {
+        const communities = cy.elements().components();
+        const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD', '#D4A5A5', '#9FA8DA', '#CE93D8'];
+        communities.forEach((component, index) => {
+            component.nodes().style({
+                'background-color': colors[index % colors.length]
+            });
+        });
+    }
 
     // Layout control
     const layoutSelect = document.getElementById('layoutSelect');
@@ -279,41 +304,13 @@ document.addEventListener('DOMContentLoaded', function() {
             cy.add(originalData);
             
             // Apply current layout settings
-            const currentLayout = document.getElementById('layoutSelect').value;
-            cy.layout({
-                name: currentLayout,
-                quality: 'proof',
-                animate: true,
-                animationDuration: 1000,
-                nodeDimensionsIncludeLabels: true,
-                padding: 50,
-                randomize: false,
-                nodeRepulsion: 8000,
-                idealEdgeLength: 100,
-                edgeElasticity: 0.45,
-                nestingFactor: 0.1,
-                gravity: 0.25,
-                numIter: 2500,
-                tile: true,
-                tilingPaddingVertical: 10,
-                tilingPaddingHorizontal: 10,
-                gravityRangeCompound: 1.5,
-                gravityCompound: 1.0,
-                gravityRange: 3.8,
-                componentSpacing: 100
-            }).run();
+            applyLayout();
             
             // Reset filters
             document.querySelector('#weightButtons button[data-weight="0"]').click();
             
             // Reapply community colors
-            const communities = cy.elements().components();
-            const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD', '#D4A5A5', '#9FA8DA', '#CE93D8'];
-            communities.forEach((component, index) => {
-                component.nodes().style({
-                    'background-color': colors[index % colors.length]
-                });
-            });
+            applyCommunityStyling();
             
         } catch (error) {
             console.error('Error uploading file:', error);
