@@ -39,7 +39,18 @@ async function initializeGraph() {
                     selector: 'edge',
                     style: {
                         'width': 'mapData(weight, 1, 5, 3, 12)',  // Increased width range
-                        'line-color': 'mapData(weight, 1, 5, "#495057", "#0d6efd")',  // Color gradient from dark gray to blue
+                        'line-color': function(ele) {
+                            const weight = ele.data('weight');
+                            const minWeight = 1;
+                            const maxWeight = 5;
+                            const t = (weight - minWeight) / (maxWeight - minWeight);
+                            const startColor = [73, 80, 87];  // #495057 in RGB
+                            const endColor = [13, 110, 253];  // #0d6efd in RGB
+                            const r = Math.round(startColor[0] + t * (endColor[0] - startColor[0]));
+                            const g = Math.round(startColor[1] + t * (endColor[1] - startColor[1]));
+                            const b = Math.round(startColor[2] + t * (endColor[2] - startColor[2]));
+                            return `rgb(${r},${g},${b})`;
+                        },
                         'curve-style': 'bezier',
                         'opacity': 'mapData(weight, 1, 5, 0.6, 1)',  // Opacity increases with weight
                         'target-arrow-shape': 'none'

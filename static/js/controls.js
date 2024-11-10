@@ -2,13 +2,39 @@ document.addEventListener('DOMContentLoaded', function() {
     // Layout control
     const layoutSelect = document.getElementById('layoutSelect');
     layoutSelect.addEventListener('change', function() {
-        const layout = cy.layout({
-            name: this.value,
-            animate: true,
-            padding: 30,
-            nodeDimensionsIncludeLabels: true
-        });
-        layout.run();
+        if (this.value === 'grid') {
+            // Sort nodes by weight and edge weight
+            const sortedNodes = cy.nodes().sort((a, b) => {
+                const weightDiff = b.data('weight') - a.data('weight');
+                if (weightDiff !== 0) return weightDiff;
+                
+                // For nodes with same weight, compare total edge weights
+                const aEdgeWeight = a.connectedEdges().reduce((sum, edge) => sum + edge.data('weight'), 0);
+                const bEdgeWeight = b.connectedEdges().reduce((sum, edge) => sum + edge.data('weight'), 0);
+                return bEdgeWeight - aEdgeWeight;
+            });
+
+            const layout = cy.layout({
+                name: 'grid',
+                animate: true,
+                padding: 30,
+                nodeDimensionsIncludeLabels: true,
+                sort: function(a, b) {
+                    // Use pre-calculated sort order
+                    return sortedNodes.indexOf(a) - sortedNodes.indexOf(b);
+                },
+                cols: Math.ceil(Math.sqrt(cy.nodes().length)) // Square-ish grid
+            });
+            layout.run();
+        } else {
+            const layout = cy.layout({
+                name: this.value,
+                animate: true,
+                padding: 30,
+                nodeDimensionsIncludeLabels: true
+            });
+            layout.run();
+        }
     });
 
     // Edge weight filter buttons
