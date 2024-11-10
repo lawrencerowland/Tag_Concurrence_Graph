@@ -3,19 +3,50 @@ let originalData = null;
 
 async function initializeGraph() {
     try {
+        console.log("Starting graph initialization...");
+        
         // Load network data
         const response = await fetch('/api/network');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         originalData = await response.json();
+        
+        // Verify data structure
+        console.log("Received network data:", originalData);
+        if (!originalData || !Array.isArray(originalData.nodes) || !Array.isArray(originalData.edges)) {
+            throw new Error("Invalid data structure: missing nodes or edges arrays");
+        }
+        
+        // Verify node and edge format
+        const validNodeFormat = originalData.nodes.every(node => 
+            node.data && typeof node.data.id === 'string');
+        const validEdgeFormat = originalData.edges.every(edge => 
+            edge.data && typeof edge.data.source === 'string' && typeof edge.data.target === 'string');
+            
+        if (!validNodeFormat || !validEdgeFormat) {
+            throw new Error("Invalid data format: nodes must have {data: {id: string}}, edges must have {data: {source: string, target: string}}");
+        }
+
+        console.log("Data validation passed. Initializing Cytoscape...");
 
         // Initialize Cytoscape with error handling
         try {
+            // Check if required extensions are loaded
+            if (typeof cytoscape === 'undefined') {
+                throw new Error("Cytoscape library not loaded");
+            }
+            if (typeof cytoscape('core', 'fcose') !== 'function') {
+                throw new Error("FCose layout extension not loaded");
+            }
+
             // Register the panzoom extension
             if (typeof cytoscape('core', 'panzoom') !== 'function') {
+                console.log("Registering panzoom extension...");
                 cytoscape.use(cytoscapePanzoom);
             }
+
+            console.log("Creating Cytoscape instance with data:", originalData);
 
             cy = cytoscape({
                 container: document.getElementById('cy'),
@@ -90,6 +121,8 @@ async function initializeGraph() {
                 }
             });
 
+            console.log("Cytoscape instance created successfully");
+
             // Initialize panzoom after cy is created
             cy.panzoom({
                 zoomFactor: 0.05,
@@ -127,7 +160,10 @@ async function initializeGraph() {
         console.error('Error initializing graph:', error);
         const cyContainer = document.getElementById('cy');
         if (cyContainer) {
-            cyContainer.innerHTML = '<div class="alert alert-danger">Error loading graph visualization. Please try refreshing the page.</div>';
+            cyContainer.innerHTML = `<div class="alert alert-danger">
+                Error loading graph visualization: ${error.message}
+                <br>Please check console for details and try refreshing the page.
+            </div>`;
         }
     }
 }
