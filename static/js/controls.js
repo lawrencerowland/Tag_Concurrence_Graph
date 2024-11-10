@@ -92,4 +92,66 @@ document.addEventListener('DOMContentLoaded', function() {
             .style('label', labelsVisible ? 'data(id)' : '')
             .update();
     });
+
+    // Export functionality
+    const exportBtn = document.getElementById('exportGraph');
+    exportBtn.addEventListener('click', async function() {
+        try {
+            // Get current filter weight
+            const activeWeightBtn = document.querySelector('#weightButtons button.active');
+            const currentWeight = parseFloat(activeWeightBtn.dataset.weight);
+            
+            // Get current layout
+            const currentLayout = layoutSelect.value;
+            
+            // Prepare export data
+            const exportData = {
+                nodes: cy.nodes().map(node => ({
+                    data: {
+                        id: node.id(),
+                        weight: node.data('weight')
+                    }
+                })),
+                edges: cy.edges().map(edge => ({
+                    data: {
+                        source: edge.source().id(),
+                        target: edge.target().id(),
+                        weight: edge.data('weight')
+                    }
+                })),
+                filter_weight: currentWeight,
+                layout: currentLayout
+            };
+
+            // Send data to server
+            const response = await fetch('/api/export', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(exportData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            // Get the blob from the response
+            const blob = await response.blob();
+            
+            // Create a download link and trigger it
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = response.headers.get('Content-Disposition').split('filename=')[1];
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        } catch (error) {
+            console.error('Error exporting graph:', error);
+            alert('Error exporting graph. Please try again.');
+        }
+    });
 });
