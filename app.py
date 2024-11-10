@@ -43,7 +43,14 @@ def index():
 @app.route('/api/network')
 def get_network():
     dataset = request.args.get('dataset', 'lawrence')
-    return jsonify(load_network_data(dataset))
+    print(f"Loading dataset: {dataset}")  # Debug log
+    data = load_network_data(dataset)
+    print(f"Loaded data with {len(data['nodes'])} nodes")  # Debug log
+    response = jsonify(data)
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response
 
 @app.route('/api/upload', methods=['POST'])
 def upload_file():
