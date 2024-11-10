@@ -3,26 +3,13 @@ let originalData = null;
 
 async function initializeGraph() {
     try {
-        console.log("Starting graph initialization...");
-        
-        // Load network data
         const response = await fetch('/api/network');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        console.log("Received network data:", data);
-
-        // Verify data structure
-        if (!Array.isArray(data)) {
-            throw new Error("Invalid data structure: expected array of elements");
-        }
+        originalData = await response.json();
 
         // Initialize Cytoscape
         cy = cytoscape({
             container: document.getElementById('cy'),
-            elements: data,
-            wheelSensitivity: 0.2,
+            elements: originalData,
             style: [
                 {
                     selector: 'node',
@@ -33,13 +20,8 @@ async function initializeGraph() {
                         'font-size': '12px',
                         'text-wrap': 'wrap',
                         'text-max-width': '80px',
-                        'text-valign': 'center',
-                        'text-halign': 'center',
                         'width': 30,
-                        'height': 30,
-                        'text-outline-color': '#212529',
-                        'text-outline-width': 2,
-                        'font-weight': 'bold'
+                        'height': 30
                     }
                 },
                 {
@@ -53,10 +35,10 @@ async function initializeGraph() {
                 {
                     selector: 'edge',
                     style: {
-                        'width': 'mapData(weight, 1, 5, 1, 5)',
+                        'width': 'mapData(weight, 1, 5, 2, 8)',
                         'line-color': '#6ea8fe',
                         'curve-style': 'bezier',
-                        'opacity': 0.6,
+                        'opacity': 0.8,
                         'target-arrow-shape': 'none'
                     }
                 },
@@ -79,46 +61,34 @@ async function initializeGraph() {
                 }
             ],
             layout: {
-                name: 'cose',
+                name: 'fcose',
+                quality: 'proof',
                 animate: true,
                 animationDuration: 1000,
                 nodeDimensionsIncludeLabels: true,
                 padding: 50,
-                componentSpacing: 100,
-                nodeOverlap: 20,
+                randomize: true,
+                nodeRepulsion: 8000,
                 idealEdgeLength: 100,
                 edgeElasticity: 0.45,
                 nestingFactor: 0.1,
                 gravity: 0.25,
-                numIter: 2000,
-                initialTemp: 200,
-                coolingFactor: 0.95,
-                minTemp: 1.0
+                numIter: 2500,
+                tile: true,
+                tilingPaddingVertical: 10,
+                tilingPaddingHorizontal: 10
             }
         });
 
-        // Initialize panzoom after graph is ready
-        cy.ready(() => {
+        // Initialize panzoom after cy is created
+        if (cy.panzoom) {
             cy.panzoom({
                 zoomFactor: 0.05,
                 zoomDelay: 45,
                 minZoom: 0.1,
-                maxZoom: 10,
-                fitPadding: 50
+                maxZoom: 10
             });
-
-            // Initial layout
-            cy.layout({
-                name: 'cose',
-                animate: true,
-                nodeDimensionsIncludeLabels: true,
-                padding: 50
-            }).run();
-
-            // Center and fit the graph
-            cy.fit();
-            cy.center();
-        });
+        }
 
         // Event handlers
         cy.on('tap', 'node', function(evt) {
@@ -134,16 +104,13 @@ async function initializeGraph() {
             }
         });
 
+        // Fit the graph to the viewport after layout is done
+        cy.on('layoutstop', function() {
+            cy.fit();
+        });
+
     } catch (error) {
         console.error('Error initializing graph:', error);
-        const cyContainer = document.getElementById('cy');
-        if (cyContainer) {
-            cyContainer.innerHTML = `
-                <div class="alert alert-danger">
-                    Error loading graph visualization: ${error.message}
-                    <br>Please check console for details and try refreshing the page.
-                </div>`;
-        }
     }
 }
 
@@ -171,7 +138,7 @@ function updateNodeInfo(node) {
         <p><strong>Connections:</strong> ${neighbors.length}</p>
         <p><strong>Connected Tags:</strong></p>
         <ul class="list-unstyled">
-            ${Array.from(neighbors).map(n => {
+            ${neighbors.map(n => {
                 const edge = edges.filter(e => e.source().id() === n.id() || e.target().id() === n.id())[0];
                 return `<li>${n.id()} (weight: ${edge.data('weight')})</li>`;
             }).join('')}

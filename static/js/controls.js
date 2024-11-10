@@ -45,15 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 node.style('opacity', 0);
             }
         });
-
-        // Recalculate layout with current settings
-        const layout = cy.layout({
-            name: layoutSelect.value,
-            animate: true,
-            padding: 30,
-            nodeDimensionsIncludeLabels: true
-        });
-        layout.run();
     });
 
     // Reset view button
