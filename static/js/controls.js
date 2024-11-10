@@ -1,21 +1,36 @@
 document.addEventListener('DOMContentLoaded', async function() {
-    // Initial load of Lawrence dataset
-    const lawrenceButton = document.querySelector('[data-dataset="lawrence"]');
-    lawrenceButton.classList.add('active');
-    
-    // Load Lawrence dataset by default
+    // Wait for Cytoscape initialization
+    while (!cy) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+    }
+
     try {
+        // Load Lawrence dataset by default
         const response = await fetch('/api/network?dataset=lawrence');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         originalData = await response.json();
+        
+        // Clear any existing elements
+        cy.elements().remove();
+        
+        // Add new elements
         cy.add(originalData);
         
-        // Apply initial layout and community colors
+        // Apply initial layout and styling
         applyLayout();
         applyCommunityStyling();
+        
+        // Update button state
+        const datasetButtons = document.querySelectorAll('[data-dataset]');
+        datasetButtons.forEach(btn => btn.classList.remove('active'));
+        document.querySelector('[data-dataset="lawrence"]').classList.add('active');
+        
     } catch (error) {
-        console.error('Error loading initial dataset:', error);
+        console.error('Error initializing graph:', error);
     }
-    
+
     // Dataset switcher
     const datasetButtons = document.querySelectorAll('[data-dataset]');
     datasetButtons.forEach(button => {
@@ -24,25 +39,27 @@ document.addEventListener('DOMContentLoaded', async function() {
             datasetButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             
-            // Clear existing graph
-            cy.elements().remove();
-            
-            // Load new dataset
             try {
+                // Clear existing graph
+                cy.elements().remove();
+                
+                // Load new dataset
                 const response = await fetch(`/api/network?dataset=${this.dataset.dataset}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 originalData = await response.json();
                 
                 // Add new elements
                 cy.add(originalData);
                 
-                // Apply current layout
+                // Apply layout and styling
                 applyLayout();
+                applyCommunityStyling();
                 
                 // Reset filters
                 document.querySelector('#weightButtons button[data-weight="0"]').click();
                 
-                // Reapply community colors
-                applyCommunityStyling();
             } catch (error) {
                 console.error('Error loading dataset:', error);
                 alert('Error loading dataset. Please try again.');
@@ -86,6 +103,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
     }
 
+    // Rest of the existing code...
     // Layout control
     const layoutSelect = document.getElementById('layoutSelect');
     layoutSelect.addEventListener('change', function() {
@@ -298,6 +316,9 @@ document.addEventListener('DOMContentLoaded', async function() {
             
             // Get and load new network data
             const networkResponse = await fetch('/api/network');
+            if (!networkResponse.ok) {
+                throw new Error('Failed to load network data');
+            }
             originalData = await networkResponse.json();
             
             // Add new elements
