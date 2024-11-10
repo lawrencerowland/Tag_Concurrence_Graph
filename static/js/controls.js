@@ -11,68 +11,75 @@ document.addEventListener('DOMContentLoaded', function() {
         layout.run();
     });
 
-    // Edge weight filter
-    const edgeWeightFilter = document.getElementById('edgeWeightFilter');
-    const weightValue = document.getElementById('weightValue');
-    edgeWeightFilter.max = 5;  // Update max value to 5
-    edgeWeightFilter.step = 0.5;  // Update step for better control
-    
-    edgeWeightFilter.addEventListener('input', function() {
-        const threshold = parseFloat(this.value);
-        weightValue.textContent = threshold;
-        
-        // Reset visibility
-        cy.elements().style('opacity', 1);
-        
-        // Track nodes with edges above threshold
-        const nodesWithValidEdges = new Set();
-        
-        // Process edges
-        cy.edges().forEach(edge => {
-            const weight = edge.data('weight');
-            if (weight >= threshold) {
-                edge.style('opacity', 0.8);
-                nodesWithValidEdges.add(edge.source().id());
-                nodesWithValidEdges.add(edge.target().id());
-            } else {
-                edge.style('opacity', 0);
-            }
+    // Edge weight filter buttons
+    const weightButtons = document.querySelectorAll('#weightButtons button');
+    weightButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const threshold = parseFloat(this.dataset.weight);
+            
+            // Update active button state
+            weightButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Clear existing elements and create filtered graph
+            cy.elements().remove();
+            const filteredElements = filterGraphByWeight(threshold);
+            cy.add(filteredElements);
+            
+            // Apply layout to filtered graph
+            cy.layout({
+                name: 'fcose',
+                quality: 'proof',
+                animate: true,
+                animationDuration: 1000,
+                nodeDimensionsIncludeLabels: true,
+                padding: 50,
+                randomize: false,
+                nodeRepulsion: 8000,
+                idealEdgeLength: 100,
+                edgeElasticity: 0.45,
+                nestingFactor: 0.1,
+                gravity: 0.25,
+                numIter: 2500
+            }).run();
         });
-        
-        // Hide nodes with no valid edges
-        cy.nodes().forEach(node => {
-            if (!nodesWithValidEdges.has(node.id())) {
-                node.style('opacity', 0);
-            }
-        });
-
-        // Recalculate layout after filtering
-        cy.layout({
-            name: 'fcose',
-            quality: 'proof',
-            animate: true,
-            animationDuration: 1000,
-            nodeDimensionsIncludeLabels: true,
-            padding: 50,
-            randomize: false,
-            nodeRepulsion: 8000,
-            idealEdgeLength: 100,
-            edgeElasticity: 0.45,
-            nestingFactor: 0.1,
-            gravity: 0.25,
-            numIter: 2500
-        }).run();
     });
+
+    function filterGraphByWeight(threshold) {
+        const filteredElements = {nodes: new Set(), edges: []};
+        
+        // Filter edges and collect valid nodes
+        originalData.edges.forEach(edge => {
+            if (edge.data.weight >= threshold) {
+                filteredElements.edges.push(edge);
+                filteredElements.nodes.add(edge.data.source);
+                filteredElements.nodes.add(edge.data.target);
+            }
+        });
+        
+        // Create node objects for valid nodes
+        const nodes = Array.from(filteredElements.nodes).map(nodeId => {
+            const originalNode = originalData.nodes.find(n => n.data.id === nodeId);
+            return originalNode;
+        });
+        
+        return [...nodes, ...filteredElements.edges];
+    }
 
     // Reset view button
     const resetViewBtn = document.getElementById('resetView');
     resetViewBtn.addEventListener('click', function() {
+        // Reset active button
+        weightButtons.forEach(btn => btn.classList.remove('active'));
+        weightButtons[0].classList.add('active');
+        
+        // Restore full graph
+        cy.elements().remove();
+        cy.add(originalData);
+        
+        // Reset view
         cy.fit();
         cy.center();
-        // Reset edge weight filter
-        edgeWeightFilter.value = 0;
-        weightValue.textContent = "0";
-        cy.elements().style('opacity', 1);
     });
 
     // Toggle labels button

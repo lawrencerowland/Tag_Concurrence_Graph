@@ -14,9 +14,15 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="edgeWeightFilter" class="form-label">Min Edge Weight</label>
-                <input type="range" class="form-range" id="edgeWeightFilter" min="0" max="5" step="0.5" value="0">
-                <span id="weightValue">0</span>
+                <label class="form-label">Edge Weight Filter</label>
+                <div class="btn-group" role="group" id="weightButtons">
+                    <button type="button" class="btn btn-secondary active" data-weight="0">All</button>
+                    <button type="button" class="btn btn-secondary" data-weight="1">≥1</button>
+                    <button type="button" class="btn btn-secondary" data-weight="2">≥2</button>
+                    <button type="button" class="btn btn-secondary" data-weight="3">≥3</button>
+                    <button type="button" class="btn btn-secondary" data-weight="4">≥4</button>
+                    <button type="button" class="btn btn-secondary" data-weight="5">≥5</button>
+                </div>
             </div>
             <div class="mb-3">
                 <button class="btn btn-secondary" id="resetView">Reset View</button>
