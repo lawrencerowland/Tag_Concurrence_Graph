@@ -5,6 +5,28 @@
     <div class="row">
         <div class="col-md-3 p-3 control-panel">
             <h4>Tag Network Controls</h4>
+            <!-- Dataset Switcher -->
+            <div class="mb-3">
+                <label class="form-label">Dataset Selection</label>
+                <div class="btn-group w-100" role="group">
+                    <button type="button" class="btn btn-secondary active" data-dataset="lawrence">Lawrence's Reading List</button>
+                    <button type="button" class="btn btn-secondary" data-dataset="complex">Complex Projects</button>
+                </div>
+            </div>
+            <!-- Information Buttons -->
+            <div class="mb-3">
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#jsonFormatModal">
+                        JSON Format Guide
+                    </button>
+                    <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                        About This Tool
+                    </button>
+                    <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#howToModal">
+                        How to Use
+                    </button>
+                </div>
+            </div>
             <div class="mb-3">
                 <label for="layoutSelect" class="form-label">Layout</label>
                 <select class="form-select" id="layoutSelect">
@@ -50,6 +72,89 @@
         </div>
         <div class="col-md-9">
             <div id="cy"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modals -->
+<div class="modal fade" id="jsonFormatModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">JSON Format Guide</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>The JSON file should follow this structure:</p>
+                <pre><code>{
+    "nodes": [
+        {
+            "id": "Node Name",
+            "weight": 10
+        }
+    ],
+    "edges": [
+        {
+            "source": "Source Node Name",
+            "target": "Target Node Name",
+            "weight": 5
+        }
+    ]
+}</code></pre>
+                <ul>
+                    <li><strong>nodes</strong>: Array of nodes with unique IDs and weights</li>
+                    <li><strong>edges</strong>: Array of connections between nodes with weights</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="aboutModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">About This Tool</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>This web-based visualization tool displays relationships between tags using interactive network graphs. Features include:</p>
+                <ul>
+                    <li>Community detection algorithms</li>
+                    <li>Weight-based node sizing</li>
+                    <li>Interactive filtering capabilities</li>
+                    <li>Export/Import functionality for graph states</li>
+                </ul>
+                <hr>
+                <p class="mb-0 text-muted">Created by Lawrence's Lab - 2024</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="howToModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">How to Use</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Basic Navigation</h6>
+                <ul>
+                    <li>Click and drag to move around the graph</li>
+                    <li>Scroll to zoom in/out</li>
+                    <li>Click nodes to see their connections</li>
+                </ul>
+                <h6>Features</h6>
+                <ul>
+                    <li>Switch between different layouts using the dropdown</li>
+                    <li>Filter connections by weight using the buttons</li>
+                    <li>Toggle node labels on/off</li>
+                    <li>Export your current view</li>
+                    <li>Upload custom JSON data</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

@@ -1,4 +1,66 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Dataset switcher
+    const datasetButtons = document.querySelectorAll('[data-dataset]');
+    datasetButtons.forEach(button => {
+        button.addEventListener('click', async function() {
+            // Update active state
+            datasetButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Clear existing graph
+            cy.elements().remove();
+            
+            // Load new dataset
+            try {
+                const response = await fetch(`/api/network?dataset=${this.dataset.dataset}`);
+                originalData = await response.json();
+                
+                // Add new elements
+                cy.add(originalData);
+                
+                // Apply current layout
+                const currentLayout = document.getElementById('layoutSelect').value;
+                cy.layout({
+                    name: currentLayout,
+                    quality: 'proof',
+                    animate: true,
+                    animationDuration: 1000,
+                    nodeDimensionsIncludeLabels: true,
+                    padding: 50,
+                    randomize: false,
+                    nodeRepulsion: 8000,
+                    idealEdgeLength: 100,
+                    edgeElasticity: 0.45,
+                    nestingFactor: 0.1,
+                    gravity: 0.25,
+                    numIter: 2500,
+                    tile: true,
+                    tilingPaddingVertical: 10,
+                    tilingPaddingHorizontal: 10,
+                    gravityRangeCompound: 1.5,
+                    gravityCompound: 1.0,
+                    gravityRange: 3.8,
+                    componentSpacing: 100
+                }).run();
+                
+                // Reset filters
+                document.querySelector('#weightButtons button[data-weight="0"]').click();
+                
+                // Reapply community colors
+                const communities = cy.elements().components();
+                const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD', '#D4A5A5', '#9FA8DA', '#CE93D8'];
+                communities.forEach((component, index) => {
+                    component.nodes().style({
+                        'background-color': colors[index % colors.length]
+                    });
+                });
+            } catch (error) {
+                console.error('Error loading dataset:', error);
+                alert('Error loading dataset. Please try again.');
+            }
+        });
+    });
+
     // Layout control
     const layoutSelect = document.getElementById('layoutSelect');
     layoutSelect.addEventListener('change', function() {
