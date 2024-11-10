@@ -45,6 +45,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 node.style('opacity', 0);
             }
         });
+
+        // Recalculate layout after filtering
+        cy.layout({
+            name: 'fcose',
+            quality: 'proof',
+            animate: true,
+            animationDuration: 1000,
+            nodeDimensionsIncludeLabels: true,
+            padding: 50,
+            randomize: false,
+            nodeRepulsion: 8000,
+            idealEdgeLength: 100,
+            edgeElasticity: 0.45,
+            nestingFactor: 0.1,
+            gravity: 0.25,
+            numIter: 2500
+        }).run();
     });
 
     // Reset view button

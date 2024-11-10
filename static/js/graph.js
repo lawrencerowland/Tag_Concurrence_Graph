@@ -3,8 +3,10 @@ let originalData = null;
 
 async function initializeGraph() {
     try {
+        console.log("Starting graph initialization...");
         const response = await fetch('/api/network');
         originalData = await response.json();
+        console.log("Received network data:", originalData);
 
         // Initialize Cytoscape
         cy = cytoscape({
@@ -67,27 +69,19 @@ async function initializeGraph() {
                 animationDuration: 1000,
                 nodeDimensionsIncludeLabels: true,
                 padding: 50,
-                randomize: true,
+                randomize: false,
                 nodeRepulsion: 8000,
                 idealEdgeLength: 100,
                 edgeElasticity: 0.45,
                 nestingFactor: 0.1,
                 gravity: 0.25,
-                numIter: 2500,
-                tile: true,
-                tilingPaddingVertical: 10,
-                tilingPaddingHorizontal: 10
+                numIter: 2500
             }
         });
 
-        // Initialize panzoom after cy is created
-        if (cy.panzoom) {
-            cy.panzoom({
-                zoomFactor: 0.05,
-                zoomDelay: 45,
-                minZoom: 0.1,
-                maxZoom: 10
-            });
+        // Initialize panzoom with default settings after Cytoscape instance is created
+        if (typeof cy.panzoom === 'function') {
+            cy.panzoom();
         }
 
         // Event handlers
