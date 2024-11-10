@@ -35,10 +35,10 @@ async function initializeGraph() {
                 {
                     selector: 'edge',
                     style: {
-                        'width': 'mapData(weight, 1, 5, 1, 5)',
-                        'line-color': '#495057',
+                        'width': 'mapData(weight, 1, 5, 2, 8)',
+                        'line-color': '#6ea8fe',
                         'curve-style': 'bezier',
-                        'opacity': 0.7,
+                        'opacity': 0.8,
                         'target-arrow-shape': 'none'
                     }
                 },

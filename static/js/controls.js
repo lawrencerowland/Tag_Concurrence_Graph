@@ -14,13 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Edge weight filter
     const edgeWeightFilter = document.getElementById('edgeWeightFilter');
     const weightValue = document.getElementById('weightValue');
+    edgeWeightFilter.max = 5;  // Update max value to 5
+    edgeWeightFilter.step = 0.5;  // Update step for better control
+    
     edgeWeightFilter.addEventListener('input', function() {
         const threshold = parseFloat(this.value);
         weightValue.textContent = threshold;
         
         cy.edges().forEach(edge => {
             const weight = edge.data('weight');
-            edge.style('opacity', weight >= threshold ? 0.7 : 0);
+            edge.style('opacity', weight >= threshold ? 0.8 : 0);
         });
     });
 
