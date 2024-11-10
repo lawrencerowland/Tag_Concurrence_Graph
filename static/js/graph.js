@@ -5,14 +5,10 @@ let originalData = null;
 async function initializeGraph() {
     try {
         console.log("Starting graph initialization...");
-        const response = await fetch('/api/network');
-        originalData = await response.json();
-        console.log("Received network data:", originalData);
-
-        // Initialize Cytoscape
+        // Initialize Cytoscape with empty elements
         cy = cytoscape({
             container: document.getElementById('cy'),
-            elements: originalData,
+            elements: [], // Start empty, controls.js will populate
             style: [
                 {
                     selector: 'node',
@@ -111,16 +107,6 @@ async function initializeGraph() {
         if (typeof cy.panzoom === 'function') {
             cy.panzoom();
         }
-
-        // Color nodes by their connectivity patterns
-        const communities = cy.elements().components();
-        const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD', '#D4A5A5', '#9FA8DA', '#CE93D8'];
-
-        communities.forEach((component, index) => {
-            component.nodes().style({
-                'background-color': colors[index % colors.length]
-            });
-        });
 
         // Event handlers
         cy.on('tap', 'node', function(evt) {
