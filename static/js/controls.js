@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     try {
+        // Set Lawrence dataset button as active by default
+        const datasetButtons = document.querySelectorAll('[data-dataset]');
+        datasetButtons.forEach(btn => btn.classList.remove('active'));
+        document.querySelector('[data-dataset="lawrence"]').classList.add('active');
+
         console.log("Loading initial dataset (Lawrence's)...");
         // Load Lawrence dataset by default with explicit dataset parameter
         const response = await fetch('/api/network?dataset=lawrence');
@@ -24,17 +29,11 @@ document.addEventListener('DOMContentLoaded', async function() {
         applyLayout();
         applyCommunityStyling();
         
-        // Update button state
-        const datasetButtons = document.querySelectorAll('[data-dataset]');
-        datasetButtons.forEach(btn => btn.classList.remove('active'));
-        document.querySelector('[data-dataset="lawrence"]').classList.add('active');
-        
     } catch (error) {
         console.error('Error initializing graph:', error);
     }
 
     // Dataset switcher
-    const datasetButtons = document.querySelectorAll('[data-dataset]');
     datasetButtons.forEach(button => {
         button.addEventListener('click', async function() {
             console.log("Switching to dataset:", this.dataset.dataset);
