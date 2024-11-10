@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     try {
-        // Load Lawrence dataset by default
+        console.log("Loading initial dataset (Lawrence's)...");
+        // Load Lawrence dataset by default with explicit dataset parameter
         const response = await fetch('/api/network?dataset=lawrence');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         originalData = await response.json();
+        console.log("Loaded dataset:", originalData);
         
         // Clear any existing elements
         cy.elements().remove();
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const datasetButtons = document.querySelectorAll('[data-dataset]');
     datasetButtons.forEach(button => {
         button.addEventListener('click', async function() {
+            console.log("Switching to dataset:", this.dataset.dataset);
             // Update active state
             datasetButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
@@ -43,12 +46,13 @@ document.addEventListener('DOMContentLoaded', async function() {
                 // Clear existing graph
                 cy.elements().remove();
                 
-                // Load new dataset
+                // Load new dataset with explicit dataset parameter
                 const response = await fetch(`/api/network?dataset=${this.dataset.dataset}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 originalData = await response.json();
+                console.log("Loaded new dataset:", originalData);
                 
                 // Add new elements
                 cy.add(originalData);
@@ -103,7 +107,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
     }
 
-    // Rest of the existing code...
     // Layout control
     const layoutSelect = document.getElementById('layoutSelect');
     layoutSelect.addEventListener('change', function() {
