@@ -1,3 +1,4 @@
+// Update only the edge styling section where the warning occurs
 let cy = null;
 let originalData = null;
 
@@ -30,7 +31,7 @@ async function initializeGraph() {
                 {
                     selector: 'node[weight > 0]',
                     style: {
-                        'width': 'mapData(weight, 1, 23, 30, 80)',  // Adjust range based on actual weight values
+                        'width': 'mapData(weight, 1, 23, 30, 80)',
                         'height': 'mapData(weight, 1, 23, 30, 80)',
                         'font-size': 'mapData(weight, 1, 23, 12, 18)'
                     }
@@ -38,21 +39,25 @@ async function initializeGraph() {
                 {
                     selector: 'edge',
                     style: {
-                        'width': 'mapData(weight, 1, 5, 3, 12)',  // Increased width range
+                        'width': 'mapData(weight, 1, 5, 3, 12)',
                         'line-color': function(ele) {
                             const weight = ele.data('weight');
                             const minWeight = 1;
                             const maxWeight = 5;
                             const t = (weight - minWeight) / (maxWeight - minWeight);
-                            const startColor = [73, 80, 87];  // #495057 in RGB
-                            const endColor = [13, 110, 253];  // #0d6efd in RGB
-                            const r = Math.round(startColor[0] + t * (endColor[0] - startColor[0]));
-                            const g = Math.round(startColor[1] + t * (endColor[1] - startColor[1]));
-                            const b = Math.round(startColor[2] + t * (endColor[2] - startColor[2]));
+                            
+                            // Ensure RGB values are within valid range (0-255)
+                            const startColor = [73, 80, 87];    // #495057
+                            const endColor = [13, 110, 253];   // #0d6efd
+                            
+                            const r = Math.max(0, Math.min(255, Math.round(startColor[0] + t * (endColor[0] - startColor[0]))));
+                            const g = Math.max(0, Math.min(255, Math.round(startColor[1] + t * (endColor[1] - startColor[1]))));
+                            const b = Math.max(0, Math.min(255, Math.round(startColor[2] + t * (endColor[2] - startColor[2]))));
+                            
                             return `rgb(${r},${g},${b})`;
                         },
                         'curve-style': 'bezier',
-                        'opacity': 'mapData(weight, 1, 5, 0.6, 1)',  // Opacity increases with weight
+                        'opacity': 'mapData(weight, 1, 5, 0.6, 1)',
                         'target-arrow-shape': 'none'
                     }
                 },
@@ -92,20 +97,17 @@ async function initializeGraph() {
                 nestingFactor: 0.1,
                 gravity: 0.25,
                 numIter: 2500,
-                // Add community detection parameters
                 tile: true,
                 tilingPaddingVertical: 10,
                 tilingPaddingHorizontal: 10,
                 gravityRangeCompound: 1.5,
-                // Improve community separation
                 gravityCompound: 1.0,
                 gravityRange: 3.8,
-                // Separate components more
                 componentSpacing: 100
             }
         });
 
-        // Initialize panzoom with default settings after Cytoscape instance is created
+        // Initialize panzoom
         if (typeof cy.panzoom === 'function') {
             cy.panzoom();
         }
@@ -149,7 +151,6 @@ function highlightNeighbors(node) {
     const neighborhood = node.neighborhood().add(node);
     neighborhood.addClass('highlighted');
     cy.elements().difference(neighborhood).style('opacity', '0.2');
-    // Preserve community colors when highlighting
     neighborhood.nodes().style('border-color', '#0d6efd');
     neighborhood.nodes().style('border-width', 3);
 }

@@ -2,6 +2,7 @@ from flask import Flask, render_template, jsonify, send_from_directory, request,
 import json
 import os
 from datetime import datetime
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = "tag_network_visualization_secret"
@@ -41,6 +42,44 @@ def index():
 @app.route('/api/network')
 def get_network():
     return jsonify(load_network_data())
+
+@app.route('/api/upload', methods=['POST'])
+def upload_file():
+    if 'file' not in request.files:
+        return jsonify({"error": "No file provided"}), 400
+        
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"error": "No file selected"}), 400
+        
+    if not file.filename.endswith('.json'):
+        return jsonify({"error": "Only JSON files are allowed"}), 400
+        
+    try:
+        # Read and validate JSON structure
+        data = json.loads(file.read().decode('utf-8'))
+        
+        # Validate required structure
+        if not isinstance(data, dict) or 'nodes' not in data:
+            raise ValueError("Invalid JSON structure")
+            
+        # Validate nodes have required fields
+        for node in data['nodes']:
+            if not isinstance(node, dict) or 'id' not in node or 'weight' not in node:
+                raise ValueError("Invalid node structure")
+        
+        # Save valid file
+        file.seek(0)
+        file.save('tag_concurrence_graph.json')
+        
+        return jsonify({"message": "File uploaded successfully"}), 200
+        
+    except json.JSONDecodeError:
+        return jsonify({"error": "Invalid JSON file"}), 400
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    except Exception as e:
+        return jsonify({"error": "Upload failed"}), 500
 
 @app.route('/api/export', methods=['POST'])
 def export_network():
