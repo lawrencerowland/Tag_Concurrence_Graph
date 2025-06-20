@@ -11,8 +11,7 @@ def test_index_route():
     with app.test_client() as client:
         resp = client.get('/')
         assert resp.status_code == 200
-
-
+        
 def test_network_route():
     with app.test_client() as client:
         resp = client.get('/api/network')
@@ -58,8 +57,7 @@ def test_upload_route_valid_and_invalid(tmp_path):
         assert 'error' in resp_bad.get_json()
     with open(graph_path, 'wb') as f:
         f.write(original)
-
-
+        
 def test_upload_non_json_file():
     """Uploading a file without .json extension should fail."""
     with app.test_client() as client:

@@ -1,3 +1,24 @@
+// Helper to fetch a dataset either via the Flask API or directly from the JSON
+// file. This allows the static build to work without a running back-end.
+async function fetchDataset(name) {
+    try {
+        const apiResp = await fetch(`/api/network?dataset=${name}`);
+        if (apiResp.ok) {
+            return await apiResp.json();
+        }
+    } catch (err) {
+        console.warn('API fetch failed, falling back to static file:', err);
+    }
+    const fileName = name === 'lawrence'
+        ? 'tag_concurrence_graph.json'
+        : 'complex_project_management_graph.json';
+    const fileResp = await fetch(fileName);
+    if (!fileResp.ok) {
+        throw new Error(`Failed to load dataset: ${fileName}`);
+    }
+    return await fileResp.json();
+}
+
 document.addEventListener('DOMContentLoaded', async function() {
     // Initialize dataset buttons first
     const datasetButtons = document.querySelectorAll('[data-dataset]');
@@ -15,12 +36,8 @@ document.addEventListener('DOMContentLoaded', async function() {
         lawrenceButton.classList.add('active');
 
         console.log("Loading Lawrence dataset...");
-        // Load Lawrence dataset by default
-        const response = await fetch('/api/network?dataset=lawrence');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        originalData = await response.json();
+        // Load Lawrence dataset by default using the helper
+        originalData = await fetchDataset('lawrence');
         console.log("Loaded dataset with nodes:", originalData.nodes.length);
         
         // Clear any existing elements
@@ -48,13 +65,9 @@ document.addEventListener('DOMContentLoaded', async function() {
             try {
                 // Clear existing graph
                 cy.elements().remove();
-                
-                // Load new dataset with explicit dataset parameter
-                const response = await fetch(`/api/network?dataset=${this.dataset.dataset}`);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                originalData = await response.json();
+
+                // Load new dataset using helper
+                originalData = await fetchDataset(this.dataset.dataset);
                 console.log("Loaded new dataset with nodes:", originalData.nodes.length);
                 
                 // Add new elements
@@ -321,11 +334,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             cy.elements().remove();
             
             // Get and load new network data
-            const networkResponse = await fetch('/api/network');
-            if (!networkResponse.ok) {
-                throw new Error('Failed to load network data');
-            }
-            originalData = await networkResponse.json();
+            originalData = await fetchDataset('lawrence');
             
             // Add new elements
             cy.add(originalData);

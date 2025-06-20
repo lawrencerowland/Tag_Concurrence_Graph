@@ -2,7 +2,6 @@ from flask import Flask, render_template, jsonify, send_from_directory, request,
 import json
 import os
 from datetime import datetime
-from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = "tag_network_visualization_secret"
@@ -104,7 +103,7 @@ def upload_file():
         return jsonify({"error": "Invalid JSON file"}), 400
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
-    except Exception as e:
+    except Exception:
         return jsonify({"error": "Upload failed"}), 500
 
 @app.route('/api/export', methods=['POST'])
@@ -141,3 +140,16 @@ def export_network():
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                              'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+# Serve JSON datasets directly so the front-end can fetch them without the Flask
+# API routes. This allows the static build to load data on GitHub Pages.
+@app.route('/tag_concurrence_graph.json')
+def serve_tag_concurrence_graph():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    return send_from_directory(base_dir, 'tag_concurrence_graph.json', mimetype='application/json')
+
+
+@app.route('/complex_project_management_graph.json')
+def serve_complex_project_management_graph():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    return send_from_directory(base_dir, 'complex_project_management_graph.json', mimetype='application/json')
