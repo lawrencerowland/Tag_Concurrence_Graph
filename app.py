@@ -2,7 +2,6 @@ from flask import Flask, render_template, jsonify, send_from_directory, request,
 import json
 import os
 from datetime import datetime
-from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = "tag_network_visualization_secret"
@@ -104,7 +103,7 @@ def upload_file():
         return jsonify({"error": "Invalid JSON file"}), 400
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
-    except Exception as e:
+    except Exception:
         return jsonify({"error": "Upload failed"}), 500
 
 @app.route('/api/export', methods=['POST'])
