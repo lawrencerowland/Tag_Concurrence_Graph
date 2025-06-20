@@ -75,7 +75,7 @@ def upload_file():
     if file.filename == '':
         return jsonify({"error": "No file selected"}), 400
         
-    if not file.filename.endswith('.json'):
+    if not file.filename or not file.filename.endswith('.json'):
         return jsonify({"error": "Only JSON files are allowed"}), 400
         
     try:

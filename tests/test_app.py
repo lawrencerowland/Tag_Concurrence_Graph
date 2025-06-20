@@ -6,13 +6,12 @@ import json
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app import app
 
+
 def test_index_route():
     with app.test_client() as client:
         resp = client.get('/')
         assert resp.status_code == 200
-
-
-
+        
 def test_network_route():
     with app.test_client() as client:
         resp = client.get('/api/network')
@@ -58,4 +57,48 @@ def test_upload_route_valid_and_invalid(tmp_path):
         assert 'error' in resp_bad.get_json()
     with open(graph_path, 'wb') as f:
         f.write(original)
+        
+def test_upload_non_json_file():
+    """Uploading a file without .json extension should fail."""
+    with app.test_client() as client:
+        data = {
+            'file': (io.BytesIO(b'{}'), 'data.txt')
+        }
+        resp = client.post('/api/upload', data=data, content_type='multipart/form-data')
+        assert resp.status_code == 400
+        assert resp.get_json()['error'] == 'Only JSON files are allowed'
 
+
+def test_upload_valid_json_file():
+    """Uploading a valid JSON file should succeed."""
+    json_content = b'{"nodes": [], "edges": []}'
+    with app.test_client() as client:
+        data = {
+            'file': (io.BytesIO(json_content), 'graph.json')
+        }
+        resp = client.post('/api/upload', data=data, content_type='multipart/form-data')
+        assert resp.status_code == 200
+        assert resp.get_json()['message'] == 'File uploaded successfully'
+
+
+def test_upload_json_uppercase_extension():
+    """Uploading JSON file with uppercase extension should fail."""
+    json_content = b'{"nodes": [], "edges": []}'
+    with app.test_client() as client:
+        data = {
+            'file': (io.BytesIO(json_content), 'graph.JSON')
+        }
+        resp = client.post('/api/upload', data=data, content_type='multipart/form-data')
+        assert resp.status_code == 400
+        assert resp.get_json()['error'] == 'Only JSON files are allowed'
+
+
+def test_upload_empty_filename():
+    """Uploading with empty filename should fail."""
+    with app.test_client() as client:
+        data = {
+            'file': (io.BytesIO(b'{}'), '')
+        }
+        resp = client.post('/api/upload', data=data, content_type='multipart/form-data')
+        assert resp.status_code == 400
+        assert resp.get_json()['error'] == 'No file selected'
