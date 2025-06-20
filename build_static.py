@@ -20,8 +20,13 @@ def build():
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(rendered)
 
-    # Copy static files
-    shutil.copytree(app.static_folder, os.path.join(output_dir, 'static'), dirs_exist_ok=True)
+    # Copy static files if available
+    if app.static_folder:
+        shutil.copytree(
+            app.static_folder,
+            os.path.join(output_dir, 'static'),
+            dirs_exist_ok=True,
+        )
 
     # Copy example JSON datasets
     for fname in ['tag_concurrence_graph.json', 'complex_project_management_graph.json']:
