@@ -11,3 +11,8 @@ here's an app for building concept graphs out of a list of tagged documents. htt
 "#knowledgegraph #knowledgemanagement #ai #designthinking"
 "
 https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7261881256538173440
+
+
+## Deployment
+For tips on running this project on GitHub Pages, see [github-pages-deployment.md](github-pages-deployment.md).
+
