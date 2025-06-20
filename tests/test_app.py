@@ -39,7 +39,7 @@ def test_upload_valid_json_file(tmp_path):
 
 
 def test_upload_json_uppercase_extension():
-    """Uploading JSON file with uppercase extension should succeed."""
+    """Uploading JSON file with uppercase extension should fail."""
     from io import BytesIO
 
     json_content = b'{"nodes": [], "edges": []}'
@@ -49,8 +49,8 @@ def test_upload_json_uppercase_extension():
             'file': (BytesIO(json_content), 'graph.JSON')
         }
         resp = client.post('/api/upload', data=data, content_type='multipart/form-data')
-        assert resp.status_code == 200
-        assert resp.get_json()['message'] == 'File uploaded successfully'
+        assert resp.status_code == 400
+        assert resp.get_json()['error'] == 'Only JSON files are allowed'
 
 
 def test_upload_empty_filename():
