@@ -141,3 +141,16 @@ def export_network():
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                              'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+# Serve JSON datasets directly so the front-end can fetch them without the Flask
+# API routes. This allows the static build to load data on GitHub Pages.
+@app.route('/tag_concurrence_graph.json')
+def serve_tag_concurrence_graph():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    return send_from_directory(base_dir, 'tag_concurrence_graph.json', mimetype='application/json')
+
+
+@app.route('/complex_project_management_graph.json')
+def serve_complex_project_management_graph():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    return send_from_directory(base_dir, 'complex_project_management_graph.json', mimetype='application/json')
