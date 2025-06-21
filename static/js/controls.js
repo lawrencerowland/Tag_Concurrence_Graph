@@ -20,75 +20,57 @@ async function fetchDataset(name) {
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
-    // Initialize dataset buttons first
     const datasetButtons = document.querySelectorAll('[data-dataset]');
     const defaultDataset = document.body.dataset.defaultDataset || 'lawrence';
-    
+
     // Wait for Cytoscape initialization
     while (!cy) {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    try {
-        console.log("Setting initial dataset...");
-        // Highlight the default dataset button if present
-        datasetButtons.forEach(btn => btn.classList.remove('active'));
-        const defaultButton = document.querySelector(`[data-dataset="${defaultDataset}"]`);
-        if (defaultButton) {
-            defaultButton.classList.add('active');
-        }
+    async function loadDataset(name) {
+        console.log('Loading dataset:', name);
+        originalData = await fetchDataset(name);
+        console.log('Loaded dataset with nodes:', originalData.nodes.length);
 
-        console.log("Loading dataset: ", defaultDataset);
-        // Load dataset specified on the body element
-        originalData = await fetchDataset(defaultDataset);
-        console.log("Loaded dataset with nodes:", originalData.nodes.length);
-        
-        // Clear any existing elements
         cy.elements().remove();
-        
-        // Add new elements
         cy.add(originalData);
-        
-        // Apply initial layout and styling
+
         applyLayout();
         applyCommunityStyling();
-        
+
+        document.querySelector('#weightButtons button[data-weight="0"]').click();
+    }
+
+    try {
+        if (datasetButtons.length) {
+            datasetButtons.forEach(btn => btn.classList.remove('active'));
+            const defaultButton = document.querySelector(`[data-dataset="${defaultDataset}"]`);
+            if (defaultButton) {
+                defaultButton.classList.add('active');
+            }
+        }
+
+        await loadDataset(defaultDataset);
     } catch (error) {
         console.error('Error initializing graph:', error);
     }
 
-    // Dataset switcher
-    datasetButtons.forEach(button => {
-        button.addEventListener('click', async function() {
-            console.log("Switching to dataset:", this.dataset.dataset);
-            // Update active state
-            datasetButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            
-            try {
-                // Clear existing graph
-                cy.elements().remove();
-
-                // Load new dataset using helper
-                originalData = await fetchDataset(this.dataset.dataset);
-                console.log("Loaded new dataset with nodes:", originalData.nodes.length);
-                
-                // Add new elements
-                cy.add(originalData);
-                
-                // Apply layout and styling
-                applyLayout();
-                applyCommunityStyling();
-                
-                // Reset filters
-                document.querySelector('#weightButtons button[data-weight="0"]').click();
-                
-            } catch (error) {
-                console.error('Error loading dataset:', error);
-                alert('Error loading dataset. Please try again.');
-            }
+    // Dataset switcher (only if buttons exist)
+    if (datasetButtons.length) {
+        datasetButtons.forEach(button => {
+            button.addEventListener('click', async function() {
+                datasetButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                try {
+                    await loadDataset(this.dataset.dataset);
+                } catch (error) {
+                    console.error('Error loading dataset:', error);
+                    alert('Error loading dataset. Please try again.');
+                }
+            });
         });
-    });
+    }
 
     function applyLayout() {
         const currentLayout = document.getElementById('layoutSelect').value;
@@ -308,56 +290,5 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     });
 
-    // File upload handling (only if upload form exists)
-    const uploadForm = document.getElementById('uploadForm');
-    if (uploadForm) {
-        uploadForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const fileInput = document.getElementById('jsonFile');
-        const file = fileInput.files[0];
-        
-        if (!file) {
-            alert('Please select a file to upload');
-            return;
-        }
-        
-        try {
-            const formData = new FormData();
-            formData.append('file', file);
-            
-            const response = await fetch('/api/upload', {
-                method: 'POST',
-                body: formData
-            });
-            
-            if (!response.ok) {
-                throw new Error('Upload failed');
-            }
-            
-            // Clear existing graph
-            cy.elements().remove();
-            
-            // Get and load new network data
-            originalData = await fetchDataset(defaultDataset);
-            
-            // Add new elements
-            cy.add(originalData);
-            
-            // Apply current layout settings
-            applyLayout();
-            
-            // Reset filters
-            document.querySelector('#weightButtons button[data-weight="0"]').click();
-            
-            // Reapply community colors
-            applyCommunityStyling();
-            
-        } catch (error) {
-            console.error('Error uploading file:', error);
-            alert('Error uploading file. Please ensure the JSON format matches the required structure.');
-        }
-        
-        fileInput.value = ''; // Reset file input
-        });
-    }
+    // File upload functionality disabled
 });
