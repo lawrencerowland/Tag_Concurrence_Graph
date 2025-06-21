@@ -22,6 +22,7 @@ async function fetchDataset(name) {
 document.addEventListener('DOMContentLoaded', async function() {
     // Initialize dataset buttons first
     const datasetButtons = document.querySelectorAll('[data-dataset]');
+    const defaultDataset = document.body.dataset.defaultDataset || 'lawrence';
     
     // Wait for Cytoscape initialization
     while (!cy) {
@@ -30,14 +31,16 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     try {
         console.log("Setting initial dataset...");
-        // Set Lawrence dataset button as active
+        // Highlight the default dataset button if present
         datasetButtons.forEach(btn => btn.classList.remove('active'));
-        const lawrenceButton = document.querySelector('[data-dataset="lawrence"]');
-        lawrenceButton.classList.add('active');
+        const defaultButton = document.querySelector(`[data-dataset="${defaultDataset}"]`);
+        if (defaultButton) {
+            defaultButton.classList.add('active');
+        }
 
-        console.log("Loading Lawrence dataset...");
-        // Load Lawrence dataset by default using the helper
-        originalData = await fetchDataset('lawrence');
+        console.log("Loading dataset: ", defaultDataset);
+        // Load dataset specified on the body element
+        originalData = await fetchDataset(defaultDataset);
         console.log("Loaded dataset with nodes:", originalData.nodes.length);
         
         // Clear any existing elements
@@ -305,9 +308,10 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     });
 
-    // File upload handling
+    // File upload handling (only if upload form exists)
     const uploadForm = document.getElementById('uploadForm');
-    uploadForm.addEventListener('submit', async function(e) {
+    if (uploadForm) {
+        uploadForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         const fileInput = document.getElementById('jsonFile');
         const file = fileInput.files[0];
@@ -334,7 +338,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             cy.elements().remove();
             
             // Get and load new network data
-            originalData = await fetchDataset('lawrence');
+            originalData = await fetchDataset(defaultDataset);
             
             // Add new elements
             cy.add(originalData);
@@ -354,5 +358,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
         
         fileInput.value = ''; // Reset file input
-    });
+        });
+    }
 });
