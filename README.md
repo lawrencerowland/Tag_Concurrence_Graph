@@ -12,6 +12,16 @@ here's an app for building concept graphs out of a list of tagged documents. htt
 "
 https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7261881256538173440
 
+## Example graphs
+
+The repository includes two sample HTML pages:
+
+- `index.html` shows Lawrence's reading list graph.
+- `complex.html` visualizes a complex project management graph.
+
+Each page links to the other in the sidebar so you can easily switch between them.
+
+
 
 ## Deployment
 For tips on running this project on GitHub Pages, see [github-pages-deployment.md](github-pages-deployment.md).
