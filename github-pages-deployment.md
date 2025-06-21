@@ -24,6 +24,6 @@ If server features are required, consider hosting the Flask app on a small cloud
 
 - Python dependencies are listed in `pyproject.toml`. Use Python 3.11 or later.
 - For local development with Flask, run `python main.py` and visit `http://localhost:5000`.
-- To serve the static version locally, you can use a simple HTTP server: `python -m http.server` from the directory containing `index.html`.
+- To serve the static version locally, you can use a simple HTTP server: `python -m http.server` from the directory containing `index.html` or `complex.html`.
 
 Choose the option that best fits the project goals. For a simple demo or personal site, converting everything to static files is often the quickest way to deploy on GitHub Pages.
