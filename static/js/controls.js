@@ -30,8 +30,14 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     async function loadDataset(name) {
         console.log('Loading dataset:', name);
-        originalData = await fetchDataset(name);
-        console.log('Loaded dataset with nodes:', originalData.nodes.length);
+        try {
+            originalData = await fetchDataset(name);
+            console.log('Loaded dataset with nodes:', originalData.nodes.length);
+        } catch (err) {
+            console.error('Failed to load dataset:', err);
+            alert('Failed to load dataset. Please ensure the JSON files are present.');
+            return;
+        }
 
         cy.elements().remove();
         cy.add(originalData);
