@@ -258,28 +258,17 @@ document.addEventListener('DOMContentLoaded', async function() {
                 layout: currentLayout
             };
 
-            // Send data to server
-            const response = await fetch('/api/export', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(exportData)
-            });
+            // Create a Blob locally instead of sending to the server
+            const jsonString = JSON.stringify(exportData, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
 
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-
-            // Get the blob from the response
-            const blob = await response.blob();
-            
-            // Create a download link and trigger it
+            // Generate filename with timestamp
+            const ts = new Date().toISOString().replace(/[:.]/g, '-');
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.style.display = 'none';
             a.href = url;
-            a.download = response.headers.get('Content-Disposition').split('filename=')[1];
+            a.download = `network_export_${ts}.json`;
             document.body.appendChild(a);
             a.click();
             window.URL.revokeObjectURL(url);
