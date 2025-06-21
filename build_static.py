@@ -14,11 +14,13 @@ def build():
     os.makedirs(output_dir, exist_ok=True)
 
     with app.app_context():
-        with app.test_request_context():
-            rendered = render_template('index.html')
-        out_path = os.path.join(output_dir, 'index.html')
-        with open(out_path, 'w', encoding='utf-8') as f:
-            f.write(rendered)
+        # Render each HTML template that should be available in the static site
+        for template_name in ['index.html', 'complex.html']:
+            with app.test_request_context():
+                rendered = render_template(template_name)
+            out_path = os.path.join(output_dir, template_name)
+            with open(out_path, 'w', encoding='utf-8') as f:
+                f.write(rendered)
 
     # Copy static files if available
     if app.static_folder:
