@@ -1,14 +1,5 @@
-// Helper to fetch a dataset either via the Flask API or directly from the JSON
-// file. This allows the static build to work without a running back-end.
+// Helper to fetch a dataset directly from the JSON file.
 async function fetchDataset(name) {
-    try {
-        const apiResp = await fetch(`/api/network?dataset=${name}`);
-        if (apiResp.ok) {
-            return await apiResp.json();
-        }
-    } catch (err) {
-        console.warn('API fetch failed, falling back to static file:', err);
-    }
     const fileName = name === 'lawrence'
         ? 'tag_concurrence_graph.json'
         : 'complex_project_management_graph.json';
@@ -21,6 +12,7 @@ async function fetchDataset(name) {
 
 document.addEventListener('DOMContentLoaded', async function() {
     const datasetButtons = document.querySelectorAll('[data-dataset]');
+    const uploadInput = document.getElementById('uploadFile');
     const defaultDataset = document.body.dataset.defaultDataset || 'lawrence';
 
     // Wait for Cytoscape initialization
@@ -285,5 +277,31 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     });
 
-    // File upload functionality disabled
+    // Local file upload handling
+    if (uploadInput) {
+        uploadInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                try {
+                    const parsed = JSON.parse(evt.target.result);
+                    if (!parsed.nodes || !parsed.edges) {
+                        alert('Invalid JSON structure');
+                        return;
+                    }
+                    originalData = parsed;
+                    cy.elements().remove();
+                    cy.add(parsed);
+                    applyLayout();
+                    applyCommunityStyling();
+                    document.querySelector('#weightButtons button[data-weight="0"]').click();
+                } catch (e) {
+                    console.error('Failed to parse file', e);
+                    alert('Failed to load JSON file');
+                }
+            };
+            reader.readAsText(file);
+        });
+    }
 });
