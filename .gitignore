@@ -56,7 +56,6 @@ db.sqlite3-journal
 # Scrapy stuff:
 .scrapy
 # Sphinx documentation
-docs/
 # PyBuilder
 .pybuilder/
 target/
@@ -154,5 +153,4 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-docs/
 !docs/.gitkeep
