@@ -1,11 +1,10 @@
 import os
 import shutil
-from flask import Flask, render_template
+from jinja2 import Environment, FileSystemLoader
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-app = Flask(__name__, template_folder=os.path.join(APP_ROOT, 'templates'),
-            static_folder=os.path.join(APP_ROOT, 'static'), static_url_path='/static')
+env = Environment(loader=FileSystemLoader(os.path.join(APP_ROOT, 'templates')))
 
 
 def build():
@@ -13,19 +12,19 @@ def build():
     output_dir = os.path.join(APP_ROOT, 'docs')
     os.makedirs(output_dir, exist_ok=True)
 
-    with app.app_context():
-        # Render each HTML template that should be available in the static site
-        for template_name in ['index.html', 'complex.html']:
-            with app.test_request_context():
-                rendered = render_template(template_name)
-            out_path = os.path.join(output_dir, template_name)
-            with open(out_path, 'w', encoding='utf-8') as f:
-                f.write(rendered)
+    # Render each HTML template that should be available in the static site
+    for template_name in ['index.html', 'complex.html']:
+        template = env.get_template(template_name)
+        rendered = template.render()
+        out_path = os.path.join(output_dir, template_name)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(rendered)
 
-    # Copy static files if available
-    if app.static_folder:
+    # Copy static files
+    static_src = os.path.join(APP_ROOT, 'static')
+    if os.path.isdir(static_src):
         shutil.copytree(
-            app.static_folder,
+            static_src,
             os.path.join(output_dir, 'static'),
             dirs_exist_ok=True,
         )
