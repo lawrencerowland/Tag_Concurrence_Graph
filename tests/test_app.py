@@ -1,3 +1,9 @@
+"""Dataset sanity checks.
+
+These tests ensure the example JSON graphs bundled with the site contain
+both nodes and edges. They replace the old Flask-based API tests.
+"""
+
 import json
 import os
 
