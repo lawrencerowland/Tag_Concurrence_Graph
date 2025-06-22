@@ -10,11 +10,13 @@ def test_primary_dataset_has_nodes_and_edges():
     data = load_json('tag_concurrence_graph.json')
     assert 'nodes' in data and 'edges' in data
     assert len(data['nodes']) > 0
+    assert len(data['edges']) > 0
 
 def test_complex_dataset_has_nodes_and_edges():
     data = load_json('complex_project_management_graph.json')
     assert 'nodes' in data and 'edges' in data
     assert len(data['nodes']) > 0
+    assert len(data['edges']) > 0
 
 def test_upload_empty_filename():
     """Uploading with empty filename should fail."""
