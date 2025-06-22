@@ -1,22 +1,36 @@
-// Helper to fetch a dataset either via the Flask API or directly from the JSON
-// file. This allows the static build to work without a running back-end.
+// Helper to fetch a dataset from a static JSON file.  If the file uses the
+// "raw" format (nodes with id/weight fields and edges with source/target), it
+// is converted to the Cytoscape element format expected by the graph code.
 async function fetchDataset(name) {
-    try {
-        const apiResp = await fetch(`/api/network?dataset=${name}`);
-        if (apiResp.ok) {
-            return await apiResp.json();
-        }
-    } catch (err) {
-        console.warn('API fetch failed, falling back to static file:', err);
-    }
     const fileName = name === 'lawrence'
         ? 'tag_concurrence_graph.json'
         : 'complex_project_management_graph.json';
-    const fileResp = await fetch(fileName);
-    if (!fileResp.ok) {
+
+    const resp = await fetch(fileName);
+    if (!resp.ok) {
         throw new Error(`Failed to load dataset: ${fileName}`);
     }
-    return await fileResp.json();
+
+    const data = await resp.json();
+
+    // Detect raw format by checking for the absence of the "data" wrapper
+    if (data.nodes && data.nodes.length && !data.nodes[0].data) {
+        return {
+            nodes: data.nodes.map(n => ({
+                data: { id: n.id, weight: n.weight }
+            })),
+            edges: data.edges.map(e => ({
+                data: {
+                    id: `${e.source}-${e.target}`,
+                    source: e.source,
+                    target: e.target,
+                    weight: e.weight
+                }
+            }))
+        };
+    }
+
+    return data;
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
