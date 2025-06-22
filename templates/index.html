@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% set default_dataset = 'lawrence' %}
+{% set default_dataset = 'complex' %}
 
 {% block content %}
 <div class="container-fluid">
@@ -7,7 +7,7 @@
         <div class="col-md-3 p-3 control-panel">
             <h4>Key concepts in my reading list: a visualiser for document tags</h4>
             <p>
-                <a href="complex.html">View complex project graph</a>
+                <a href="complex.html">View reading list graph</a>
             </p>
             <!-- Information Buttons -->
             <div class="mb-3">
@@ -20,6 +20,9 @@
                     </button>
                     <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#howToModal">
                         How to Use
+                    </button>
+                    <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#askModal">
+                        Ask for your own graph
                     </button>
                 </div>
             </div>
@@ -151,6 +154,36 @@
                     <li>Download your current view as a JSON file</li>
                     <li>Upload custom JSON data</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="askModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ask for your own graph</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Run this prompt in your ai with the docs described:</p>
+                <p>hi, these are meta data for key documents, each of which have been tagged with several concepts. run a concurrence algorithm for the tags, and so create a json file with an edge and node list, where concurrent tags are the nodes, and node weight is the tag count, and each edge is a concurrency, where the edge weight is the number of identical concurrencies. the json format is here:</p>
+                <pre><code>{
+    "nodes": [
+        {
+            "id": "Node Name",
+            "weight": 10
+        }
+    ],
+    "edges": [
+        {
+            "source": "Source Node Name",
+            "target": "Target Node Name",
+            "weight": 5
+        }
+    ]
+}</code></pre>
             </div>
         </div>
     </div>
