@@ -56,6 +56,15 @@ document.addEventListener('DOMContentLoaded', async function() {
         cy.elements().remove();
         cy.add(originalData);
 
+        // Heavy datasets can stall the fcose layout. Switch to a
+        // simpler layout for the large reading list graph by default.
+        if (name === 'lawrence') {
+            const layoutSelect = document.getElementById('layoutSelect');
+            if (layoutSelect.value === 'fcose') {
+                layoutSelect.value = 'concentric';
+            }
+        }
+
         applyLayout();
         applyCommunityStyling();
 
