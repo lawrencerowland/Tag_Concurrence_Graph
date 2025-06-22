@@ -1,291 +1,52 @@
 {
-    "nodes": [
-        {
-            "id": "Systems Thinking",
-            "weight": 22
-        },
-        {
-            "id": "Stakeholder Management",
-            "weight": 18
-        },
-        {
-            "id": "Risk Management",
-            "weight": 25
-        },
-        {
-            "id": "Agile Methodology",
-            "weight": 15
-        },
-        {
-            "id": "Critical Path Method",
-            "weight": 12
-        },
-        {
-            "id": "Resource Allocation",
-            "weight": 20
-        },
-        {
-            "id": "Adaptive Planning",
-            "weight": 16
-        },
-        {
-            "id": "Complexity Theory",
-            "weight": 19
-        },
-        {
-            "id": "Scenario Analysis",
-            "weight": 13
-        },
-        {
-            "id": "Decision-Making Under Uncertainty",
-            "weight": 23
-        },
-        {
-            "id": "Project Governance",
-            "weight": 18
-        },
-        {
-            "id": "Communication Strategy",
-            "weight": 15
-        },
-        {
-            "id": "Change Management",
-            "weight": 17
-        },
-        {
-            "id": "Emergent Behavior",
-            "weight": 10
-        },
-        {
-            "id": "Feedback Loops",
-            "weight": 12
-        },
-        {
-            "id": "Dynamic Scheduling",
-            "weight": 14
-        },
-        {
-            "id": "Cross-Functional Teams",
-            "weight": 13
-        },
-        {
-            "id": "Project Lifecycle",
-            "weight": 15
-        },
-        {
-            "id": "Integrated Project Delivery",
-            "weight": 11
-        },
-        {
-            "id": "Lean Construction",
-            "weight": 13
-        },
-        {
-            "id": "Collaborative Tools",
-            "weight": 14
-        },
-        {
-            "id": "Stakeholder Alignment",
-            "weight": 12
-        },
-        {
-            "id": "Knowledge Management",
-            "weight": 18
-        },
-        {
-            "id": "Multi-criteria Decision Analysis",
-            "weight": 14
-        },
-        {
-            "id": "Value Engineering",
-            "weight": 11
-        },
-        {
-            "id": "Iterative Development",
-            "weight": 13
-        },
-        {
-            "id": "Cost-Benefit Analysis",
-            "weight": 16
-        },
-        {
-            "id": "Monte Carlo Simulation",
-            "weight": 10
-        },
-        {
-            "id": "Organizational Learning",
-            "weight": 17
-        },
-        {
-            "id": "Scenario Planning",
-            "weight": 14
-        },
-        {
-            "id": "Portfolio Management",
-            "weight": 15
-        },
-        {
-            "id": "Network Analysis",
-            "weight": 12
-        },
-        {
-            "id": "Change Readiness",
-            "weight": 11
-        },
-        {
-            "id": "Contingency Planning",
-            "weight": 13
-        },
-        {
-            "id": "System Dynamics",
-            "weight": 16
-        }
-    ],
-    "edges": [
-        {
-            "source": "Systems Thinking",
-            "target": "Complexity Theory",
-            "weight": 15
-        },
-        {
-            "source": "Stakeholder Management",
-            "target": "Communication Strategy",
-            "weight": 12
-        },
-        {
-            "source": "Risk Management",
-            "target": "Scenario Analysis",
-            "weight": 14
-        },
-        {
-            "source": "Agile Methodology",
-            "target": "Adaptive Planning",
-            "weight": 10
-        },
-        {
-            "source": "Critical Path Method",
-            "target": "Resource Allocation",
-            "weight": 9
-        },
-        {
-            "source": "Resource Allocation",
-            "target": "Decision-Making Under Uncertainty",
-            "weight": 17
-        },
-        {
-            "source": "Adaptive Planning",
-            "target": "Emergent Behavior",
-            "weight": 8
-        },
-        {
-            "source": "Complexity Theory",
-            "target": "Emergent Behavior",
-            "weight": 13
-        },
-        {
-            "source": "Scenario Analysis",
-            "target": "Decision-Making Under Uncertainty",
-            "weight": 18
-        },
-        {
-            "source": "Project Governance",
-            "target": "Change Management",
-            "weight": 12
-        },
-        {
-            "source": "Communication Strategy",
-            "target": "Feedback Loops",
-            "weight": 10
-        },
-        {
-            "source": "Change Management",
-            "target": "Stakeholder Management",
-            "weight": 11
-        },
-        {
-            "source": "Systems Thinking",
-            "target": "Feedback Loops",
-            "weight": 14
-        },
-        {
-            "source": "Risk Management",
-            "target": "Project Governance",
-            "weight": 13
-        },
-        {
-            "source": "Agile Methodology",
-            "target": "Change Management",
-            "weight": 9
-        },
-        {
-            "source": "Dynamic Scheduling",
-            "target": "Cross-Functional Teams",
-            "weight": 8
-        },
-        {
-            "source": "Project Lifecycle",
-            "target": "Integrated Project Delivery",
-            "weight": 9
-        },
-        {
-            "source": "Lean Construction",
-            "target": "Collaborative Tools",
-            "weight": 10
-        },
-        {
-            "source": "Stakeholder Alignment",
-            "target": "Knowledge Management",
-            "weight": 11
-        },
-        {
-            "source": "Multi-criteria Decision Analysis",
-            "target": "Value Engineering",
-            "weight": 8
-        },
-        {
-            "source": "Iterative Development",
-            "target": "Agile Methodology",
-            "weight": 11
-        },
-        {
-            "source": "Cost-Benefit Analysis",
-            "target": "Monte Carlo Simulation",
-            "weight": 7
-        },
-        {
-            "source": "Organizational Learning",
-            "target": "Knowledge Management",
-            "weight": 15
-        },
-        {
-            "source": "Scenario Planning",
-            "target": "Risk Management",
-            "weight": 13
-        },
-        {
-            "source": "Portfolio Management",
-            "target": "Resource Allocation",
-            "weight": 10
-        },
-        {
-            "source": "Network Analysis",
-            "target": "System Dynamics",
-            "weight": 9
-        },
-        {
-            "source": "Change Readiness",
-            "target": "Change Management",
-            "weight": 10
-        },
-        {
-            "source": "Contingency Planning",
-            "target": "Risk Management",
-            "weight": 12
-        },
-        {
-            "source": "System Dynamics",
-            "target": "Feedback Loops",
-            "weight": 11
-        }
-    ]
-}
+  "nodes": [
+    { "id": "Systems Thinking", "weight": 8.8 },
+    { "id": "Stakeholder Management", "weight": 7.2 },
+    { "id": "Risk Management", "weight": 10.0 },
+    { "id": "Agile Methodology", "weight": 6.0 },
+    { "id": "Critical Path Method", "weight": 4.8 },
+    { "id": "Resource Allocation", "weight": 8.0 },
+    { "id": "Adaptive Planning", "weight": 6.4 },
+    { "id": "Complexity Theory", "weight": 7.6 },
+    { "id": "Scenario Analysis", "weight": 5.2 },
+    { "id": "Decision-Making Under Uncertainty", "weight": 9.2 },
+    { "id": "Project Governance", "weight": 7.2 },
+    { "id": "Communication Strategy", "weight": 6.0 },
+    { "id": "Change Management", "weight": 6.8 },
+    { "id": "Emergent Behavior", "weight": 4.0 },
+    { "id": "Feedback Loops", "weight": 4.8 },
+    { "id": "Dynamic Scheduling", "weight": 5.6 },
+    { "id": "Cross-Functional Teams", "weight": 5.2 },
+    { "id": "Project Lifecycle", "weight": 6.0 },
+    { "id": "Integrated Project Delivery", "weight": 4.4 },
+    { "id": "Lean Construction", "weight": 5.2 },
+    { "id": "Collaborative Tools", "weight": 5.6 },
+    { "id": "Stakeholder Alignment", "weight": 4.8 },
+    { "id": "Knowledge Management", "weight": 7.2 },
+    { "id": "Multi-criteria Decision Analysis", "weight": 5.6 },
+    { "id": "Value Engineering", "weight": 4.4 },
+    { "id": "Iterative Development", "weight": 5.2 },
+    { "id": "Cost-Benefit Analysis", "weight": 6.4 },
+    { "id": "Monte Carlo Simulation", "weight": 4.0 },
+    { "id": "Organizational Learning", "weight": 6.8 },
+    { "id": "Scenario Planning", "weight": 5.6 },
+    { "id": "Portfolio Management", "weight": 6.0 },
+    { "id": "Network Analysis", "weight": 4.8 },
+    { "id": "Change Readiness", "weight": 4.4 },
+    { "id": "Contingency Planning", "weight": 5.2 },
+    { "id": "System Dynamics", "weight": 6.4 }
+  ],
+  "edges": [
+    { "source": "Systems Thinking", "target": "Complexity Theory", "weight": 8.3 },
+    { "source": "Stakeholder Management", "target": "Communication Strategy", "weight": 6.7 },
+    { "source": "Risk Management", "target": "Scenario Analysis", "weight": 7.8 },
+    { "source": "Agile Methodology", "target": "Adaptive Planning", "weight": 5.6 },
+    { "source": "Critical Path Method", "target": "Resource Allocation", "weight": 5.0 },
+    { "source": "Resource Allocation", "target": "Decision-Making Under Uncertainty", "weight": 9.4 },
+    { "source": "Adaptive Planning", "target": "Emergent Behavior", "weight": 4.4 },
+    { "source": "Complexity Theory", "target": "Emergent Behavior", "weight": 7.2 },
+    { "source": "Scenario Analysis", "target": "Decision-Making Under Uncertainty", "weight": 10.0 },
+    { "source": "Project Governance", "target": "Change Management", "weight": 6.7 },
+    { "source": "Communication Strategy", "target": "Feedback Loops", "weight": 5.6 },
+    { "source": "Change Management", "target": "Stakeholder Management", "weight": 6.1 },
+    { "source": "Systems Thinking", "t
