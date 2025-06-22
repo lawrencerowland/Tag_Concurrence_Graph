@@ -2,9 +2,21 @@ import os
 import sys
 import io
 import json
+import pytest
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app import app
+
+
+@pytest.fixture(autouse=True)
+def preserve_dataset():
+    """Ensure tag_concurrence_graph.json is restored after each test."""
+    graph_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'tag_concurrence_graph.json')
+    with open(graph_path, 'rb') as f:
+        original = f.read()
+    yield
+    with open(graph_path, 'wb') as f:
+        f.write(original)
 
 
 def test_index_route():
