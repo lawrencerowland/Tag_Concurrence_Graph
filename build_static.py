@@ -13,7 +13,7 @@ def build():
     os.makedirs(output_dir, exist_ok=True)
 
     # Render each HTML template that should be available in the static site
-    for template_name in ['index.html', 'complex.html']:
+    for template_name in ['index.html', 'complex.html', 'pw_best.html']:
         template = env.get_template(template_name)
         rendered = template.render()
         out_path = os.path.join(output_dir, template_name)
@@ -30,7 +30,11 @@ def build():
         )
 
     # Copy example JSON datasets
-    for fname in ['tag_concurrence_graph.json', 'complex_project_management_graph.json']:
+    for fname in [
+        'tag_concurrence_graph.json',
+        'complex_project_management_graph.json',
+        'portfolio_wave_best.json',
+    ]:
         src = os.path.join(APP_ROOT, fname)
         if os.path.exists(src):
             shutil.copy(src, os.path.join(output_dir, fname))
