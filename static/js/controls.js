@@ -2,9 +2,11 @@
 // "raw" format (nodes with id/weight fields and edges with source/target), it
 // is converted to the Cytoscape element format expected by the graph code.
 async function fetchDataset(name) {
-    const fileName = name === 'lawrence'
-        ? 'tag_concurrence_graph.json'
-        : 'complex_project_management_graph.json';
+    const files = {
+        lawrence: 'tag_concurrence_graph.json',
+        pw_best: 'portfolio_wave_best.json',
+    };
+    const fileName = files[name] || 'complex_project_management_graph.json';
 
     const resp = await fetch(fileName);
     if (!resp.ok) {
