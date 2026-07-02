@@ -154,3 +154,5 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 docs/
+static/.DS_Store
+.DS_Store
