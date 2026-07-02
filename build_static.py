@@ -30,7 +30,11 @@ def build():
         )
 
     # Copy example JSON datasets
-    for fname in ['tag_concurrence_graph.json', 'complex_project_management_graph.json']:
+    for fname in [
+        'tag_concurrence_graph.json',
+        'complex_project_management_graph.json',
+        'portfolio_wave_best.json',
+    ]:
         src = os.path.join(APP_ROOT, fname)
         if os.path.exists(src):
             shutil.copy(src, os.path.join(output_dir, fname))

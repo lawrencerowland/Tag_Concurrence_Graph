@@ -15,3 +15,5 @@ def test_build_creates_docs(tmp_path):
     assert os.path.isdir(docs_dir)
     assert os.path.isfile(os.path.join(docs_dir, 'index.html'))
     assert os.path.isfile(os.path.join(docs_dir, 'complex.html'))
+    assert os.path.isfile(os.path.join(docs_dir, 'pw_best.html'))
+    assert os.path.isfile(os.path.join(docs_dir, 'portfolio_wave_best.json'))

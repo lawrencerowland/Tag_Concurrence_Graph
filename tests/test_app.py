@@ -24,3 +24,8 @@ def test_complex_dataset_has_nodes_and_edges():
     assert len(data['nodes']) > 0
     assert len(data['edges']) > 0
 
+def test_portfolio_wave_best_dataset_has_nodes_and_edges():
+    data = load_json('portfolio_wave_best.json')
+    assert 'nodes' in data and 'edges' in data
+    assert len(data['nodes']) > 0
+    assert len(data['edges']) > 0

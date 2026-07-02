@@ -42,7 +42,7 @@
   },
   {
    "id": "Foray: Semantics for WBS",
-   "weight": 1
+   "weight": 4
   },
   {
    "id": "Foray: processes to plans",
@@ -338,7 +338,7 @@
   },
   {
    "id": "Source: Introducing CatColab",
-   "weight": 1
+   "weight": 2
   },
   {
    "id": "Source: It's Bayes All The Way Up",
@@ -346,7 +346,7 @@
   },
   {
    "id": "Source: KR in bicategories of Relations",
-   "weight": 1
+   "weight": 2
   },
   {
    "id": "Source: MBSE chapter Category Theory 43 S. Breiner, E. Subrahmanian, and R. D. Sriram",
@@ -442,7 +442,7 @@
   },
   {
    "id": "Source: Robot Task Plans using Functorial Data Migrations",
-   "weight": 1
+   "weight": 2
   },
   {
    "id": "Source: Safeguarded AI programme Our TA1",
@@ -633,11 +633,11 @@
    "weight": 12
   },
   {
-   "id": "Tag: operad",
+   "id": "Tag: wiring diagram",
    "weight": 9
   },
   {
-   "id": "Tag: wiring diagram",
+   "id": "Tag: operad",
    "weight": 9
   },
   {
@@ -777,15 +777,15 @@
    "weight": 3
   },
   {
-   "id": "Tag: indexed category",
-   "weight": 3
-  },
-  {
    "id": "Tag: presheaves",
    "weight": 3
   },
   {
    "id": "Tag: copresheaves",
+   "weight": 3
+  },
+  {
+   "id": "Tag: indexed category",
    "weight": 3
   },
   {
@@ -809,11 +809,11 @@
    "weight": 3
   },
   {
-   "id": "Tag: resource theories",
+   "id": "Tag: commutative monoid",
    "weight": 3
   },
   {
-   "id": "Tag: commutative monoid",
+   "id": "Tag: resource theories",
    "weight": 3
   },
   {
@@ -821,11 +821,11 @@
    "weight": 3
   },
   {
-   "id": "Tag: pddl",
+   "id": "Tag: planning",
    "weight": 3
   },
   {
-   "id": "Tag: planning",
+   "id": "Tag: pddl",
    "weight": 3
   },
   {
@@ -857,11 +857,11 @@
    "weight": 2
   },
   {
-   "id": "Tag: self similarity",
+   "id": "Tag: olog",
    "weight": 2
   },
   {
-   "id": "Tag: olog",
+   "id": "Tag: self similarity",
    "weight": 2
   },
   {
@@ -881,11 +881,11 @@
    "weight": 2
   },
   {
-   "id": "Tag: graph rewriting",
+   "id": "Tag: tree",
    "weight": 2
   },
   {
-   "id": "Tag: tree",
+   "id": "Tag: graph rewriting",
    "weight": 2
   },
   {
@@ -913,11 +913,11 @@
    "weight": 2
   },
   {
-   "id": "Tag: unbundling",
+   "id": "Tag: key",
    "weight": 2
   },
   {
-   "id": "Tag: key",
+   "id": "Tag: unbundling",
    "weight": 2
   },
   {
@@ -933,11 +933,11 @@
    "weight": 2
   },
   {
-   "id": "Tag: commitments",
+   "id": "Tag: grothendieck construction",
    "weight": 2
   },
   {
-   "id": "Tag: grothendieck construction",
+   "id": "Tag: commitments",
    "weight": 2
   },
   {
@@ -961,11 +961,11 @@
    "weight": 2
   },
   {
-   "id": "Tag: alternate perspectives",
+   "id": "Tag: dpo",
    "weight": 2
   },
   {
-   "id": "Tag: dpo",
+   "id": "Tag: alternate perspectives",
    "weight": 2
   },
   {
@@ -1143,6 +1143,11 @@
   {
    "source": "Source: On Hopfield Networks and Boltzmann Machines",
    "target": "Foray: 2nd tier",
+   "weight": 1
+  },
+  {
+   "source": "Source: KR in bicategories of Relations",
+   "target": "Foray: Semantics for WBS",
    "weight": 1
   },
   {
@@ -1361,6 +1366,11 @@
    "weight": 1
   },
   {
+   "source": "Source: Robot Task Plans using Functorial Data Migrations",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
    "source": "Source: Project Scheduling and Copresheaves | The n-Category Caf\u00e9",
    "target": "Foray: Generate WBS paths",
    "weight": 1
@@ -1393,6 +1403,11 @@
   {
    "source": "Source: Introducing CatColab",
    "target": "Foray: Generate WBS paths",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
+   "target": "Foray: Semantics for WBS",
    "weight": 1
   },
   {
@@ -1742,17 +1757,7 @@
   },
   {
    "source": "Source: Category Theory for Scientists",
-   "target": "Tag: self similarity",
-   "weight": 1
-  },
-  {
-   "source": "Source: Category Theory for Scientists",
    "target": "Tag: hierarchy",
-   "weight": 1
-  },
-  {
-   "source": "Source: Category Theory for Scientists",
-   "target": "Tag: operads",
    "weight": 1
   },
   {
@@ -1762,7 +1767,17 @@
   },
   {
    "source": "Source: Category Theory for Scientists",
+   "target": "Tag: operads",
+   "weight": 1
+  },
+  {
+   "source": "Source: Category Theory for Scientists",
    "target": "Tag: monoid",
+   "weight": 1
+  },
+  {
+   "source": "Source: Category Theory for Scientists",
+   "target": "Tag: self similarity",
    "weight": 1
   },
   {
@@ -1772,17 +1787,7 @@
   },
   {
    "source": "Source: 5 diagram representation of system lifecycle properties V",
-   "target": "Tag: system",
-   "weight": 1
-  },
-  {
-   "source": "Source: 5 diagram representation of system lifecycle properties V",
    "target": "Tag: interface",
-   "weight": 1
-  },
-  {
-   "source": "Source: 5 diagram representation of system lifecycle properties V",
-   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -1792,7 +1797,17 @@
   },
   {
    "source": "Source: 5 diagram representation of system lifecycle properties V",
+   "target": "Tag: bloggable",
+   "weight": 1
+  },
+  {
+   "source": "Source: 5 diagram representation of system lifecycle properties V",
    "target": "Tag: 2017bottomup",
+   "weight": 1
+  },
+  {
+   "source": "Source: 5 diagram representation of system lifecycle properties V",
+   "target": "Tag: system",
    "weight": 1
   },
   {
@@ -1807,17 +1822,12 @@
   },
   {
    "source": "Source: 2024 Oct apple on reasoning",
-   "target": "Tag: reasoning",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2024 Oct apple on reasoning",
    "target": "Tag: llm",
    "weight": 1
   },
   {
-   "source": "Source: Geometric deep learning ch 1 and 2 lectures",
-   "target": "Tag: ml",
+   "source": "Source: 2024 Oct apple on reasoning",
+   "target": "Tag: reasoning",
    "weight": 1
   },
   {
@@ -1826,13 +1836,8 @@
    "weight": 1
   },
   {
-   "source": "Source: Regarding your prime requirement",
-   "target": "Tag: interesting",
-   "weight": 1
-  },
-  {
-   "source": "Source: Regarding your prime requirement",
-   "target": "Tag: folio",
+   "source": "Source: Geometric deep learning ch 1 and 2 lectures",
+   "target": "Tag: ml",
    "weight": 1
   },
   {
@@ -1843,6 +1848,16 @@
   {
    "source": "Source: Regarding your prime requirement",
    "target": "Tag: experimentable",
+   "weight": 1
+  },
+  {
+   "source": "Source: Regarding your prime requirement",
+   "target": "Tag: folio",
+   "weight": 1
+  },
+  {
+   "source": "Source: Regarding your prime requirement",
+   "target": "Tag: interesting",
    "weight": 1
   },
   {
@@ -1867,17 +1882,12 @@
   },
   {
    "source": "Source: Decapodes",
-   "target": "Tag: operad",
-   "weight": 1
-  },
-  {
-   "source": "Source: Decapodes",
    "target": "Tag: wiring diagram",
    "weight": 1
   },
   {
-   "source": "Source: Open cybernetic systems II parametrised optics and agency - General - LocalCharts 2",
-   "target": "Tag: optics",
+   "source": "Source: Decapodes",
+   "target": "Tag: operad",
    "weight": 1
   },
   {
@@ -1887,12 +1897,12 @@
   },
   {
    "source": "Source: Open cybernetic systems II parametrised optics and agency - General - LocalCharts 2",
-   "target": "Tag: para",
+   "target": "Tag: optics",
    "weight": 1
   },
   {
-   "source": "Source: concept with an attitude in nLab",
-   "target": "Tag: bloggable",
+   "source": "Source: Open cybernetic systems II parametrised optics and agency - General - LocalCharts 2",
+   "target": "Tag: para",
    "weight": 1
   },
   {
@@ -1901,23 +1911,8 @@
    "weight": 1
   },
   {
-   "source": "Source: Technical chapter on concept graphs .pdf",
-   "target": "Tag: graph rewriting",
-   "weight": 1
-  },
-  {
-   "source": "Source: Technical chapter on concept graphs .pdf",
-   "target": "Tag: interesting",
-   "weight": 1
-  },
-  {
-   "source": "Source: Technical chapter on concept graphs .pdf",
-   "target": "Tag: hierarchy",
-   "weight": 1
-  },
-  {
-   "source": "Source: Technical chapter on concept graphs .pdf",
-   "target": "Tag: tree",
+   "source": "Source: concept with an attitude in nLab",
+   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -1931,8 +1926,23 @@
    "weight": 1
   },
   {
-   "source": "Source: 2017 A higher-order temporal logic for dynamical systems",
-   "target": "Tag: dynamic",
+   "source": "Source: Technical chapter on concept graphs .pdf",
+   "target": "Tag: tree",
+   "weight": 1
+  },
+  {
+   "source": "Source: Technical chapter on concept graphs .pdf",
+   "target": "Tag: hierarchy",
+   "weight": 1
+  },
+  {
+   "source": "Source: Technical chapter on concept graphs .pdf",
+   "target": "Tag: interesting",
+   "weight": 1
+  },
+  {
+   "source": "Source: Technical chapter on concept graphs .pdf",
+   "target": "Tag: graph rewriting",
    "weight": 1
   },
   {
@@ -1942,12 +1952,12 @@
   },
   {
    "source": "Source: 2017 A higher-order temporal logic for dynamical systems",
-   "target": "Tag: rel category",
+   "target": "Tag: behavioural approach",
    "weight": 1
   },
   {
    "source": "Source: 2017 A higher-order temporal logic for dynamical systems",
-   "target": "Tag: behavioural approach",
+   "target": "Tag: sheaves",
    "weight": 1
   },
   {
@@ -1957,7 +1967,17 @@
   },
   {
    "source": "Source: 2017 A higher-order temporal logic for dynamical systems",
-   "target": "Tag: sheaves",
+   "target": "Tag: dynamic",
+   "weight": 1
+  },
+  {
+   "source": "Source: 2017 A higher-order temporal logic for dynamical systems",
+   "target": "Tag: rel category",
+   "weight": 1
+  },
+  {
+   "source": "Source: ARIA-Safeguarded-AI-Programme-Thesis-V1",
+   "target": "Tag: categories",
    "weight": 1
   },
   {
@@ -1966,7 +1986,7 @@
    "weight": 1
   },
   {
-   "source": "Source: ARIA-Safeguarded-AI-Programme-Thesis-V1",
+   "source": "Source: A Compositional Framework for Markov Processes",
    "target": "Tag: categories",
    "weight": 1
   },
@@ -1981,8 +2001,8 @@
    "weight": 1
   },
   {
-   "source": "Source: A Compositional Framework for Markov Processes",
-   "target": "Tag: categories",
+   "source": "Source: Geometric Deep Learning Grids, Groups, Graphs, Geodesics, and Gauges",
+   "target": "Tag: graph",
    "weight": 1
   },
   {
@@ -1991,18 +2011,13 @@
    "weight": 1
   },
   {
-   "source": "Source: Geometric Deep Learning Grids, Groups, Graphs, Geodesics, and Gauges",
-   "target": "Tag: graph",
+   "source": "Source: 2024 Autoregressive Large Language Models are Computationally Universal",
+   "target": "Tag: llm",
    "weight": 1
   },
   {
    "source": "Source: 2024 Autoregressive Large Language Models are Computationally Universal",
    "target": "Tag: computation",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2024 Autoregressive Large Language Models are Computationally Universal",
-   "target": "Tag: llm",
    "weight": 1
   },
   {
@@ -2022,22 +2037,17 @@
   },
   {
    "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
-   "target": "Tag: smc",
-   "weight": 1
-  },
-  {
-   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
-   "target": "Tag: lax functor",
-   "weight": 1
-  },
-  {
-   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
-   "target": "Tag: indexed category",
+   "target": "Tag: double category",
    "weight": 1
   },
   {
    "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
    "target": "Tag: presheaves",
+   "weight": 1
+  },
+  {
+   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
+   "target": "Tag: behavioural approach",
    "weight": 1
   },
   {
@@ -2052,7 +2062,22 @@
   },
   {
    "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
-   "target": "Tag: double category",
+   "target": "Tag: copresheaves",
+   "weight": 1
+  },
+  {
+   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
+   "target": "Tag: indexed category",
+   "weight": 1
+  },
+  {
+   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
+   "target": "Tag: smc",
+   "weight": 1
+  },
+  {
+   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
+   "target": "Tag: lax functor",
    "weight": 1
   },
   {
@@ -2061,18 +2086,18 @@
    "weight": 1
   },
   {
-   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
-   "target": "Tag: copresheaves",
-   "weight": 1
-  },
-  {
-   "source": "Source: A personal prospect of categorical cybernetics \u2013 General abstract nonsense.",
-   "target": "Tag: behavioural approach",
+   "source": "Source: KR in bicategories of Relations",
+   "target": "Tag: bi category",
    "weight": 1
   },
   {
    "source": "Source: KR in bicategories of Relations",
-   "target": "Tag: bi category",
+   "target": "Tag: poset",
+   "weight": 1
+  },
+  {
+   "source": "Source: KR in bicategories of Relations",
+   "target": "Tag: 2 category",
    "weight": 1
   },
   {
@@ -2086,13 +2111,8 @@
    "weight": 1
   },
   {
-   "source": "Source: KR in bicategories of Relations",
-   "target": "Tag: poset",
-   "weight": 1
-  },
-  {
-   "source": "Source: KR in bicategories of Relations",
-   "target": "Tag: 2 category",
+   "source": "Source: Up and Down the Ladder of Abstraction",
+   "target": "Tag: key",
    "weight": 1
   },
   {
@@ -2107,17 +2127,7 @@
   },
   {
    "source": "Source: Up and Down the Ladder of Abstraction",
-   "target": "Tag: key",
-   "weight": 1
-  },
-  {
-   "source": "Source: Up and Down the Ladder of Abstraction",
    "target": "Tag: bundle",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2020 (Project Narrative) Functorial Dynamics and Interaction: A computational design environment",
-   "target": "Tag: arena",
    "weight": 1
   },
   {
@@ -2126,13 +2136,18 @@
    "weight": 1
   },
   {
-   "source": "Source: Hamming - The Art Of Doing Science And Engineering 1997",
-   "target": "Tag: bloggable",
+   "source": "Source: 2020 (Project Narrative) Functorial Dynamics and Interaction: A computational design environment",
+   "target": "Tag: arena",
    "weight": 1
   },
   {
    "source": "Source: Hamming - The Art Of Doing Science And Engineering 1997",
    "target": "Tag: design",
+   "weight": 1
+  },
+  {
+   "source": "Source: Hamming - The Art Of Doing Science And Engineering 1997",
+   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -2143,6 +2158,16 @@
   {
    "source": "Source: It's Bayes All The Way Up",
    "target": "Tag: predictive processing",
+   "weight": 1
+  },
+  {
+   "source": "Source: Modeling Hierarchical System with Operads",
+   "target": "Tag: interface",
+   "weight": 1
+  },
+  {
+   "source": "Source: Modeling Hierarchical System with Operads",
+   "target": "Tag: tree",
    "weight": 1
   },
   {
@@ -2162,12 +2187,7 @@
   },
   {
    "source": "Source: Modeling Hierarchical System with Operads",
-   "target": "Tag: interface",
-   "weight": 1
-  },
-  {
-   "source": "Source: Modeling Hierarchical System with Operads",
-   "target": "Tag: tree",
+   "target": "Tag: wiring diagram",
    "weight": 1
   },
   {
@@ -2176,23 +2196,8 @@
    "weight": 1
   },
   {
-   "source": "Source: Modeling Hierarchical System with Operads",
-   "target": "Tag: wiring diagram",
-   "weight": 1
-  },
-  {
-   "source": "Source: 0 diagram representation of system lifecycle properties 0: Levels of abstraction for systems",
-   "target": "Tag: system",
-   "weight": 1
-  },
-  {
    "source": "Source: 0 diagram representation of system lifecycle properties 0: Levels of abstraction for systems",
    "target": "Tag: interface",
-   "weight": 1
-  },
-  {
-   "source": "Source: 0 diagram representation of system lifecycle properties 0: Levels of abstraction for systems",
-   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -2202,17 +2207,22 @@
   },
   {
    "source": "Source: 0 diagram representation of system lifecycle properties 0: Levels of abstraction for systems",
+   "target": "Tag: bloggable",
+   "weight": 1
+  },
+  {
+   "source": "Source: 0 diagram representation of system lifecycle properties 0: Levels of abstraction for systems",
    "target": "Tag: 2017bottomup",
+   "weight": 1
+  },
+  {
+   "source": "Source: 0 diagram representation of system lifecycle properties 0: Levels of abstraction for systems",
+   "target": "Tag: system",
    "weight": 1
   },
   {
    "source": "Source: Safeguarded AI programme Our TA1",
    "target": "Tag: safeguarded ai",
-   "weight": 1
-  },
-  {
-   "source": "Source: MBSE chapter Category Theory 43 S. Breiner, E. Subrahmanian, and R. D. Sriram",
-   "target": "Tag: sysml",
    "weight": 1
   },
   {
@@ -2223,6 +2233,11 @@
   {
    "source": "Source: MBSE chapter Category Theory 43 S. Breiner, E. Subrahmanian, and R. D. Sriram",
    "target": "Tag: mbse",
+   "weight": 1
+  },
+  {
+   "source": "Source: MBSE chapter Category Theory 43 S. Breiner, E. Subrahmanian, and R. D. Sriram",
+   "target": "Tag: sysml",
    "weight": 1
   },
   {
@@ -2257,32 +2272,12 @@
   },
   {
    "source": "Source: Open cybernetics systems I- feedback systems as optics \u2013 General abstract nonsense.",
-   "target": "Tag: optics",
-   "weight": 1
-  },
-  {
-   "source": "Source: Open cybernetics systems I- feedback systems as optics \u2013 General abstract nonsense.",
    "target": "Tag: lens",
    "weight": 1
   },
   {
-   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
-   "target": "Tag: trade offs",
-   "weight": 1
-  },
-  {
-   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
-   "target": "Tag: resource management",
-   "weight": 1
-  },
-  {
-   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
-   "target": "Tag: bloggable",
-   "weight": 1
-  },
-  {
-   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
-   "target": "Tag: poset",
+   "source": "Source: Open cybernetics systems I- feedback systems as optics \u2013 General abstract nonsense.",
+   "target": "Tag: optics",
    "weight": 1
   },
   {
@@ -2292,12 +2287,27 @@
   },
   {
    "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
+   "target": "Tag: poset",
+   "weight": 1
+  },
+  {
+   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
+   "target": "Tag: bloggable",
+   "weight": 1
+  },
+  {
+   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
+   "target": "Tag: trade offs",
+   "weight": 1
+  },
+  {
+   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
    "target": "Tag: design",
    "weight": 1
   },
   {
-   "source": "Source: Co-Design of Complex Systems",
-   "target": "Tag: trade offs",
+   "source": "Source: 201x Censi Formal tools for co-design mcdp-manual",
+   "target": "Tag: resource management",
    "weight": 1
   },
   {
@@ -2306,18 +2316,8 @@
    "weight": 1
   },
   {
-   "source": "Source: Monotone Co-Design Problems; or, everything is the same",
+   "source": "Source: Co-Design of Complex Systems",
    "target": "Tag: trade offs",
-   "weight": 1
-  },
-  {
-   "source": "Source: Monotone Co-Design Problems; or, everything is the same",
-   "target": "Tag: co design",
-   "weight": 1
-  },
-  {
-   "source": "Source: Monotone Co-Design Problems; or, everything is the same",
-   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -2332,17 +2332,27 @@
   },
   {
    "source": "Source: Monotone Co-Design Problems; or, everything is the same",
+   "target": "Tag: co design",
+   "weight": 1
+  },
+  {
+   "source": "Source: Monotone Co-Design Problems; or, everything is the same",
+   "target": "Tag: bloggable",
+   "weight": 1
+  },
+  {
+   "source": "Source: Monotone Co-Design Problems; or, everything is the same",
+   "target": "Tag: trade offs",
+   "weight": 1
+  },
+  {
+   "source": "Source: Monotone Co-Design Problems; or, everything is the same",
    "target": "Tag: wiring diagram",
    "weight": 1
   },
   {
    "source": "Source: Monotone Co-Design Problems; or, everything is the same",
    "target": "Tag: design",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2009 09 coecke the practising physicist",
-   "target": "Tag: smc",
    "weight": 1
   },
   {
@@ -2356,6 +2366,16 @@
    "weight": 1
   },
   {
+   "source": "Source: 2009 09 coecke the practising physicist",
+   "target": "Tag: smc",
+   "weight": 1
+  },
+  {
+   "source": "Source: 2023 Myers dynamics",
+   "target": "Tag: behavioural approach",
+   "weight": 1
+  },
+  {
    "source": "Source: 2023 Myers dynamics",
    "target": "Tag: arena",
    "weight": 1
@@ -2371,23 +2391,13 @@
    "weight": 1
   },
   {
-   "source": "Source: 2023 Myers dynamics",
-   "target": "Tag: behavioural approach",
+   "source": "Source: 2021 Myers double categories of Open Systems",
+   "target": "Tag: double category",
    "weight": 1
   },
   {
    "source": "Source: 2021 Myers double categories of Open Systems",
    "target": "Tag: arena",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2021 Myers double categories of Open Systems",
-   "target": "Tag: indexed category",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2021 Myers double categories of Open Systems",
-   "target": "Tag: double category",
    "weight": 1
   },
   {
@@ -2401,8 +2411,8 @@
    "weight": 1
   },
   {
-   "source": "Source: 2022 lynch Relational Composition of Physical Systems A Categorical Approach",
-   "target": "Tag: systems",
+   "source": "Source: 2021 Myers double categories of Open Systems",
+   "target": "Tag: indexed category",
    "weight": 1
   },
   {
@@ -2412,7 +2422,7 @@
   },
   {
    "source": "Source: 2022 lynch Relational Composition of Physical Systems A Categorical Approach",
-   "target": "Tag: operad",
+   "target": "Tag: systems",
    "weight": 1
   },
   {
@@ -2421,8 +2431,8 @@
    "weight": 1
   },
   {
-   "source": "Source: 2019 spivak Lenses",
-   "target": "Tag: smc",
+   "source": "Source: 2022 lynch Relational Composition of Physical Systems A Categorical Approach",
+   "target": "Tag: operad",
    "weight": 1
   },
   {
@@ -2432,12 +2442,17 @@
   },
   {
    "source": "Source: 2019 spivak Lenses",
-   "target": "Tag: para",
+   "target": "Tag: bundle",
    "weight": 1
   },
   {
    "source": "Source: 2019 spivak Lenses",
-   "target": "Tag: bundle",
+   "target": "Tag: smc",
+   "weight": 1
+  },
+  {
+   "source": "Source: 2019 spivak Lenses",
+   "target": "Tag: para",
    "weight": 1
   },
   {
@@ -2447,17 +2462,17 @@
   },
   {
    "source": "Source: 2014 coecke resources",
-   "target": "Tag: resource theories",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2014 coecke resources",
    "target": "Tag: commutative monoid",
    "weight": 1
   },
   {
    "source": "Source: 2014 coecke resources",
-   "target": "Tag: smc",
+   "target": "Tag: poset",
+   "weight": 1
+  },
+  {
+   "source": "Source: 2014 coecke resources",
+   "target": "Tag: resource theories",
    "weight": 1
   },
   {
@@ -2467,12 +2482,22 @@
   },
   {
    "source": "Source: 2014 coecke resources",
-   "target": "Tag: poset",
+   "target": "Tag: smc",
+   "weight": 1
+  },
+  {
+   "source": "Source: 9 Complex Adaptive System Design (Part 9) | Azimuth",
+   "target": "Tag: grothendieck construction",
    "weight": 1
   },
   {
    "source": "Source: 9 Complex Adaptive System Design (Part 9) | Azimuth",
    "target": "Tag: commitments",
+   "weight": 1
+  },
+  {
+   "source": "Source: 9 Complex Adaptive System Design (Part 9) | Azimuth",
+   "target": "Tag: scheduling",
    "weight": 1
   },
   {
@@ -2487,17 +2512,17 @@
   },
   {
    "source": "Source: 9 Complex Adaptive System Design (Part 9) | Azimuth",
-   "target": "Tag: scheduling",
-   "weight": 1
-  },
-  {
-   "source": "Source: 9 Complex Adaptive System Design (Part 9) | Azimuth",
    "target": "Tag: resource management",
    "weight": 1
   },
   {
-   "source": "Source: 9 Complex Adaptive System Design (Part 9) | Azimuth",
-   "target": "Tag: grothendieck construction",
+   "source": "Source: The Behavioral The BehavioralApproach to Open andInterconnected Systems",
+   "target": "Tag: category theory",
+   "weight": 1
+  },
+  {
+   "source": "Source: The Behavioral The BehavioralApproach to Open andInterconnected Systems",
+   "target": "Tag: tear zoom link",
    "weight": 1
   },
   {
@@ -2512,27 +2537,7 @@
   },
   {
    "source": "Source: The Behavioral The BehavioralApproach to Open andInterconnected Systems",
-   "target": "Tag: category theory",
-   "weight": 1
-  },
-  {
-   "source": "Source: The Behavioral The BehavioralApproach to Open andInterconnected Systems",
-   "target": "Tag: tear zoom link",
-   "weight": 1
-  },
-  {
-   "source": "Source: The Behavioral The BehavioralApproach to Open andInterconnected Systems",
    "target": "Tag: bundle",
-   "weight": 1
-  },
-  {
-   "source": "Source: 8 Complex Adaptive System Design (Part 8)",
-   "target": "Tag: petri net",
-   "weight": 1
-  },
-  {
-   "source": "Source: 8 Complex Adaptive System Design (Part 8)",
-   "target": "Tag: network",
    "weight": 1
   },
   {
@@ -2542,12 +2547,17 @@
   },
   {
    "source": "Source: 8 Complex Adaptive System Design (Part 8)",
-   "target": "Tag: resource management",
+   "target": "Tag: category theory",
    "weight": 1
   },
   {
    "source": "Source: 8 Complex Adaptive System Design (Part 8)",
-   "target": "Tag: category theory",
+   "target": "Tag: network",
+   "weight": 1
+  },
+  {
+   "source": "Source: 8 Complex Adaptive System Design (Part 8)",
+   "target": "Tag: petri net",
    "weight": 1
   },
   {
@@ -2556,8 +2566,8 @@
    "weight": 1
   },
   {
-   "source": "Source: An Algebra of Resource Sharing Machines",
-   "target": "Tag: indexed category",
+   "source": "Source: 8 Complex Adaptive System Design (Part 8)",
+   "target": "Tag: resource management",
    "weight": 1
   },
   {
@@ -2567,17 +2577,22 @@
   },
   {
    "source": "Source: An Algebra of Resource Sharing Machines",
+   "target": "Tag: indexed category",
+   "weight": 1
+  },
+  {
+   "source": "Source: An Algebra of Resource Sharing Machines",
    "target": "Tag: wiring diagram",
    "weight": 1
   },
   {
    "source": "Source: An Algebra of Resource Sharing Machines",
-   "target": "Tag: operad",
+   "target": "Tag: undirected system",
    "weight": 1
   },
   {
    "source": "Source: An Algebra of Resource Sharing Machines",
-   "target": "Tag: undirected system",
+   "target": "Tag: operad",
    "weight": 1
   },
   {
@@ -2587,7 +2602,7 @@
   },
   {
    "source": "Source: The Behavioral Approach to Systems Theory | The n-Category Caf\u00e9",
-   "target": "Tag: dynamic systems",
+   "target": "Tag: behavioural approach",
    "weight": 1
   },
   {
@@ -2597,7 +2612,7 @@
   },
   {
    "source": "Source: The Behavioral Approach to Systems Theory | The n-Category Caf\u00e9",
-   "target": "Tag: behavioural approach",
+   "target": "Tag: dynamic systems",
    "weight": 1
   },
   {
@@ -2607,17 +2622,22 @@
   },
   {
    "source": "Source: 6 Complex Adaptive System Design (Part 6) | Azimuth",
-   "target": "Tag: network operad",
-   "weight": 1
-  },
-  {
-   "source": "Source: 6 Complex Adaptive System Design (Part 6) | Azimuth",
    "target": "Tag: grothendieck construction",
    "weight": 1
   },
   {
+   "source": "Source: 6 Complex Adaptive System Design (Part 6) | Azimuth",
+   "target": "Tag: network operad",
+   "weight": 1
+  },
+  {
    "source": "Source: 5 Complex Adaptive System Design (Part 5) | Azimuth",
-   "target": "Tag: operad",
+   "target": "Tag: network operad",
+   "weight": 1
+  },
+  {
+   "source": "Source: 5 Complex Adaptive System Design (Part 5) | Azimuth",
+   "target": "Tag: dynamic",
    "weight": 1
   },
   {
@@ -2627,22 +2647,17 @@
   },
   {
    "source": "Source: 5 Complex Adaptive System Design (Part 5) | Azimuth",
-   "target": "Tag: dynamic",
-   "weight": 1
-  },
-  {
-   "source": "Source: 5 Complex Adaptive System Design (Part 5) | Azimuth",
-   "target": "Tag: network operad",
-   "weight": 1
-  },
-  {
-   "source": "Source: AlgebraicJulia blog - Composing open dynamical systems II- Undirected composition",
-   "target": "Tag: dynamic",
+   "target": "Tag: operad",
    "weight": 1
   },
   {
    "source": "Source: AlgebraicJulia blog - Composing open dynamical systems II- Undirected composition",
    "target": "Tag: categories",
+   "weight": 1
+  },
+  {
+   "source": "Source: AlgebraicJulia blog - Composing open dynamical systems II- Undirected composition",
+   "target": "Tag: dynamic",
    "weight": 1
   },
   {
@@ -2662,6 +2677,21 @@
   },
   {
    "source": "Source: 4 Complex Adaptive System Design (Part 4) | Azimuth",
+   "target": "Tag: network",
+   "weight": 1
+  },
+  {
+   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
+   "target": "Tag: categories",
+   "weight": 1
+  },
+  {
+   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
+   "target": "Tag: network operad",
+   "weight": 1
+  },
+  {
+   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
    "target": "Tag: network",
    "weight": 1
   },
@@ -2672,37 +2702,22 @@
   },
   {
    "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
-   "target": "Tag: network",
-   "weight": 1
-  },
-  {
-   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
-   "target": "Tag: network operad",
-   "weight": 1
-  },
-  {
-   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
-   "target": "Tag: categories",
-   "weight": 1
-  },
-  {
-   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
-   "target": "Tag: operad",
-   "weight": 1
-  },
-  {
-   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
    "target": "Tag: wiring diagram",
    "weight": 1
   },
   {
-   "source": "Source: Operads for complex system design specification, analysis and synthesis",
+   "source": "Source: 3 Complex Adaptive System Design (Part 3) | Azimuth",
    "target": "Tag: operad",
    "weight": 1
   },
   {
    "source": "Source: Operads for complex system design specification, analysis and synthesis",
    "target": "Tag: system",
+   "weight": 1
+  },
+  {
+   "source": "Source: Operads for complex system design specification, analysis and synthesis",
+   "target": "Tag: operad",
    "weight": 1
   },
   {
@@ -2717,26 +2732,6 @@
   },
   {
    "source": "Source: Encoding Compositionality in Classical Planning Solutions",
-   "target": "Tag: smc",
-   "weight": 1
-  },
-  {
-   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
-   "target": "Tag: pddl",
-   "weight": 1
-  },
-  {
-   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
-   "target": "Tag: bloggable",
-   "weight": 1
-  },
-  {
-   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
-   "target": "Tag: requirements",
-   "weight": 1
-  },
-  {
-   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
    "target": "Tag: categories",
    "weight": 1
   },
@@ -2746,8 +2741,23 @@
    "weight": 1
   },
   {
-   "source": "Source: ModelCollab",
-   "target": "Tag: tools",
+   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
+   "target": "Tag: requirements",
+   "weight": 1
+  },
+  {
+   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
+   "target": "Tag: bloggable",
+   "weight": 1
+  },
+  {
+   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
+   "target": "Tag: smc",
+   "weight": 1
+  },
+  {
+   "source": "Source: Encoding Compositionality in Classical Planning Solutions",
+   "target": "Tag: pddl",
    "weight": 1
   },
   {
@@ -2762,12 +2772,12 @@
   },
   {
    "source": "Source: ModelCollab",
-   "target": "Tag: bloggable",
+   "target": "Tag: tools",
    "weight": 1
   },
   {
-   "source": "Source: Span(Graph) a Canonical Feedback Algebra of Open Transition Systems",
-   "target": "Tag: smc",
+   "source": "Source: ModelCollab",
+   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -2777,7 +2787,17 @@
   },
   {
    "source": "Source: Span(Graph) a Canonical Feedback Algebra of Open Transition Systems",
+   "target": "Tag: smc",
+   "weight": 1
+  },
+  {
+   "source": "Source: Span(Graph) a Canonical Feedback Algebra of Open Transition Systems",
    "target": "Tag: open system",
+   "weight": 1
+  },
+  {
+   "source": "Source: 7 Complex Adaptive System Design (Part 7)",
+   "target": "Tag: network operad",
    "weight": 1
   },
   {
@@ -2792,27 +2812,12 @@
   },
   {
    "source": "Source: 7 Complex Adaptive System Design (Part 7)",
-   "target": "Tag: resource management",
-   "weight": 1
-  },
-  {
-   "source": "Source: 7 Complex Adaptive System Design (Part 7)",
-   "target": "Tag: network operad",
-   "weight": 1
-  },
-  {
-   "source": "Source: 7 Complex Adaptive System Design (Part 7)",
    "target": "Tag: design",
    "weight": 1
   },
   {
-   "source": "Source: Robot Task Plans using Functorial Data Migrations",
-   "target": "Tag: functor",
-   "weight": 1
-  },
-  {
-   "source": "Source: Robot Task Plans using Functorial Data Migrations",
-   "target": "Tag: pddl",
+   "source": "Source: 7 Complex Adaptive System Design (Part 7)",
+   "target": "Tag: resource management",
    "weight": 1
   },
   {
@@ -2822,12 +2827,12 @@
   },
   {
    "source": "Source: Robot Task Plans using Functorial Data Migrations",
-   "target": "Tag: alternate perspectives",
+   "target": "Tag: functor",
    "weight": 1
   },
   {
    "source": "Source: Robot Task Plans using Functorial Data Migrations",
-   "target": "Tag: planning",
+   "target": "Tag: dpo",
    "weight": 1
   },
   {
@@ -2837,7 +2842,17 @@
   },
   {
    "source": "Source: Robot Task Plans using Functorial Data Migrations",
-   "target": "Tag: dpo",
+   "target": "Tag: planning",
+   "weight": 1
+  },
+  {
+   "source": "Source: Robot Task Plans using Functorial Data Migrations",
+   "target": "Tag: pddl",
+   "weight": 1
+  },
+  {
+   "source": "Source: Robot Task Plans using Functorial Data Migrations",
+   "target": "Tag: alternate perspectives",
    "weight": 1
   },
   {
@@ -2857,12 +2872,12 @@
   },
   {
    "source": "Source: Open Petri net",
-   "target": "Tag: petri net",
+   "target": "Tag: commutative monoid",
    "weight": 1
   },
   {
    "source": "Source: Open Petri net",
-   "target": "Tag: commutative monoid",
+   "target": "Tag: double category",
    "weight": 1
   },
   {
@@ -2877,7 +2892,7 @@
   },
   {
    "source": "Source: Open Petri net",
-   "target": "Tag: double category",
+   "target": "Tag: petri net",
    "weight": 1
   },
   {
@@ -2892,11 +2907,6 @@
   },
   {
    "source": "Source: Agent model via graph rewrite",
-   "target": "Tag: wiring diagram",
-   "weight": 1
-  },
-  {
-   "source": "Source: Agent model via graph rewrite",
    "target": "Tag: dynamic systems",
    "weight": 1
   },
@@ -2906,13 +2916,13 @@
    "weight": 1
   },
   {
-   "source": "Source: Categories of sigma nets",
-   "target": "Tag: smc",
+   "source": "Source: Agent model via graph rewrite",
+   "target": "Tag: wiring diagram",
    "weight": 1
   },
   {
    "source": "Source: Categories of sigma nets",
-   "target": "Tag: generative model",
+   "target": "Tag: commutative monoid",
    "weight": 1
   },
   {
@@ -2922,12 +2932,22 @@
   },
   {
    "source": "Source: Categories of sigma nets",
-   "target": "Tag: commutative monoid",
+   "target": "Tag: generative model",
+   "weight": 1
+  },
+  {
+   "source": "Source: Categories of sigma nets",
+   "target": "Tag: smc",
    "weight": 1
   },
   {
    "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
-   "target": "Tag: pddl",
+   "target": "Tag: categories",
+   "weight": 1
+  },
+  {
+   "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
+   "target": "Tag: logic",
    "weight": 1
   },
   {
@@ -2937,17 +2957,7 @@
   },
   {
    "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
-   "target": "Tag: categories",
-   "weight": 1
-  },
-  {
-   "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
-   "target": "Tag: planning",
-   "weight": 1
-  },
-  {
-   "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
-   "target": "Tag: c set",
+   "target": "Tag: copresheaves",
    "weight": 1
   },
   {
@@ -2957,47 +2967,17 @@
   },
   {
    "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
-   "target": "Tag: copresheaves",
+   "target": "Tag: planning",
    "weight": 1
   },
   {
    "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
-   "target": "Tag: logic",
+   "target": "Tag: pddl",
    "weight": 1
   },
   {
-   "source": "Source: Introducing CatColab",
-   "target": "Tag: functor",
-   "weight": 1
-  },
-  {
-   "source": "Source: Introducing CatColab",
-   "target": "Tag: lax functor",
-   "weight": 1
-  },
-  {
-   "source": "Source: Introducing CatColab",
-   "target": "Tag: model",
-   "weight": 1
-  },
-  {
-   "source": "Source: Introducing CatColab",
-   "target": "Tag: bloggable",
-   "weight": 1
-  },
-  {
-   "source": "Source: Introducing CatColab",
-   "target": "Tag: stock and flow",
-   "weight": 1
-  },
-  {
-   "source": "Source: Introducing CatColab",
-   "target": "Tag: tools",
-   "weight": 1
-  },
-  {
-   "source": "Source: Introducing CatColab",
-   "target": "Tag: categories",
+   "source": "Source: Using categorical logic for AI planning \u2013 Topos Institute",
+   "target": "Tag: c set",
    "weight": 1
   },
   {
@@ -3007,7 +2987,52 @@
   },
   {
    "source": "Source: Introducing CatColab",
+   "target": "Tag: categories",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
+   "target": "Tag: functor",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
+   "target": "Tag: stock and flow",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
    "target": "Tag: olog",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
+   "target": "Tag: tools",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
+   "target": "Tag: bloggable",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
+   "target": "Tag: model",
+   "weight": 1
+  },
+  {
+   "source": "Source: Introducing CatColab",
+   "target": "Tag: lax functor",
+   "weight": 1
+  },
+  {
+   "source": "Source: Compositional Modeling with Stock and Flow Diagr",
+   "target": "Tag: categories",
+   "weight": 1
+  },
+  {
+   "source": "Source: Compositional Modeling with Stock and Flow Diagr",
+   "target": "Tag: stock and flow",
    "weight": 1
   },
   {
@@ -3018,16 +3043,6 @@
   {
    "source": "Source: Compositional Modeling with Stock and Flow Diagr",
    "target": "Tag: dynamic system",
-   "weight": 1
-  },
-  {
-   "source": "Source: Compositional Modeling with Stock and Flow Diagr",
-   "target": "Tag: stock and flow",
-   "weight": 1
-  },
-  {
-   "source": "Source: Compositional Modeling with Stock and Flow Diagr",
-   "target": "Tag: categories",
    "weight": 1
   },
   {
@@ -3052,12 +3067,7 @@
   },
   {
    "source": "Source: 2023 sheafs for design",
-   "target": "Tag: 2 category",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2023 sheafs for design",
-   "target": "Tag: design",
+   "target": "Tag: sheaves",
    "weight": 1
   },
   {
@@ -3067,7 +3077,12 @@
   },
   {
    "source": "Source: 2023 sheafs for design",
-   "target": "Tag: sheaves",
+   "target": "Tag: 2 category",
+   "weight": 1
+  },
+  {
+   "source": "Source: 2023 sheafs for design",
+   "target": "Tag: design",
    "weight": 1
   },
   {
@@ -3087,16 +3102,11 @@
   },
   {
    "source": "Source: castlelab.princeton.edu ch 15",
-   "target": "Tag: rl",
+   "target": "Tag: stochastic optimisation",
    "weight": 1
   },
   {
    "source": "Source: castlelab.princeton.edu ch 15",
-   "target": "Tag: stochastic optimisation",
-   "weight": 1
-  },
-  {
-   "source": "Source: castlelab.princeton.edu ch7",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3106,13 +3116,18 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 19",
+   "source": "Source: castlelab.princeton.edu ch7",
    "target": "Tag: rl",
    "weight": 1
   },
   {
    "source": "Source: castlelab.princeton.edu ch 19",
    "target": "Tag: stochastic optimisation",
+   "weight": 1
+  },
+  {
+   "source": "Source: castlelab.princeton.edu ch 19",
+   "target": "Tag: rl",
    "weight": 1
   },
   {
@@ -3122,16 +3137,11 @@
   },
   {
    "source": "Source: castlelab.princeton.edu ch 13",
-   "target": "Tag: rl",
+   "target": "Tag: stochastic optimisation",
    "weight": 1
   },
   {
    "source": "Source: castlelab.princeton.edu ch 13",
-   "target": "Tag: stochastic optimisation",
-   "weight": 1
-  },
-  {
-   "source": "Source: castlelab.princeton.edu ch 5",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3141,7 +3151,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 8",
+   "source": "Source: castlelab.princeton.edu ch 5",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3151,7 +3161,7 @@
    "weight": 1
   },
   {
-   "source": "Source: From the jungle of stochastic optimization to\u2026 Sequential Decision Analytics \u2013 Castle Labs",
+   "source": "Source: castlelab.princeton.edu ch 8",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3161,7 +3171,7 @@
    "weight": 1
   },
   {
-   "source": "Source: RLSO ch 2",
+   "source": "Source: From the jungle of stochastic optimization to\u2026 Sequential Decision Analytics \u2013 Castle Labs",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3171,7 +3181,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu index",
+   "source": "Source: RLSO ch 2",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3181,7 +3191,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 4",
+   "source": "Source: castlelab.princeton.edu index",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3191,7 +3201,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 12",
+   "source": "Source: castlelab.princeton.edu ch 4",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3201,7 +3211,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 20",
+   "source": "Source: castlelab.princeton.edu ch 12",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3211,7 +3221,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 18",
+   "source": "Source: castlelab.princeton.edu ch 20",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3221,7 +3231,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 11",
+   "source": "Source: castlelab.princeton.edu ch 18",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3231,7 +3241,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 10",
+   "source": "Source: castlelab.princeton.edu ch 11",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3241,7 +3251,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 17",
+   "source": "Source: castlelab.princeton.edu ch 10",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3251,7 +3261,7 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 16",
+   "source": "Source: castlelab.princeton.edu ch 17",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3261,7 +3271,7 @@
    "weight": 1
   },
   {
-   "source": "Source: On State Variables, Bandit Problems and POMDPs",
+   "source": "Source: castlelab.princeton.edu ch 16",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3271,13 +3281,18 @@
    "weight": 1
   },
   {
-   "source": "Source: castlelab.princeton.edu ch 9",
+   "source": "Source: On State Variables, Bandit Problems and POMDPs",
    "target": "Tag: rl",
    "weight": 1
   },
   {
    "source": "Source: castlelab.princeton.edu ch 9",
    "target": "Tag: stochastic optimisation",
+   "weight": 1
+  },
+  {
+   "source": "Source: castlelab.princeton.edu ch 9",
+   "target": "Tag: rl",
    "weight": 1
   },
   {
@@ -3287,16 +3302,11 @@
   },
   {
    "source": "Source: castlelab.princeton.edu ch 6",
-   "target": "Tag: rl",
+   "target": "Tag: stochastic optimisation",
    "weight": 1
   },
   {
    "source": "Source: castlelab.princeton.edu ch 6",
-   "target": "Tag: stochastic optimisation",
-   "weight": 1
-  },
-  {
-   "source": "Source: RLSO-Cover-Chapter1-June302021",
    "target": "Tag: rl",
    "weight": 1
   },
@@ -3306,13 +3316,18 @@
    "weight": 1
   },
   {
-   "source": "Source: Powell-SDAM-Nov242022_final_w_frontcover",
+   "source": "Source: RLSO-Cover-Chapter1-June302021",
    "target": "Tag: rl",
    "weight": 1
   },
   {
    "source": "Source: Powell-SDAM-Nov242022_final_w_frontcover",
    "target": "Tag: stochastic optimisation",
+   "weight": 1
+  },
+  {
+   "source": "Source: Powell-SDAM-Nov242022_final_w_frontcover",
+   "target": "Tag: rl",
    "weight": 1
   },
   {
@@ -3322,11 +3337,16 @@
   },
   {
    "source": "Source: 2018 A Unified Framework for Stochastic Optimization",
-   "target": "Tag: rl",
+   "target": "Tag: stochastic optimisation",
    "weight": 1
   },
   {
    "source": "Source: 2018 A Unified Framework for Stochastic Optimization",
+   "target": "Tag: rl",
+   "weight": 1
+  },
+  {
+   "source": "Source: 2020 Powell SEQUENTIAL DECISION ANALYTICS AND MODELING Modeling exercises with python",
    "target": "Tag: stochastic optimisation",
    "weight": 1
   },
@@ -3337,32 +3357,12 @@
   },
   {
    "source": "Source: 2020 Powell SEQUENTIAL DECISION ANALYTICS AND MODELING Modeling exercises with python",
-   "target": "Tag: rl",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2020 Powell SEQUENTIAL DECISION ANALYTICS AND MODELING Modeling exercises with python",
-   "target": "Tag: stochastic optimisation",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2020 Powell SEQUENTIAL DECISION ANALYTICS AND MODELING Modeling exercises with python",
    "target": "Tag: experimentable",
    "weight": 1
   },
   {
-   "source": "Source: Compositional Cyber-Physical Systems Modeling",
-   "target": "Tag: system",
-   "weight": 1
-  },
-  {
-   "source": "Source: Compositional Cyber-Physical Systems Modeling",
-   "target": "Tag: model",
-   "weight": 1
-  },
-  {
-   "source": "Source: Compositional Cyber-Physical Systems Modeling",
-   "target": "Tag: lens",
+   "source": "Source: 2020 Powell SEQUENTIAL DECISION ANALYTICS AND MODELING Modeling exercises with python",
+   "target": "Tag: rl",
    "weight": 1
   },
   {
@@ -3376,7 +3376,17 @@
    "weight": 1
   },
   {
-   "source": "Source: Semantics of Cyber-Physical Systems",
+   "source": "Source: Compositional Cyber-Physical Systems Modeling",
+   "target": "Tag: lens",
+   "weight": 1
+  },
+  {
+   "source": "Source: Compositional Cyber-Physical Systems Modeling",
+   "target": "Tag: model",
+   "weight": 1
+  },
+  {
+   "source": "Source: Compositional Cyber-Physical Systems Modeling",
    "target": "Tag: system",
    "weight": 1
   },
@@ -3396,8 +3406,8 @@
    "weight": 1
   },
   {
-   "source": "Source: Spivak-Operadics-The-mathematics-of-modular-design",
-   "target": "Tag: self similarity",
+   "source": "Source: Semantics of Cyber-Physical Systems",
+   "target": "Tag: system",
    "weight": 1
   },
   {
@@ -3416,23 +3426,8 @@
    "weight": 1
   },
   {
-   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
-   "target": "Tag: port graph",
-   "weight": 1
-  },
-  {
-   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
-   "target": "Tag: dynamic system",
-   "weight": 1
-  },
-  {
-   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
-   "target": "Tag: operad",
-   "weight": 1
-  },
-  {
-   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
-   "target": "Tag: c set",
+   "source": "Source: Spivak-Operadics-The-mathematics-of-modular-design",
+   "target": "Tag: self similarity",
    "weight": 1
   },
   {
@@ -3442,7 +3437,27 @@
   },
   {
    "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
+   "target": "Tag: port graph",
+   "weight": 1
+  },
+  {
+   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
+   "target": "Tag: c set",
+   "weight": 1
+  },
+  {
+   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
+   "target": "Tag: dynamic system",
+   "weight": 1
+  },
+  {
+   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
    "target": "Tag: undirected system",
+   "weight": 1
+  },
+  {
+   "source": "Source: Operadic Modeling of Dynamical Systems: Mathematics and Computation",
+   "target": "Tag: operad",
    "weight": 1
   },
   {
@@ -3452,12 +3467,12 @@
   },
   {
    "source": "Source: Wiring diagrams for computing",
-   "target": "Tag: operad",
+   "target": "Tag: smcs",
    "weight": 1
   },
   {
    "source": "Source: Wiring diagrams for computing",
-   "target": "Tag: smcs",
+   "target": "Tag: operad",
    "weight": 1
   },
   {
@@ -3472,7 +3487,7 @@
   },
   {
    "source": "Source: orchestrating_agents",
-   "target": "Tag: api",
+   "target": "Tag: experimentable",
    "weight": 1
   },
   {
@@ -3482,7 +3497,7 @@
   },
   {
    "source": "Source: orchestrating_agents",
-   "target": "Tag: experimentable",
+   "target": "Tag: api",
    "weight": 1
   },
   {
@@ -3517,12 +3532,12 @@
   },
   {
    "source": "Source: 2024 THEORIZING WITH LARGE LANGUAGE MODELS",
-   "target": "Tag: reasoning",
+   "target": "Tag: llm",
    "weight": 1
   },
   {
    "source": "Source: 2024 THEORIZING WITH LARGE LANGUAGE MODELS",
-   "target": "Tag: llm",
+   "target": "Tag: reasoning",
    "weight": 1
   },
   {
@@ -3532,17 +3547,12 @@
   },
   {
    "source": "Source: 2nd rev Artificial Intelligence in the Knowledge Economy",
-   "target": "Tag: agents",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2nd rev Artificial Intelligence in the Knowledge Economy",
    "target": "Tag: llms",
    "weight": 1
   },
   {
-   "source": "Source: GPT Actions library - GitHub | OpenAI Cookbook",
-   "target": "Tag: api",
+   "source": "Source: 2nd rev Artificial Intelligence in the Knowledge Economy",
+   "target": "Tag: agents",
    "weight": 1
   },
   {
@@ -3552,12 +3562,12 @@
   },
   {
    "source": "Source: GPT Actions library - GitHub | OpenAI Cookbook",
-   "target": "Tag: experimentable",
+   "target": "Tag: api",
    "weight": 1
   },
   {
-   "source": "Source: PG-Schemas: Schemas for Property Graphs",
-   "target": "Tag: ontology",
+   "source": "Source: GPT Actions library - GitHub | OpenAI Cookbook",
+   "target": "Tag: experimentable",
    "weight": 1
   },
   {
@@ -3571,8 +3581,8 @@
    "weight": 1
   },
   {
-   "source": "Source: 1 diagram representation of system lifecycle properties I",
-   "target": "Tag: system",
+   "source": "Source: PG-Schemas: Schemas for Property Graphs",
+   "target": "Tag: ontology",
    "weight": 1
   },
   {
@@ -3582,12 +3592,12 @@
   },
   {
    "source": "Source: 1 diagram representation of system lifecycle properties I",
-   "target": "Tag: bloggable",
+   "target": "Tag: convey",
    "weight": 1
   },
   {
    "source": "Source: 1 diagram representation of system lifecycle properties I",
-   "target": "Tag: convey",
+   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -3596,7 +3606,7 @@
    "weight": 1
   },
   {
-   "source": "Source: 4 diagram representation of system lifecycle properties IV",
+   "source": "Source: 1 diagram representation of system lifecycle properties I",
    "target": "Tag: system",
    "weight": 1
   },
@@ -3607,12 +3617,12 @@
   },
   {
    "source": "Source: 4 diagram representation of system lifecycle properties IV",
-   "target": "Tag: bloggable",
+   "target": "Tag: convey",
    "weight": 1
   },
   {
    "source": "Source: 4 diagram representation of system lifecycle properties IV",
-   "target": "Tag: convey",
+   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -3621,8 +3631,8 @@
    "weight": 1
   },
   {
-   "source": "Source: Toward a Theory of Design as Computation \u2014 Dorian Taylor",
-   "target": "Tag: computation",
+   "source": "Source: 4 diagram representation of system lifecycle properties IV",
+   "target": "Tag: system",
    "weight": 1
   },
   {
@@ -3632,7 +3642,17 @@
   },
   {
    "source": "Source: Toward a Theory of Design as Computation \u2014 Dorian Taylor",
+   "target": "Tag: computation",
+   "weight": 1
+  },
+  {
+   "source": "Source: Toward a Theory of Design as Computation \u2014 Dorian Taylor",
    "target": "Tag: design",
+   "weight": 1
+  },
+  {
+   "source": "Source: Category-Theoretic Formulation of the Model-Based Systems Architecting Cognitive-Computational Cycle",
+   "target": "Tag: categories",
    "weight": 1
   },
   {
@@ -3648,11 +3668,6 @@
   {
    "source": "Source: Category-Theoretic Formulation of the Model-Based Systems Architecting Cognitive-Computational Cycle",
    "target": "Tag: alternate perspectives",
-   "weight": 1
-  },
-  {
-   "source": "Source: Category-Theoretic Formulation of the Model-Based Systems Architecting Cognitive-Computational Cycle",
-   "target": "Tag: categories",
    "weight": 1
   },
   {
@@ -3687,17 +3702,7 @@
   },
   {
    "source": "Source: 2 diagram representation of system lifecycle properties II",
-   "target": "Tag: system",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2 diagram representation of system lifecycle properties II",
    "target": "Tag: interface",
-   "weight": 1
-  },
-  {
-   "source": "Source: 2 diagram representation of system lifecycle properties II",
-   "target": "Tag: bloggable",
    "weight": 1
   },
   {
@@ -3707,12 +3712,17 @@
   },
   {
    "source": "Source: 2 diagram representation of system lifecycle properties II",
+   "target": "Tag: bloggable",
+   "weight": 1
+  },
+  {
+   "source": "Source: 2 diagram representation of system lifecycle properties II",
    "target": "Tag: 2017bottomup",
    "weight": 1
   },
   {
-   "source": "Source: Categories and Compositionality with a view to Applications",
-   "target": "Tag: resource theories",
+   "source": "Source: 2 diagram representation of system lifecycle properties II",
+   "target": "Tag: system",
    "weight": 1
   },
   {
@@ -3722,12 +3732,17 @@
   },
   {
    "source": "Source: Categories and Compositionality with a view to Applications",
+   "target": "Tag: co design",
+   "weight": 1
+  },
+  {
+   "source": "Source: Categories and Compositionality with a view to Applications",
    "target": "Tag: bloggable",
    "weight": 1
   },
   {
    "source": "Source: Categories and Compositionality with a view to Applications",
-   "target": "Tag: co design",
+   "target": "Tag: resource theories",
    "weight": 1
   },
   {
@@ -3757,23 +3772,18 @@
   },
   {
    "source": "Source: 202x Improving the engineering design process by simulating iteration impact with ASM2.0",
-   "target": "Tag: cambridge design",
+   "target": "Tag: tools",
    "weight": 1
   },
   {
    "source": "Source: 202x Improving the engineering design process by simulating iteration impact with ASM2.0",
-   "target": "Tag: tools",
+   "target": "Tag: cambridge design",
    "weight": 1
   },
   {
    "source": "Source: 202x Improving the engineering design process by simulating iteration impact with ASM2.0",
    "target": "Tag: design",
    "weight": 1
-  },
-  {
-   "source": "Tag: goldblatt",
-   "target": "Foray: Canon",
-   "weight": 5
   },
   {
    "source": "Tag: sheaf",
@@ -3784,6 +3794,11 @@
    "source": "Tag: logic",
    "target": "Foray: Canon",
    "weight": 1
+  },
+  {
+   "source": "Tag: goldblatt",
+   "target": "Foray: Canon",
+   "weight": 5
   },
   {
    "source": "Tag: convey",
@@ -3806,17 +3821,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: self similarity",
-   "target": "Foray: Canon",
-   "weight": 1
-  },
-  {
    "source": "Tag: hierarchy",
-   "target": "Foray: Canon",
-   "weight": 1
-  },
-  {
-   "source": "Tag: operads",
    "target": "Foray: Canon",
    "weight": 1
   },
@@ -3826,9 +3831,14 @@
    "weight": 1
   },
   {
-   "source": "Tag: system",
-   "target": "Foray: 2nd tier",
-   "weight": 3
+   "source": "Tag: operads",
+   "target": "Foray: Canon",
+   "weight": 1
+  },
+  {
+   "source": "Tag: self similarity",
+   "target": "Foray: Canon",
+   "weight": 1
   },
   {
    "source": "Tag: interface",
@@ -3836,19 +3846,24 @@
    "weight": 3
   },
   {
-   "source": "Tag: bloggable",
-   "target": "Foray: 2nd tier",
-   "weight": 5
-  },
-  {
    "source": "Tag: convey",
    "target": "Foray: 2nd tier",
    "weight": 2
   },
   {
+   "source": "Tag: bloggable",
+   "target": "Foray: 2nd tier",
+   "weight": 5
+  },
+  {
    "source": "Tag: 2017bottomup",
    "target": "Foray: 2nd tier",
    "weight": 2
+  },
+  {
+   "source": "Tag: system",
+   "target": "Foray: 2nd tier",
+   "weight": 3
   },
   {
    "source": "Tag: llm",
@@ -3871,7 +3886,12 @@
    "weight": 2
   },
   {
-   "source": "Tag: interesting",
+   "source": "Tag: graph",
+   "target": "Foray: 2nd tier",
+   "weight": 4
+  },
+  {
+   "source": "Tag: experimentable",
    "target": "Foray: 2nd tier",
    "weight": 2
   },
@@ -3881,12 +3901,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: graph",
-   "target": "Foray: 2nd tier",
-   "weight": 4
-  },
-  {
-   "source": "Tag: experimentable",
+   "source": "Tag: interesting",
    "target": "Foray: 2nd tier",
    "weight": 2
   },
@@ -3921,32 +3936,17 @@
    "weight": 2
   },
   {
-   "source": "Tag: optics",
-   "target": "Foray: 2nd tier",
-   "weight": 3
-  },
-  {
    "source": "Tag: para",
    "target": "Foray: 2nd tier",
    "weight": 2
   },
   {
-   "source": "Tag: category theory",
-   "target": "Foray: 2nd tier",
-   "weight": 2
-  },
-  {
-   "source": "Tag: graph rewriting",
-   "target": "Foray: 2nd tier",
-   "weight": 1
-  },
-  {
-   "source": "Tag: hierarchy",
+   "source": "Tag: optics",
    "target": "Foray: 2nd tier",
    "weight": 3
   },
   {
-   "source": "Tag: tree",
+   "source": "Tag: category theory",
    "target": "Foray: 2nd tier",
    "weight": 2
   },
@@ -3956,17 +3956,17 @@
    "weight": 1
   },
   {
-   "source": "Tag: dynamic",
+   "source": "Tag: tree",
    "target": "Foray: 2nd tier",
-   "weight": 1
+   "weight": 2
   },
   {
-   "source": "Tag: topos",
+   "source": "Tag: hierarchy",
    "target": "Foray: 2nd tier",
-   "weight": 1
+   "weight": 3
   },
   {
-   "source": "Tag: rel category",
+   "source": "Tag: graph rewriting",
    "target": "Foray: 2nd tier",
    "weight": 1
   },
@@ -3977,6 +3977,21 @@
   },
   {
    "source": "Tag: sheaves",
+   "target": "Foray: 2nd tier",
+   "weight": 1
+  },
+  {
+   "source": "Tag: topos",
+   "target": "Foray: 2nd tier",
+   "weight": 1
+  },
+  {
+   "source": "Tag: dynamic",
+   "target": "Foray: 2nd tier",
+   "weight": 1
+  },
+  {
+   "source": "Tag: rel category",
    "target": "Foray: 2nd tier",
    "weight": 1
   },
@@ -4011,12 +4026,7 @@
    "weight": 2
   },
   {
-   "source": "Tag: lax functor",
-   "target": "Foray: 2nd tier",
-   "weight": 1
-  },
-  {
-   "source": "Tag: indexed category",
+   "source": "Tag: double category",
    "target": "Foray: 2nd tier",
    "weight": 1
   },
@@ -4036,7 +4046,12 @@
    "weight": 1
   },
   {
-   "source": "Tag: double category",
+   "source": "Tag: indexed category",
+   "target": "Foray: 2nd tier",
+   "weight": 1
+  },
+  {
+   "source": "Tag: lax functor",
    "target": "Foray: 2nd tier",
    "weight": 1
   },
@@ -4046,12 +4061,12 @@
    "weight": 1
   },
   {
-   "source": "Tag: unbundling",
+   "source": "Tag: key",
    "target": "Foray: 2nd tier",
    "weight": 1
   },
   {
-   "source": "Tag: key",
+   "source": "Tag: unbundling",
    "target": "Foray: 2nd tier",
    "weight": 1
   },
@@ -4091,17 +4106,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: trade offs",
-   "target": "Foray: Co design for trade offs",
-   "weight": 3
-  },
-  {
-   "source": "Tag: bloggable",
-   "target": "Foray: Co design for trade offs",
-   "weight": 2
-  },
-  {
-   "source": "Tag: resource management",
+   "source": "Tag: category theory",
    "target": "Foray: Co design for trade offs",
    "weight": 1
   },
@@ -4111,14 +4116,24 @@
    "weight": 2
   },
   {
-   "source": "Tag: category theory",
+   "source": "Tag: bloggable",
    "target": "Foray: Co design for trade offs",
-   "weight": 1
+   "weight": 2
+  },
+  {
+   "source": "Tag: trade offs",
+   "target": "Foray: Co design for trade offs",
+   "weight": 3
   },
   {
    "source": "Tag: design",
    "target": "Foray: Co design for trade offs",
    "weight": 2
+  },
+  {
+   "source": "Tag: resource management",
+   "target": "Foray: Co design for trade offs",
+   "weight": 1
   },
   {
    "source": "Tag: co design",
@@ -4136,11 +4151,6 @@
    "weight": 1
   },
   {
-   "source": "Tag: smc",
-   "target": "Foray: Dynamic project states",
-   "weight": 4
-  },
-  {
    "source": "Tag: category theory",
    "target": "Foray: Dynamic project states",
    "weight": 1
@@ -4149,6 +4159,16 @@
    "source": "Tag: bloggable",
    "target": "Foray: Dynamic project states",
    "weight": 2
+  },
+  {
+   "source": "Tag: smc",
+   "target": "Foray: Dynamic project states",
+   "weight": 4
+  },
+  {
+   "source": "Tag: behavioural approach",
+   "target": "Foray: Dynamic project states",
+   "weight": 3
   },
   {
    "source": "Tag: arena",
@@ -4161,17 +4181,17 @@
    "weight": 1
   },
   {
-   "source": "Tag: behavioural approach",
-   "target": "Foray: Dynamic project states",
-   "weight": 3
-  },
-  {
-   "source": "Tag: indexed category",
+   "source": "Tag: double category",
    "target": "Foray: Dynamic project states",
    "weight": 1
   },
   {
-   "source": "Tag: double category",
+   "source": "Tag: open system",
+   "target": "Foray: Dynamic project states",
+   "weight": 1
+  },
+  {
+   "source": "Tag: indexed category",
    "target": "Foray: Dynamic project states",
    "weight": 1
   },
@@ -4181,7 +4201,7 @@
    "weight": 2
   },
   {
-   "source": "Tag: open system",
+   "source": "Tag: categories",
    "target": "Foray: Dynamic project states",
    "weight": 1
   },
@@ -4191,17 +4211,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: categories",
-   "target": "Foray: Dynamic project states",
-   "weight": 1
-  },
-  {
    "source": "Tag: operad",
-   "target": "Foray: Dynamic project states",
-   "weight": 1
-  },
-  {
-   "source": "Tag: lens",
    "target": "Foray: Dynamic project states",
    "weight": 1
   },
@@ -4211,7 +4221,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: resource theories",
+   "source": "Tag: lens",
    "target": "Foray: Dynamic project states",
    "weight": 1
   },
@@ -4226,9 +4236,24 @@
    "weight": 1
   },
   {
+   "source": "Tag: resource theories",
+   "target": "Foray: Dynamic project states",
+   "weight": 1
+  },
+  {
+   "source": "Tag: grothendieck construction",
+   "target": "Foray: Dynamics ( sharing)",
+   "weight": 2
+  },
+  {
    "source": "Tag: commitments",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 1
+  },
+  {
+   "source": "Tag: scheduling",
+   "target": "Foray: Dynamics ( sharing)",
+   "weight": 2
   },
   {
    "source": "Tag: petri net",
@@ -4241,17 +4266,17 @@
    "weight": 1
   },
   {
-   "source": "Tag: scheduling",
-   "target": "Foray: Dynamics ( sharing)",
-   "weight": 2
-  },
-  {
    "source": "Tag: resource management",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 2
   },
   {
-   "source": "Tag: grothendieck construction",
+   "source": "Tag: category theory",
+   "target": "Foray: Dynamics ( sharing)",
+   "weight": 2
+  },
+  {
+   "source": "Tag: tear zoom link",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 2
   },
@@ -4264,16 +4289,6 @@
    "source": "Tag: interesting",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 1
-  },
-  {
-   "source": "Tag: category theory",
-   "target": "Foray: Dynamics ( sharing)",
-   "weight": 2
-  },
-  {
-   "source": "Tag: tear zoom link",
-   "target": "Foray: Dynamics ( sharing)",
-   "weight": 2
   },
   {
    "source": "Tag: bundle",
@@ -4291,12 +4306,17 @@
    "weight": 1
   },
   {
-   "source": "Tag: indexed category",
+   "source": "Tag: lens",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 1
   },
   {
-   "source": "Tag: lens",
+   "source": "Tag: operad",
+   "target": "Foray: Dynamics ( sharing)",
+   "weight": 3
+  },
+  {
+   "source": "Tag: indexed category",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 1
   },
@@ -4304,11 +4324,6 @@
    "source": "Tag: wiring diagram",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 2
-  },
-  {
-   "source": "Tag: operad",
-   "target": "Foray: Dynamics ( sharing)",
-   "weight": 3
   },
   {
    "source": "Tag: undirected system",
@@ -4321,12 +4336,12 @@
    "weight": 3
   },
   {
-   "source": "Tag: dynamic systems",
+   "source": "Tag: behavioural approach",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 1
   },
   {
-   "source": "Tag: behavioural approach",
+   "source": "Tag: dynamic systems",
    "target": "Foray: Dynamics ( sharing)",
    "weight": 1
   },
@@ -4366,29 +4381,14 @@
    "weight": 1
   },
   {
-   "source": "Tag: bloggable",
-   "target": "Foray: Generate WBS paths",
-   "weight": 4
-  },
-  {
    "source": "Tag: generative model",
    "target": "Foray: Generate WBS paths",
    "weight": 3
   },
   {
-   "source": "Tag: smc",
+   "source": "Tag: bloggable",
    "target": "Foray: Generate WBS paths",
-   "weight": 3
-  },
-  {
-   "source": "Tag: pddl",
-   "target": "Foray: Generate WBS paths",
-   "weight": 3
-  },
-  {
-   "source": "Tag: requirements",
-   "target": "Foray: Generate WBS paths",
-   "weight": 1
+   "weight": 4
   },
   {
    "source": "Tag: categories",
@@ -4396,7 +4396,22 @@
    "weight": 5
   },
   {
+   "source": "Tag: requirements",
+   "target": "Foray: Generate WBS paths",
+   "weight": 1
+  },
+  {
+   "source": "Tag: smc",
+   "target": "Foray: Generate WBS paths",
+   "weight": 3
+  },
+  {
    "source": "Tag: planning",
+   "target": "Foray: Generate WBS paths",
+   "weight": 3
+  },
+  {
+   "source": "Tag: pddl",
    "target": "Foray: Generate WBS paths",
    "weight": 3
   },
@@ -4421,17 +4436,12 @@
    "weight": 2
   },
   {
-   "source": "Tag: commitments",
-   "target": "Foray: Generate WBS paths",
-   "weight": 1
-  },
-  {
-   "source": "Tag: resource management",
-   "target": "Foray: Generate WBS paths",
-   "weight": 1
-  },
-  {
    "source": "Tag: network operad",
+   "target": "Foray: Generate WBS paths",
+   "weight": 1
+  },
+  {
+   "source": "Tag: commitments",
    "target": "Foray: Generate WBS paths",
    "weight": 1
   },
@@ -4446,9 +4456,9 @@
    "weight": 1
   },
   {
-   "source": "Tag: functor",
+   "source": "Tag: resource management",
    "target": "Foray: Generate WBS paths",
-   "weight": 3
+   "weight": 1
   },
   {
    "source": "Tag: ontology",
@@ -4456,14 +4466,19 @@
    "weight": 1
   },
   {
-   "source": "Tag: alternate perspectives",
+   "source": "Tag: functor",
    "target": "Foray: Generate WBS paths",
-   "weight": 1
+   "weight": 3
   },
   {
    "source": "Tag: dpo",
    "target": "Foray: Generate WBS paths",
    "weight": 2
+  },
+  {
+   "source": "Tag: alternate perspectives",
+   "target": "Foray: Generate WBS paths",
+   "weight": 1
   },
   {
    "source": "Tag: scheduling",
@@ -4476,12 +4491,12 @@
    "weight": 2
   },
   {
-   "source": "Tag: petri net",
+   "source": "Tag: commutative monoid",
    "target": "Foray: Generate WBS paths",
    "weight": 2
   },
   {
-   "source": "Tag: commutative monoid",
+   "source": "Tag: double category",
    "target": "Foray: Generate WBS paths",
    "weight": 2
   },
@@ -4491,12 +4506,17 @@
    "weight": 1
   },
   {
-   "source": "Tag: double category",
+   "source": "Tag: petri net",
    "target": "Foray: Generate WBS paths",
    "weight": 2
   },
   {
-   "source": "Tag: graph rewriting",
+   "source": "Tag: dynamic systems",
+   "target": "Foray: Generate WBS paths",
+   "weight": 1
+  },
+  {
+   "source": "Tag: agents",
    "target": "Foray: Generate WBS paths",
    "weight": 1
   },
@@ -4506,12 +4526,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: dynamic systems",
-   "target": "Foray: Generate WBS paths",
-   "weight": 1
-  },
-  {
-   "source": "Tag: agents",
+   "source": "Tag: graph rewriting",
    "target": "Foray: Generate WBS paths",
    "weight": 1
   },
@@ -4526,7 +4541,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: lax functor",
+   "source": "Tag: olog",
    "target": "Foray: Generate WBS paths",
    "weight": 1
   },
@@ -4536,7 +4551,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: olog",
+   "source": "Tag: lax functor",
    "target": "Foray: Generate WBS paths",
    "weight": 1
   },
@@ -4571,17 +4586,17 @@
    "weight": 2
   },
   {
+   "source": "Tag: topos",
+   "target": "Foray: Local data, global WBS",
+   "weight": 1
+  },
+  {
    "source": "Tag: 2 category",
    "target": "Foray: Local data, global WBS",
    "weight": 1
   },
   {
    "source": "Tag: design",
-   "target": "Foray: Local data, global WBS",
-   "weight": 1
-  },
-  {
-   "source": "Tag: topos",
    "target": "Foray: Local data, global WBS",
    "weight": 1
   },
@@ -4601,14 +4616,14 @@
    "weight": 20
   },
   {
-   "source": "Tag: rl",
-   "target": "Foray: Programme decision seq.",
-   "weight": 5
-  },
-  {
    "source": "Tag: stochastic optimisation",
    "target": "Foray: Programme decision seq.",
    "weight": 4
+  },
+  {
+   "source": "Tag: rl",
+   "target": "Foray: Programme decision seq.",
+   "weight": 5
   },
   {
    "source": "Tag: scheduling",
@@ -4621,7 +4636,12 @@
    "weight": 1
   },
   {
-   "source": "Tag: system",
+   "source": "Tag: categories",
+   "target": "Foray: Project wiring diagrams",
+   "weight": 1
+  },
+  {
+   "source": "Tag: category of wiring diagrams",
    "target": "Foray: Project wiring diagrams",
    "weight": 2
   },
@@ -4636,12 +4656,7 @@
    "weight": 1
   },
   {
-   "source": "Tag: categories",
-   "target": "Foray: Project wiring diagrams",
-   "weight": 1
-  },
-  {
-   "source": "Tag: category of wiring diagrams",
+   "source": "Tag: system",
    "target": "Foray: Project wiring diagrams",
    "weight": 2
   },
@@ -4661,11 +4676,6 @@
    "weight": 1
   },
   {
-   "source": "Tag: self similarity",
-   "target": "Foray: Project wiring diagrams",
-   "weight": 1
-  },
-  {
    "source": "Tag: smc",
    "target": "Foray: Project wiring diagrams",
    "weight": 1
@@ -4681,6 +4691,11 @@
    "weight": 2
   },
   {
+   "source": "Tag: self similarity",
+   "target": "Foray: Project wiring diagrams",
+   "weight": 1
+  },
+  {
    "source": "Tag: port graph",
    "target": "Foray: Project wiring diagrams",
    "weight": 1
@@ -4691,14 +4706,14 @@
    "weight": 1
   },
   {
-   "source": "Tag: operad",
-   "target": "Foray: Project wiring diagrams",
-   "weight": 2
-  },
-  {
    "source": "Tag: undirected system",
    "target": "Foray: Project wiring diagrams",
    "weight": 1
+  },
+  {
+   "source": "Tag: operad",
+   "target": "Foray: Project wiring diagrams",
+   "weight": 2
   },
   {
    "source": "Tag: smcs",
@@ -4711,7 +4726,7 @@
    "weight": 5
   },
   {
-   "source": "Tag: api",
+   "source": "Tag: experimentable",
    "target": "Foray: Projects by agents",
    "weight": 2
   },
@@ -4721,7 +4736,7 @@
    "weight": 4
   },
   {
-   "source": "Tag: experimentable",
+   "source": "Tag: api",
    "target": "Foray: Projects by agents",
    "weight": 2
   },
@@ -4746,22 +4761,107 @@
    "weight": 1
   },
   {
-   "source": "Tag: bloggable",
+   "source": "Tag: categories",
    "target": "Foray: Semantics for WBS",
-   "weight": 1
+   "weight": 2
   },
   {
    "source": "Tag: ontology",
    "target": "Foray: Semantics for WBS",
-   "weight": 1
+   "weight": 2
   },
   {
-   "source": "Tag: categories",
+   "source": "Tag: bloggable",
+   "target": "Foray: Semantics for WBS",
+   "weight": 2
+  },
+  {
+   "source": "Tag: bi category",
    "target": "Foray: Semantics for WBS",
    "weight": 1
   },
   {
-   "source": "Tag: system",
+   "source": "Tag: poset",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: 2 category",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: dagger category",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: smc",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: functor",
+   "target": "Foray: Semantics for WBS",
+   "weight": 2
+  },
+  {
+   "source": "Tag: dpo",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: span",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: planning",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: pddl",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: alternate perspectives",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: double category",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: stock and flow",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: olog",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: tools",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: model",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: lax functor",
+   "target": "Foray: Semantics for WBS",
+   "weight": 1
+  },
+  {
+   "source": "Tag: 2017bottomup",
    "target": "Foray: processes to plans",
    "weight": 5
   },
@@ -4771,27 +4871,27 @@
    "weight": 5
   },
   {
-   "source": "Tag: bloggable",
-   "target": "Foray: processes to plans",
-   "weight": 4
-  },
-  {
    "source": "Tag: convey",
    "target": "Foray: processes to plans",
    "weight": 5
   },
   {
-   "source": "Tag: 2017bottomup",
+   "source": "Tag: bloggable",
+   "target": "Foray: processes to plans",
+   "weight": 4
+  },
+  {
+   "source": "Tag: system",
    "target": "Foray: processes to plans",
    "weight": 5
   },
   {
-   "source": "Tag: computation",
+   "source": "Tag: key",
    "target": "Foray: processes to plans",
    "weight": 1
   },
   {
-   "source": "Tag: key",
+   "source": "Tag: computation",
    "target": "Foray: processes to plans",
    "weight": 1
   },
@@ -4801,7 +4901,17 @@
    "weight": 2
   },
   {
+   "source": "Tag: categories",
+   "target": "Foray: processes to plans",
+   "weight": 2
+  },
+  {
    "source": "Tag: mbse",
+   "target": "Foray: processes to plans",
+   "weight": 1
+  },
+  {
+   "source": "Tag: sysml",
    "target": "Foray: processes to plans",
    "weight": 1
   },
@@ -4812,16 +4922,6 @@
   },
   {
    "source": "Tag: alternate perspectives",
-   "target": "Foray: processes to plans",
-   "weight": 1
-  },
-  {
-   "source": "Tag: categories",
-   "target": "Foray: processes to plans",
-   "weight": 2
-  },
-  {
-   "source": "Tag: sysml",
    "target": "Foray: processes to plans",
    "weight": 1
   },
