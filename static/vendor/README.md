@@ -1,0 +1,1 @@
+Cytoscape.js 3.32.1, MIT licence, copied from the locked React explorer dependency for its maintained catalogue view. Grid, Concentric and Cose are built in. The other graph views retain their existing dependencies.

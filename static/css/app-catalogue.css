@@ -1,0 +1,17 @@
+.tag-explorer { max-width: 1200px; margin: auto; padding: 20px; font-family: system-ui, sans-serif; line-height: 1.5; color: #203c34; }
+.tag-explorer h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); }.tag-explorer .provenance { padding: 14px; background: #edf5f1; border-radius: 8px; }
+.tag-explorer .tag-controls { display: flex; align-items: end; flex-wrap: wrap; gap: 14px; }.tag-explorer label { display: grid; gap: 6px; }
+.tag-explorer select,.tag-explorer button { font: inherit; padding: 8px; border: 1px solid #76978a; border-radius: 5px; background: white; color: inherit; }
+.tag-explorer button { cursor: pointer; }.tag-explorer button:disabled { opacity: .5; }.tag-explorer :focus-visible { outline: 3px solid #ac682a; outline-offset: 2px; }
+.tag-explorer .cy-container { height: 60vh; min-height: 380px; position: relative; border: 1px solid #aaa; border-radius: 8px; background: white; }
+.tag-explorer .cy-tooltip { position: absolute; pointer-events: none; background: #203c34; color: white; padding: 3px 6px; border-radius: 4px; font-size: 12px; transform: translate(-50%, -150%); }
+.tag-explorer .tag-inspector { margin: 18px 0; }.tag-explorer .tag-inspector select { max-width: 100%; }.tag-explorer [role=alert] { padding: 12px; color: #9a311b; }.tag-explorer details { margin: 20px 0; }
+body { margin: 0; background: #f7f9fc; }
+.tag-explorer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 25px; }
+.tag-explorer a { color: #176249; }.tag-explorer fieldset { border: 0; padding: 0; min-width: 0; }.tag-explorer legend { margin: 18px 0 10px; font-weight: 700; }
+.tag-explorer .snapshot-note { border-left: 4px solid #ac682a; padding: 8px 15px; background: #fff6e9; }
+#catalogue-graph { width: 100%; height: 100%; }.tag-explorer [hidden] { display: none !important; }
+.tag-explorer .tag-controls label:first-child { display: block; }.tag-explorer input[type=range] { display: block; width: 220px; }
+.tag-explorer .provenance a { white-space: nowrap; }.tag-explorer .tag-inspector select { width: min(100%, 420px); }
+.tag-explorer details code { overflow-wrap: anywhere; }
+@media(max-width: 520px) { .tag-explorer { padding: 14px; }.tag-explorer .cy-container { min-height: 360px; }.tag-explorer input[type=range] { width: 100%; } }

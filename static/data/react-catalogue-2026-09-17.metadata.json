@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "title": "React catalogue: frozen 17 September 2026 snapshot",
+  "sourceRepository": "lawrencerowland/React_proj-apps",
+  "sourceFile": "app-index.csv",
+  "sourceSha256": "43f2c16370794d9f9d6ad668a791093cd83f398afafc888e02a4b0ff63aa72a2",
+  "sourceAppCount": 19,
+  "nodeCount": 40,
+  "edgeCount": 58,
+  "refreshedAt": "2026-09-17T14:08:29.017Z",
+  "generator": "scripts/generate_catalogue.py",
+  "refreshCommand": "python scripts/generate_catalogue.py --source <supplied-catalogue.csv> --date YYYY-MM-DD --activate",
+  "method": "Each tag is counted once per app; an edge counts apps containing both tags. This is co-occurrence, not a causal or typed relationship.",
+  "sourceApps": [
+    {
+      "id": "1",
+      "name": "project-management-simulation"
+    },
+    {
+      "id": "2",
+      "name": "project-dynamics-simulator"
+    },
+    {
+      "id": "3",
+      "name": "IT-project-seq-decisions"
+    },
+    {
+      "id": "4",
+      "name": "portfolio-state-machine"
+    },
+    {
+      "id": "5",
+      "name": "stakeholder-analysis-dashboard"
+    },
+    {
+      "id": "6",
+      "name": "stakeholder-network-graph"
+    },
+    {
+      "id": "7",
+      "name": "pareto_projects"
+    },
+    {
+      "id": "8",
+      "name": "market_timeline_explorer"
+    },
+    {
+      "id": "9",
+      "name": "Another-IT-project-simulation"
+    },
+    {
+      "id": "10",
+      "name": "decision-path-guide"
+    },
+    {
+      "id": "11",
+      "name": "capabilities-wiring-diag"
+    },
+    {
+      "id": "12",
+      "name": "copula-risk-analysis"
+    },
+    {
+      "id": "13",
+      "name": "scope-benefits-tree"
+    },
+    {
+      "id": "14",
+      "name": "project-controls-knowledge-graph"
+    },
+    {
+      "id": "15",
+      "name": "pm-software-evolution"
+    },
+    {
+      "id": "16",
+      "name": "olaf-delivery-dashboard"
+    },
+    {
+      "id": "17",
+      "name": "data-maturity-combined"
+    },
+    {
+      "id": "18",
+      "name": "building-site-occupancy-simulation"
+    },
+    {
+      "id": "19",
+      "name": "tag-concurrence-explorer"
+    }
+  ],
+  "snapshotDate": "2026-09-17",
+  "snapshotStatus": "frozen",
+  "sourceCommit": "12957f34702676f166f09dbb625d5c671c6dbac8",
+  "sourceUrl": "https://github.com/lawrencerowland/React_proj-apps/blob/12957f34702676f166f09dbb625d5c671c6dbac8/app-index.csv",
+  "snapshotFile": "react-catalogue-2026-09-17.csv",
+  "graphFile": "react-catalogue-2026-09-17.json",
+  "originalGenerator": "scripts/generate-tag-concurrence-graph.js",
+  "originalRefreshedAt": "2026-09-17T14:08:29.017Z",
+  "refreshPolicy": "Frozen supplied snapshot. No automatic fetch of the changing React catalogue. A different dataset requires a new snapshot date and explicit activation."
+}

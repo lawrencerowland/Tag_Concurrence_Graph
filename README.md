@@ -14,12 +14,14 @@ The app is useful for three related intuitions:
 
 ## Example Graphs
 
-The repository includes two sample graph views:
+The repository includes four graph views:
 
 - `index.html` shows Lawrence's reading list graph.
 - `complex.html` visualizes a complex project management graph.
+- `pw_best.html` maps the curated Portfolio Wave reading collection.
+- `app_catalogue.html` maps a frozen 17 September 2026 snapshot of the React app catalogue (19 apps, 40 tags and 58 tag pairs). See [CATALOGUE.md](CATALOGUE.md) for pinned source evidence and the explicit snapshot refresh process.
 
-Each page links to the other in the sidebar so you can switch between them.
+The pages link to one another so you can switch between the different source collections.
 
 ## Portfolio Wave Handoff
 
@@ -46,10 +48,12 @@ Install the Python dependencies, then run the tests or build the static site:
 ```bash
 pip install -r requirements.txt
 pytest
+node --test tests/catalogue_model.test.mjs
 python build_static.py
 ```
 
 The static site is generated into `docs/` for GitHub Pages. Do not edit generated `docs/` files directly; edit templates and static assets instead.
+The catalogue graph-operation tests require Node 22 or later and use the vendored library without npm installation. The build verifies the selected catalogue snapshot and does not fetch the changing React catalogue.
 
 ## Deployment
 
