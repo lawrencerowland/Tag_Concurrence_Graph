@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>React catalogue snapshot · Tag Concurrence Graph</title>
+  <link rel="stylesheet" href="static/css/app-catalogue.css">
+  <script defer src="static/vendor/cytoscape-3.32.1.min.js"></script>
+  <script type="module" src="static/js/app-catalogue.js"></script>
+</head>
+<body>
+<main class="tag-explorer">
+  <nav aria-label="Graph collection"><a href="index.html">Reading list</a><a href="complex.html">Project management graph</a><a href="pw_best.html">Portfolio Wave map</a><a href="https://lawrencerowland.github.io/side-projects.html">Side projects</a></nav>
+  <h1>Concepts in the apps: a catalogue tag map</h1>
+  <p>Tags become nodes; an edge counts apps that use both tags. Larger nodes appear in more apps. This shows co-occurrence, not causation, a typed ontology or detected communities.</p>
+  <p class="snapshot-note"><strong>A frozen catalogue snapshot.</strong> This view preserves the {{ catalogue.sourceAppCount }}-app React catalogue captured on {{ catalogue.snapshotDate }}{% if catalogue.snapshotDate == '2026-09-17' %}, before three apps moved to specialist collections{% endif %}. The changing <a href="https://lawrencerowland.github.io/React_proj-apps/">current React catalogue</a> is a separate view.</p>
+  <p id="provenance" class="provenance" hidden></p>
+  <p id="load-status" role="status">Loading catalogue snapshot…</p>
+  <div id="load-error" role="alert" hidden><span id="error-message"></span> <button id="retry">Retry loading</button></div>
+  <fieldset id="controls" disabled><legend>Explore the snapshot</legend><div class="tag-controls">
+    <label for="weight">Min edge weight: <span id="weight-value">0</span><input id="weight" type="range" min="0" max="10" value="0"></label>
+    <label for="layout">Layout<select id="layout"><option value="cose">Cose</option><option value="concentric">Concentric</option><option value="grid" selected>Grid</option></select></label>
+    <button id="labels">Hide Labels</button><button id="download">Download PNG</button><button id="reset-view">Reset view</button>
+  </div></fieldset>
+  <p>Drag to pan; scroll to zoom. Select a node or use the tag list to inspect its visible connections. Weight 0 shows all tags; higher thresholds hide tags without a remaining edge.</p>
+  <p id="count" aria-live="polite"></p>
+  <div class="cy-container"><div id="catalogue-graph" role="img" aria-label="Catalogue tag graph. Use the tag selector below for an accessible description of its connections."></div><div id="tooltip" class="cy-tooltip" hidden></div></div>
+  <section class="tag-inspector" aria-label="Selected tag"><label for="tag-select">Inspect a tag<select id="tag-select" disabled><option value="">Choose a tag</option></select></label><div id="selected-info"></div><button id="clear-selection" hidden>Clear selection</button></section>
+  <details><summary>Source and refresh details</summary><p>The generator counts each tag once per app and each pair once per app. The snapshot CSV and source checksum preserve the actual catalogue used. Its graph remains fixed when the original site adds or removes apps.</p><p>Maintainers can supply a new dated CSV to <code>scripts/generate_catalogue.py</code> and explicitly activate that snapshot. The build verifies the selected snapshot; it never fetches the live catalogue. <a href="https://github.com/lawrencerowland/Tag_Concurrence_Graph/blob/main/CATALOGUE.md">Reproduce or refresh this view</a>.</p></details>
+  <noscript>This interactive graph needs JavaScript. <a href="static/data/{{ catalogue.snapshotFile }}">Read the frozen catalogue CSV</a>.</noscript>
+</main>
+</body>
+</html>

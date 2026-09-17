@@ -23,6 +23,11 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests
         run: pytest
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check catalogue graph operations
+        run: node --test tests/catalogue_model.test.mjs
       - name: Build static site
         run: python build_static.py
       - uses: actions/configure-pages@v3

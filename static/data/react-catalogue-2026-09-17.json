@@ -1,0 +1,456 @@
+{
+  "nodes": [
+    {
+      "id": "active_inference",
+      "weight": 1
+    },
+    {
+      "id": "adoption",
+      "weight": 1
+    },
+    {
+      "id": "AI_adoption",
+      "weight": 2
+    },
+    {
+      "id": "behaviour",
+      "weight": 1
+    },
+    {
+      "id": "benefits",
+      "weight": 1
+    },
+    {
+      "id": "building_site",
+      "weight": 1
+    },
+    {
+      "id": "business_model",
+      "weight": 1
+    },
+    {
+      "id": "capability",
+      "weight": 1
+    },
+    {
+      "id": "competition",
+      "weight": 1
+    },
+    {
+      "id": "construction",
+      "weight": 1
+    },
+    {
+      "id": "correlation",
+      "weight": 1
+    },
+    {
+      "id": "data",
+      "weight": 1
+    },
+    {
+      "id": "decision",
+      "weight": 3
+    },
+    {
+      "id": "dependencies",
+      "weight": 1
+    },
+    {
+      "id": "feedback_loops",
+      "weight": 1
+    },
+    {
+      "id": "game_theory",
+      "weight": 1
+    },
+    {
+      "id": "gamification",
+      "weight": 2
+    },
+    {
+      "id": "generative_model",
+      "weight": 1
+    },
+    {
+      "id": "graph_pathways",
+      "weight": 1
+    },
+    {
+      "id": "knowledge_graph",
+      "weight": 4
+    },
+    {
+      "id": "knowledge_graph_dependencies",
+      "weight": 1
+    },
+    {
+      "id": "knowledge_management",
+      "weight": 1
+    },
+    {
+      "id": "learning",
+      "weight": 2
+    },
+    {
+      "id": "maturity",
+      "weight": 1
+    },
+    {
+      "id": "multiple_perspectives",
+      "weight": 3
+    },
+    {
+      "id": "non_linearity",
+      "weight": 1
+    },
+    {
+      "id": "occupancy",
+      "weight": 1
+    },
+    {
+      "id": "ontology",
+      "weight": 1
+    },
+    {
+      "id": "portfolio_management",
+      "weight": 1
+    },
+    {
+      "id": "prediction_error",
+      "weight": 1
+    },
+    {
+      "id": "project_controls",
+      "weight": 1
+    },
+    {
+      "id": "risk",
+      "weight": 1
+    },
+    {
+      "id": "roadmap",
+      "weight": 1
+    },
+    {
+      "id": "scope",
+      "weight": 1
+    },
+    {
+      "id": "simulation",
+      "weight": 1
+    },
+    {
+      "id": "stakeholder",
+      "weight": 3
+    },
+    {
+      "id": "surprise",
+      "weight": 1
+    },
+    {
+      "id": "timeline",
+      "weight": 1
+    },
+    {
+      "id": "uncertainty",
+      "weight": 2
+    },
+    {
+      "id": "workflow",
+      "weight": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "active_inference",
+      "target": "generative_model",
+      "weight": 1
+    },
+    {
+      "source": "active_inference",
+      "target": "prediction_error",
+      "weight": 1
+    },
+    {
+      "source": "active_inference",
+      "target": "surprise",
+      "weight": 1
+    },
+    {
+      "source": "adoption",
+      "target": "capability",
+      "weight": 1
+    },
+    {
+      "source": "adoption",
+      "target": "data",
+      "weight": 1
+    },
+    {
+      "source": "adoption",
+      "target": "maturity",
+      "weight": 1
+    },
+    {
+      "source": "AI_adoption",
+      "target": "business_model",
+      "weight": 1
+    },
+    {
+      "source": "AI_adoption",
+      "target": "workflow",
+      "weight": 1
+    },
+    {
+      "source": "behaviour",
+      "target": "feedback_loops",
+      "weight": 1
+    },
+    {
+      "source": "behaviour",
+      "target": "gamification",
+      "weight": 1
+    },
+    {
+      "source": "behaviour",
+      "target": "learning",
+      "weight": 1
+    },
+    {
+      "source": "behaviour",
+      "target": "non_linearity",
+      "weight": 1
+    },
+    {
+      "source": "benefits",
+      "target": "scope",
+      "weight": 1
+    },
+    {
+      "source": "building_site",
+      "target": "construction",
+      "weight": 1
+    },
+    {
+      "source": "building_site",
+      "target": "occupancy",
+      "weight": 1
+    },
+    {
+      "source": "building_site",
+      "target": "simulation",
+      "weight": 1
+    },
+    {
+      "source": "capability",
+      "target": "data",
+      "weight": 1
+    },
+    {
+      "source": "capability",
+      "target": "maturity",
+      "weight": 1
+    },
+    {
+      "source": "competition",
+      "target": "game_theory",
+      "weight": 1
+    },
+    {
+      "source": "construction",
+      "target": "occupancy",
+      "weight": 1
+    },
+    {
+      "source": "construction",
+      "target": "simulation",
+      "weight": 1
+    },
+    {
+      "source": "correlation",
+      "target": "dependencies",
+      "weight": 1
+    },
+    {
+      "source": "correlation",
+      "target": "risk",
+      "weight": 1
+    },
+    {
+      "source": "data",
+      "target": "maturity",
+      "weight": 1
+    },
+    {
+      "source": "decision",
+      "target": "gamification",
+      "weight": 1
+    },
+    {
+      "source": "decision",
+      "target": "ontology",
+      "weight": 1
+    },
+    {
+      "source": "decision",
+      "target": "uncertainty",
+      "weight": 2
+    },
+    {
+      "source": "dependencies",
+      "target": "risk",
+      "weight": 1
+    },
+    {
+      "source": "feedback_loops",
+      "target": "gamification",
+      "weight": 1
+    },
+    {
+      "source": "feedback_loops",
+      "target": "learning",
+      "weight": 1
+    },
+    {
+      "source": "feedback_loops",
+      "target": "non_linearity",
+      "weight": 1
+    },
+    {
+      "source": "gamification",
+      "target": "learning",
+      "weight": 1
+    },
+    {
+      "source": "gamification",
+      "target": "non_linearity",
+      "weight": 1
+    },
+    {
+      "source": "gamification",
+      "target": "uncertainty",
+      "weight": 1
+    },
+    {
+      "source": "generative_model",
+      "target": "prediction_error",
+      "weight": 1
+    },
+    {
+      "source": "generative_model",
+      "target": "surprise",
+      "weight": 1
+    },
+    {
+      "source": "graph_pathways",
+      "target": "knowledge_graph",
+      "weight": 1
+    },
+    {
+      "source": "graph_pathways",
+      "target": "learning",
+      "weight": 1
+    },
+    {
+      "source": "graph_pathways",
+      "target": "multiple_perspectives",
+      "weight": 1
+    },
+    {
+      "source": "graph_pathways",
+      "target": "project_controls",
+      "weight": 1
+    },
+    {
+      "source": "knowledge_graph",
+      "target": "knowledge_management",
+      "weight": 1
+    },
+    {
+      "source": "knowledge_graph",
+      "target": "learning",
+      "weight": 1
+    },
+    {
+      "source": "knowledge_graph",
+      "target": "multiple_perspectives",
+      "weight": 3
+    },
+    {
+      "source": "knowledge_graph",
+      "target": "project_controls",
+      "weight": 1
+    },
+    {
+      "source": "knowledge_graph",
+      "target": "stakeholder",
+      "weight": 3
+    },
+    {
+      "source": "knowledge_graph_dependencies",
+      "target": "roadmap",
+      "weight": 1
+    },
+    {
+      "source": "knowledge_graph_dependencies",
+      "target": "timeline",
+      "weight": 1
+    },
+    {
+      "source": "knowledge_management",
+      "target": "multiple_perspectives",
+      "weight": 1
+    },
+    {
+      "source": "knowledge_management",
+      "target": "stakeholder",
+      "weight": 1
+    },
+    {
+      "source": "learning",
+      "target": "multiple_perspectives",
+      "weight": 1
+    },
+    {
+      "source": "learning",
+      "target": "non_linearity",
+      "weight": 1
+    },
+    {
+      "source": "learning",
+      "target": "project_controls",
+      "weight": 1
+    },
+    {
+      "source": "multiple_perspectives",
+      "target": "project_controls",
+      "weight": 1
+    },
+    {
+      "source": "multiple_perspectives",
+      "target": "stakeholder",
+      "weight": 2
+    },
+    {
+      "source": "occupancy",
+      "target": "simulation",
+      "weight": 1
+    },
+    {
+      "source": "portfolio_management",
+      "target": "workflow",
+      "weight": 1
+    },
+    {
+      "source": "prediction_error",
+      "target": "surprise",
+      "weight": 1
+    },
+    {
+      "source": "roadmap",
+      "target": "timeline",
+      "weight": 1
+    }
+  ]
+}
